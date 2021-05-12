@@ -58,11 +58,11 @@ MonoBehaviour:
     isOn: 1
     lodIndex: 2
     name: GroundDetection
-  - fullName: NWH.VehiclePhysics2.Input.Input
+  - fullName: NWH.VehiclePhysics2.Input.VehicleInputHandler
     isEnabled: 1
     isOn: 1
-    lodIndex: 2
-    name: Input
+    lodIndex: -1
+    name: VehicleInputHandler
   - fullName: NWH.VehiclePhysics2.Modules.ABS.ABSModule
     isEnabled: 0
     isOn: 1
@@ -74,9 +74,9 @@ MonoBehaviour:
     lodIndex: 2
     name: AerodynamicsModule
   - fullName: NWH.VehiclePhysics2.Modules.CruiseControl.CruiseControlModule
-    isEnabled: 0
+    isEnabled: 1
     isOn: 1
-    lodIndex: -1
+    lodIndex: 3
     name: CruiseControlModule
   - fullName: NWH.VehiclePhysics2.Modules.ESC.ESCModule
     isEnabled: 1
