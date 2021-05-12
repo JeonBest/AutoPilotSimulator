@@ -1,0 +1,18 @@
+{
+    "name": "NWH.Common.Cameras",
+    "references": [
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:29f59c061700f574297724b3a8af873c",
+        "GUID:02fe2d665ce238244bea56c79a365793",
+        "GUID:d31e991413537f04bb57584d46519b51"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
