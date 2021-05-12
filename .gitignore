@@ -69,5 +69,9 @@ crashlytics-build.properties
 InitTestScene*.unity.meta
 InitTestScene*.unity
 
+### My ignore ###
+# Demo Scenes
+Driving Simulator/Assets/NWH/Vehicle Physics 2/_Demo/_Scenes
+
 
 # End of https://www.toptal.com/developers/gitignore/api/unity

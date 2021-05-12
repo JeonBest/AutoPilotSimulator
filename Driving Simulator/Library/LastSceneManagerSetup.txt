@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Main.unity
+- path: Assets/NWH/Vehicle Physics 2/_Demo/_Scenes/Monza (Desktop)/Monza.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
