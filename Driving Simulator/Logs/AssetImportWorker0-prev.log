@@ -1,0 +1,197 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.7f1 (dd97f2c94397) revision 14522354'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.928; Version 2009; 64bit' Language: 'ko' Physical Memory: 32694 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/USER/WSL/AutoPilotSimulator/Driving Simulator
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+52802
+Successfully changed project path to: C:/Users/USER/WSL/AutoPilotSimulator/Driving Simulator
+C:/Users/USER/WSL/AutoPilotSimulator/Driving Simulator
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 25.66 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.7f1 (dd97f2c94397)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/USER/WSL/AutoPilotSimulator/Driving Simulator/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon RX 6700 XT (ID=0x73df)
+    Vendor:   
+    VRAM:     12244 MB
+    Driver:   27.20.15003.5017
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56264
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002030 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 28.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.748 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000760 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 27.08 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.642 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1818 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 86.4 MB.
+System memory in use after: 86.4 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2262.
+Total: 1.842200 ms (FindLiveObjects: 0.194500 ms CreateObjectMapping: 0.066400 ms MarkObjects: 1.515700 ms  DeleteObjects: 0.064700 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/NWH
+  artifactKey: Guid(2b18fe5c23a6d5d428e73f338976d61d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH using Guid(2b18fe5c23a6d5d428e73f338976d61d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e6571a5c33720344f4ee34a5be0f4f7') in 0.007426 seconds
+  Import took 0.009427 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.162345 seconds.
+  path: Assets/NWH/Vehicle Physics 2
+  artifactKey: Guid(80fb9475b3436c043b1e27c0ed4c211d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2 using Guid(80fb9475b3436c043b1e27c0ed4c211d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f686c2dcba15b0ff782f07e9229ede04') in 0.004936 seconds
+  Import took 0.007412 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.049993 seconds.
+  path: Assets/NWH/Vehicle Physics 2/NWH.VehiclePhysics2.asmdef
+  artifactKey: Guid(4333e1ebda3404646a79cf687ca3e9e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/NWH.VehiclePhysics2.asmdef using Guid(4333e1ebda3404646a79cf687ca3e9e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59e26c434a6972e88065a82cd210c616') in 0.015002 seconds
+  Import took 0.017697 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.123510 seconds.
+  path: Assets/NWH/Vehicle Physics 2/_Demo
+  artifactKey: Guid(7822d50e70c5401fa90a5203ce39cd0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/_Demo using Guid(7822d50e70c5401fa90a5203ce39cd0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cb4ca0a3ec1b42b1ccd1cf5b8b47b07') in 0.005016 seconds
+  Import took 0.007559 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.825060 seconds.
+  path: Assets/NWH/Vehicle Physics 2/_Demo/_Scenes
+  artifactKey: Guid(d38caa95e85fc4841a29500eccf42c3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/_Demo/_Scenes using Guid(d38caa95e85fc4841a29500eccf42c3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbf227af3857eb39a7ab27f64ee3c942') in 0.004974 seconds
+  Import took 0.007518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.731158 seconds.
+  path: Assets/NWH/Vehicle Physics 2/_Demo/_Scenes/_Racetrack (Desktop)
+  artifactKey: Guid(649d437f7448e274799e934ae687c329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/_Demo/_Scenes/_Racetrack (Desktop) using Guid(649d437f7448e274799e934ae687c329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a69c30c4cb2c877773c543a1015527d1') in 0.005646 seconds
+  Import took 0.008325 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.196787 seconds.
+  path: Assets/NWH/Vehicle Physics 2/_Demo/_Scenes/_Racetrack (Desktop)/RacetrackTreeCombinedMesh.asset
+  artifactKey: Guid(2b62860680fd8ad41a7c8e0e22487e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/_Demo/_Scenes/_Racetrack (Desktop)/RacetrackTreeCombinedMesh.asset using Guid(2b62860680fd8ad41a7c8e0e22487e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cbe02027a5f7a1f6b7ad9bff957bb2c') in 0.084429 seconds
+  Import took 0.086968 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/NWH/Vehicle Physics 2/_Demo/_Scenes/_Racetrack (Desktop)/SceneManager.prefab
+  artifactKey: Guid(7b9ec91364e16ab4a92feede50cc0f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/_Demo/_Scenes/_Racetrack (Desktop)/SceneManager.prefab using Guid(7b9ec91364e16ab4a92feede50cc0f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b2b3a2ea523395c8863ea701270d696') in 0.014451 seconds
+  Import took 0.016828 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/NWH/Vehicle Physics 2/_Demo/_Scenes/_Racetrack (Desktop)/RacetrackTrees.prefab
+  artifactKey: Guid(cb1cce574a5adef4fbaf1d71965f7ffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/_Demo/_Scenes/_Racetrack (Desktop)/RacetrackTrees.prefab using Guid(cb1cce574a5adef4fbaf1d71965f7ffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '160fd4db8238f09ad63096f659bfd1a2') in 0.006240 seconds
+  Import took 0.008566 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.305634 seconds.
+  path: Assets/NWH/Vehicle Physics 2/_Demo/_Scenes/Monza (Desktop)
+  artifactKey: Guid(3eb0243f313312046b97aa50fa2b6a7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/_Demo/_Scenes/Monza (Desktop) using Guid(3eb0243f313312046b97aa50fa2b6a7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e4b8b20742194b907014813ea15bb86') in 0.013839 seconds
+  Import took 0.016244 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.934965 seconds.
+  path: Assets/NWH/Vehicle Physics 2/_Demo/_Scenes/Monza (Desktop)/Monza.unity
+  artifactKey: Guid(4b8a7da897f0f2342868b9d57aa33d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/_Demo/_Scenes/Monza (Desktop)/Monza.unity using Guid(4b8a7da897f0f2342868b9d57aa33d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee16c937aa4812909e8575a5e311ad94') in 0.005358 seconds
+  Import took 0.007892 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 557.177454 seconds.
+  path: Assets/NWH/Vehicle Physics 2/_Demo/Vehicles
+  artifactKey: Guid(f9e1549d482f38c4db469c7e829ce69f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/_Demo/Vehicles using Guid(f9e1549d482f38c4db469c7e829ce69f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25721aceb878897d570c59180c4dec22') in 0.005257 seconds
+  Import took 0.007932 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.915352 seconds.
+  path: Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Sports Car by GR3D
+  artifactKey: Guid(65ba3104368da854eb47839badd8216e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Sports Car by GR3D using Guid(65ba3104368da854eb47839badd8216e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f2a090d7a9c58d0a731ed305f681e16') in 0.005144 seconds
+  Import took 0.007556 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000569 seconds.
+  path: Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Sports Car by GR3D
+  artifactKey: Guid(65ba3104368da854eb47839badd8216e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Sports Car by GR3D using Guid(65ba3104368da854eb47839badd8216e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f2a090d7a9c58d0a731ed305f681e16') in 0.001937 seconds
+  Import took 0.003766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.069164 seconds.
+  path: Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Sports Car by GR3D/ExhaustSmoke Variant.prefab
+  artifactKey: Guid(810437f958b002e41b86c9e0a121c7ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Sports Car by GR3D/ExhaustSmoke Variant.prefab using Guid(810437f958b002e41b86c9e0a121c7ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de598c4304618150e0667b6b62c91e15') in 0.013948 seconds
+  Import took 0.016553 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Sports Car by GR3D/Sports Car.prefab
+  artifactKey: Guid(3e1aced4144dd784c8f3878b71b33dcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Sports Car by GR3D/Sports Car.prefab using Guid(3e1aced4144dd784c8f3878b71b33dcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04f23eb3d0c5f9ffc0effadbb1503c78') in 0.381085 seconds
+  Import took 0.385587 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
