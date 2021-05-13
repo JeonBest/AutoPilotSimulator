@@ -15,11 +15,11 @@ C:/Users/USER/WSL/AutoPilotSimulator/Driving Simulator
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50131
+50783
 Successfully changed project path to: C:/Users/USER/WSL/AutoPilotSimulator/Driving Simulator
 C:/Users/USER/WSL/AutoPilotSimulator/Driving Simulator
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 29.68 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 28.79 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.7f1 (dd97f2c94397)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Resources/UnitySubsystems
@@ -35,54 +35,1575 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56396
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56460
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001993 seconds.
+Registered in 0.002003 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 31.11 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 30.42 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.819 seconds
+- Completed reload, in  0.807 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000731 seconds.
+Registered in 0.000831 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 32.87 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 29.38 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.735 seconds
+- Completed reload, in  0.725 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.73 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1822 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 172.1 MB.
-System memory in use after: 172.1 MB.
+System memory in use after: 172.2 MB.
 
 Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2295.
-Total: 1.987500 ms (FindLiveObjects: 0.311100 ms CreateObjectMapping: 0.066400 ms MarkObjects: 1.505700 ms  DeleteObjects: 0.103300 ms)
+Total: 2.058100 ms (FindLiveObjects: 0.197500 ms CreateObjectMapping: 0.102100 ms MarkObjects: 1.668500 ms  DeleteObjects: 0.089100 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/MyFolder/GoodDriverAI.cs
-  artifactKey: Guid(355c0abf92a43474e8355a389c0f8e65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyFolder/GoodDriverAI.cs using Guid(355c0abf92a43474e8355a389c0f8e65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2078c2a26a30af170fa5a7c0edab6623') in 0.024560 seconds
-  Import took 0.027468 seconds .
+  path: Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Euro Truck by GR3D/SemiTruck Variant.prefab
+  artifactKey: Guid(792b1861067db5b4ea5916aae21660f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Euro Truck by GR3D/SemiTruck Variant.prefab using Guid(792b1861067db5b4ea5916aae21660f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48573285efc00a3319ee0fa58186ff07') in 0.338775 seconds
+  Import took 0.344201 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Euro Truck by GR3D/EuroTruckMirrorTextureR.renderTexture
+  artifactKey: Guid(61f2fbf5a3b9074419a3d3d83fa89263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Euro Truck by GR3D/EuroTruckMirrorTextureR.renderTexture using Guid(61f2fbf5a3b9074419a3d3d83fa89263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b4d5930bc84a926beb54d603a3639f8') in 0.043516 seconds
+  Import took 0.046387 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Euro Truck by GR3D/SemiTrailer Variant.prefab
+  artifactKey: Guid(820bff959ce14694f828c59893bb34a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Euro Truck by GR3D/SemiTrailer Variant.prefab using Guid(820bff959ce14694f828c59893bb34a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9be3e88c39e4cb44b1602f70685f9622') in 0.080187 seconds
+  Import took 0.083289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Euro Truck by GR3D/EuroTruckMirrorTextureL.renderTexture
+  artifactKey: Guid(40b17bbb042e47b46ad664ca2cbfb296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Euro Truck by GR3D/EuroTruckMirrorTextureL.renderTexture using Guid(40b17bbb042e47b46ad664ca2cbfb296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a358a516be4c15389e29dfb4e9f778c') in 0.009468 seconds
+  Import took 0.011742 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Euro Truck by GR3D
+  artifactKey: Guid(08b390848aeb8ae47b03c2226fd043d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Euro Truck by GR3D using Guid(08b390848aeb8ae47b03c2226fd043d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f2bbf4157a40f985644e782b14051f5') in 0.004992 seconds
+  Import took 0.006801 seconds .
 
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 1.40 ms, found 0 plugins.
+Registering precompiled user dll's ...
+Registered in 0.000851 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.5 MB.
-System memory in use after: 133.6 MB.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 2295.
-Total: 2.803400 ms (FindLiveObjects: 0.333800 ms CreateObjectMapping: 0.054500 ms MarkObjects: 2.315900 ms  DeleteObjects: 0.097700 ms)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.598 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1788 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 184.5 MB.
+System memory in use after: 184.6 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2310.
+Total: 1.811300 ms (FindLiveObjects: 0.193900 ms CreateObjectMapping: 0.047000 ms MarkObjects: 1.499800 ms  DeleteObjects: 0.069200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1334.347677 seconds.
+  path: Assets/MyFolder/tracktile.prefab
+  artifactKey: Guid(f1c8de67355fde746bc99afab25a34f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/tracktile.prefab using Guid(f1c8de67355fde746bc99afab25a34f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6d0f885ee674854b7440099be24678d') in 0.075207 seconds
+  Import took 0.078550 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 170.333489 seconds.
+  path: Assets/MyFolder/tracktile 1.prefab
+  artifactKey: Guid(3fe409d2a1e0b1e498fe931866607c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/tracktile 1.prefab using Guid(3fe409d2a1e0b1e498fe931866607c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3c3fbcb484abb1b52ebb8eb74948be9') in 0.025511 seconds
+  Import took 0.028311 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004862 seconds.
+  path: Assets/MyFolder/tracktile 1.prefab
+  artifactKey: Guid(3fe409d2a1e0b1e498fe931866607c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/tracktile 1.prefab using Guid(3fe409d2a1e0b1e498fe931866607c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3c3fbcb484abb1b52ebb8eb74948be9') in 0.016644 seconds
+  Import took 0.019347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.013292 seconds.
+  path: Assets/MyFolder/3 lane track.prefab
+  artifactKey: Guid(f1c8de67355fde746bc99afab25a34f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/3 lane track.prefab using Guid(f1c8de67355fde746bc99afab25a34f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7e6a17dddfdf408add4930091e803f6') in 0.024618 seconds
+  Import took 0.027290 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009675 seconds.
+  path: Assets/MyFolder/3 lane track.prefab
+  artifactKey: Guid(f1c8de67355fde746bc99afab25a34f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/3 lane track.prefab using Guid(f1c8de67355fde746bc99afab25a34f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7e6a17dddfdf408add4930091e803f6') in 0.023881 seconds
+  Import took 0.026442 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.577428 seconds.
+  path: Assets/MyFolder/GuidePivotManager.cs
+  artifactKey: Guid(4179bbdf47e65cc4ab048b12d710abf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/GuidePivotManager.cs using Guid(4179bbdf47e65cc4ab048b12d710abf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f436e54e2168ab094ea18721b0ae001f') in 0.008834 seconds
+  Import took 0.011544 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.341227 seconds.
+  path: Assets/MyFolder/1 lane track.prefab
+  artifactKey: Guid(3fe409d2a1e0b1e498fe931866607c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/1 lane track.prefab using Guid(3fe409d2a1e0b1e498fe931866607c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0268420bcd1369fe70933601949ab076') in 0.025842 seconds
+  Import took 0.028542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001470 seconds.
+  path: Assets/MyFolder/1 lane track.prefab
+  artifactKey: Guid(3fe409d2a1e0b1e498fe931866607c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/1 lane track.prefab using Guid(3fe409d2a1e0b1e498fe931866607c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0268420bcd1369fe70933601949ab076') in 0.016667 seconds
+  Import took 0.019141 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 183.922477 seconds.
+  path: Assets/MyFolder/Track.prefab
+  artifactKey: Guid(58109c002a9a0e94dbdf7ef5b897898d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/Track.prefab using Guid(58109c002a9a0e94dbdf7ef5b897898d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '696b16c2d6c6cc4ce26b140cff26b835') in 0.078974 seconds
+  Import took 0.086867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002057 seconds.
+  path: Assets/MyFolder/Track.prefab
+  artifactKey: Guid(58109c002a9a0e94dbdf7ef5b897898d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/Track.prefab using Guid(58109c002a9a0e94dbdf7ef5b897898d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '696b16c2d6c6cc4ce26b140cff26b835') in 0.063995 seconds
+  Import took 0.070908 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1316.022159 seconds.
+  path: Assets/MyFolder/track17.prefab
+  artifactKey: Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/track17.prefab using Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76224ff9e529761ea45bb0f48e5859f5') in 0.022976 seconds
+  Import took 0.026149 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003161 seconds.
+  path: Assets/MyFolder/track17.prefab
+  artifactKey: Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/track17.prefab using Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76224ff9e529761ea45bb0f48e5859f5') in 0.011327 seconds
+  Import took 0.014097 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.577206 seconds.
+  path: Assets/MyFolder/trackWithLamp.prefab
+  artifactKey: Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/trackWithLamp.prefab using Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8c34f1d0c12f4fb05590b5c2a7cd78f') in 0.016084 seconds
+  Import took 0.018954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001704 seconds.
+  path: Assets/MyFolder/trackWithLamp.prefab
+  artifactKey: Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/trackWithLamp.prefab using Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8c34f1d0c12f4fb05590b5c2a7cd78f') in 0.014539 seconds
+  Import took 0.017149 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 137.544194 seconds.
+  path: Assets/MyFolder/trackWithLamp.prefab
+  artifactKey: Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/trackWithLamp.prefab using Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5db3170994be691432c638f4a6a7690') in 0.012581 seconds
+  Import took 0.015442 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.219016 seconds.
+  path: Assets/MyFolder/trackWithLamp.prefab
+  artifactKey: Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/trackWithLamp.prefab using Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c390e70e0a33896d82c0d22849c047e') in 0.012646 seconds
+  Import took 0.015587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.666971 seconds.
+  path: Assets/MyFolder/trackWithLamp.prefab
+  artifactKey: Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/trackWithLamp.prefab using Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02f1e84f07786c348daa020f1747bab2') in 0.011033 seconds
+  Import took 0.013735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.182766 seconds.
+  path: Assets/MyFolder/trackWithLamp.prefab
+  artifactKey: Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/trackWithLamp.prefab using Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '547ed36ad6f81b4500e088903a56b4a2') in 0.015335 seconds
+  Import took 0.018225 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.827362 seconds.
+  path: Assets/MyFolder/trackWithLamp.prefab
+  artifactKey: Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/trackWithLamp.prefab using Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c46cd76d6a120e9dce9a90b2aae2b282') in 0.015525 seconds
+  Import took 0.018353 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.859555 seconds.
+  path: Assets/MyFolder/trackWithLamp.prefab
+  artifactKey: Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/trackWithLamp.prefab using Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fd212cf213f6fd3813c9d27a9c37312') in 0.012595 seconds
+  Import took 0.015316 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.610629 seconds.
+  path: Assets/MyFolder/trackWithLamp.prefab
+  artifactKey: Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/trackWithLamp.prefab using Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bb9960110840a3c05c6d13c5371b521') in 0.010859 seconds
+  Import took 0.013627 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.837926 seconds.
+  path: Assets/MyFolder/trackWithLamp.prefab
+  artifactKey: Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/trackWithLamp.prefab using Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2c393a4e03323edc41cbadaa0218100') in 0.014421 seconds
+  Import took 0.017278 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.832176 seconds.
+  path: Assets/MyFolder/trackWithLamp.prefab
+  artifactKey: Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/trackWithLamp.prefab using Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4ccad99ae2295461ee96a2320d4deea') in 0.016396 seconds
+  Import took 0.019481 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.287141 seconds.
+  path: Assets/MyFolder/trackWithLamp.prefab
+  artifactKey: Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/trackWithLamp.prefab using Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d229ad1012116b01820339055aa4a36') in 0.013415 seconds
+  Import took 0.016391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.794691 seconds.
+  path: Assets/MyFolder/trackWithLamp.prefab
+  artifactKey: Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/trackWithLamp.prefab using Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c05e8979334536944510d71c9c18b328') in 0.012545 seconds
+  Import took 0.015374 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.597323 seconds.
+  path: Assets/MyFolder/trackWithLamp.prefab
+  artifactKey: Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/trackWithLamp.prefab using Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f55a167d8596627469dd8a55a21a4ab') in 0.012091 seconds
+  Import took 0.014859 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.470457 seconds.
+  path: Assets/MyFolder/trackWithLamp.prefab
+  artifactKey: Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/trackWithLamp.prefab using Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8752d08ab8b4b184a3bd6c03f74fb92') in 0.011567 seconds
+  Import took 0.014370 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.209142 seconds.
+  path: Assets/MyFolder/trackWithLamp.prefab
+  artifactKey: Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/trackWithLamp.prefab using Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93dd6efd8f7efa94ebac639c225da8ed') in 0.011596 seconds
+  Import took 0.014493 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.215343 seconds.
+  path: Assets/MyFolder/trackWithLamp.prefab
+  artifactKey: Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/trackWithLamp.prefab using Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4621ab5cb8a3fa15d8f9f8ce1f10dc58') in 0.010065 seconds
+  Import took 0.012808 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.815267 seconds.
+  path: Assets/MyFolder/trackWithLamp.prefab
+  artifactKey: Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/trackWithLamp.prefab using Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c1a27d04a06ddaabcdc042bbe5d49d5') in 0.015221 seconds
+  Import took 0.018019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.809889 seconds.
+  path: Assets/MyFolder/trackWithLamp.prefab
+  artifactKey: Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/trackWithLamp.prefab using Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fb71dad6d3353a93860001bfd232205') in 0.013753 seconds
+  Import took 0.016678 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.667827 seconds.
+  path: Assets/MyFolder/lamp08.prefab
+  artifactKey: Guid(a576d9a69c1fb7049b9d4bdf2da5450a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/lamp08.prefab using Guid(a576d9a69c1fb7049b9d4bdf2da5450a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd55d26eb95dbd9d8d9cfe637eeca15d0') in 0.017435 seconds
+  Import took 0.020435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007167 seconds.
+  path: Assets/MyFolder/lamp08.prefab
+  artifactKey: Guid(a576d9a69c1fb7049b9d4bdf2da5450a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/lamp08.prefab using Guid(a576d9a69c1fb7049b9d4bdf2da5450a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd55d26eb95dbd9d8d9cfe637eeca15d0') in 0.014137 seconds
+  Import took 0.016938 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.059077 seconds.
+  path: Assets/MyFolder/lamp2Track.prefab
+  artifactKey: Guid(a576d9a69c1fb7049b9d4bdf2da5450a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/lamp2Track.prefab using Guid(a576d9a69c1fb7049b9d4bdf2da5450a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4748c4c1991d724b0beffc3f4f6443d') in 0.021389 seconds
+  Import took 0.024518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1832.443602 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc82108b98000c4863047ea84e19ce29') in 0.011000 seconds
+  Import took 0.013978 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000693 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.594 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1788 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 186.6 MB.
+System memory in use after: 186.7 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2315.
+Total: 1.838500 ms (FindLiveObjects: 0.165600 ms CreateObjectMapping: 0.047500 ms MarkObjects: 1.562500 ms  DeleteObjects: 0.062100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 688.388155 seconds.
+  path: Assets/MyFolder/1 lane track.prefab
+  artifactKey: Guid(3fe409d2a1e0b1e498fe931866607c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/1 lane track.prefab using Guid(3fe409d2a1e0b1e498fe931866607c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '420b99dd3ed2332d2bf6987cbd6d1e8d') in 0.058773 seconds
+  Import took 0.062198 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000663 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.590 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1788 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 186.7 MB.
+System memory in use after: 186.7 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2319.
+Total: 1.727700 ms (FindLiveObjects: 0.185500 ms CreateObjectMapping: 0.048400 ms MarkObjects: 1.433600 ms  DeleteObjects: 0.059300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000649 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.601 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1788 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 186.7 MB.
+System memory in use after: 186.8 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2322.
+Total: 2.039200 ms (FindLiveObjects: 0.206800 ms CreateObjectMapping: 0.070200 ms MarkObjects: 1.687800 ms  DeleteObjects: 0.071200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 5767.337797 seconds.
+  path: Assets/MyFolder/RoadManager.cs
+  artifactKey: Guid(bf449756254080a4384a6c4e4ad11248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/RoadManager.cs using Guid(bf449756254080a4384a6c4e4ad11248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4e9873366d362427b96fe43aba67350') in 0.008679 seconds
+  Import took 0.011684 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000707 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.618 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 186.7 MB.
+System memory in use after: 186.8 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2326.
+Total: 1.868000 ms (FindLiveObjects: 0.248100 ms CreateObjectMapping: 0.050100 ms MarkObjects: 1.498800 ms  DeleteObjects: 0.070200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 708.363252 seconds.
+  path: Assets/MyFolder/1 lane track.prefab
+  artifactKey: Guid(3fe409d2a1e0b1e498fe931866607c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/1 lane track.prefab using Guid(3fe409d2a1e0b1e498fe931866607c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f97a385f87740e3390935a2b293825e0') in 0.056429 seconds
+  Import took 0.059953 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.603437 seconds.
+  path: Assets/MyFolder/3 lane track.prefab
+  artifactKey: Guid(f1c8de67355fde746bc99afab25a34f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/3 lane track.prefab using Guid(f1c8de67355fde746bc99afab25a34f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f835e0335e2e895909080ba85e063802') in 0.017857 seconds
+  Import took 0.020683 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/MyFolder/3 lane track.prefab
+  artifactKey: Guid(f1c8de67355fde746bc99afab25a34f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/3 lane track.prefab using Guid(f1c8de67355fde746bc99afab25a34f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f835e0335e2e895909080ba85e063802') in 0.015183 seconds
+  Import took 0.017754 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/MyFolder/Track.prefab
+  artifactKey: Guid(58109c002a9a0e94dbdf7ef5b897898d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/Track.prefab using Guid(58109c002a9a0e94dbdf7ef5b897898d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f8a50274144beb187b309f08b02019') in 0.068803 seconds
+  Import took 0.075890 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.020461 seconds.
+  path: Assets/MyFolder/lamp2Track.prefab
+  artifactKey: Guid(a576d9a69c1fb7049b9d4bdf2da5450a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/lamp2Track.prefab using Guid(a576d9a69c1fb7049b9d4bdf2da5450a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78b762fd8e2a6a581029bb280acbbc1b') in 0.013681 seconds
+  Import took 0.016746 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.900400 seconds.
+  path: Assets/MyFolder/trackWithLamp.prefab
+  artifactKey: Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/trackWithLamp.prefab using Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b30f6c8a88d9b027c7127f79e8de0e0') in 0.019715 seconds
+  Import took 0.022558 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003161 seconds.
+  path: Assets/MyFolder/trackWithLamp.prefab
+  artifactKey: Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/trackWithLamp.prefab using Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b30f6c8a88d9b027c7127f79e8de0e0') in 0.016906 seconds
+  Import took 0.019771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.670719 seconds.
+  path: Assets/MyFolder/trackRightLamp.prefab
+  artifactKey: Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/trackRightLamp.prefab using Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6123d823d26d5f0c9af59ab191ecc3e') in 0.016229 seconds
+  Import took 0.019100 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014502 seconds.
+  path: Assets/MyFolder/trackRightLamp.prefab
+  artifactKey: Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/trackRightLamp.prefab using Guid(36f511832ad19da48a934f76d29939c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6123d823d26d5f0c9af59ab191ecc3e') in 0.014896 seconds
+  Import took 0.017889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.598593 seconds.
+  path: Assets/MyFolder/lampLeftTrack.prefab
+  artifactKey: Guid(a576d9a69c1fb7049b9d4bdf2da5450a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/lampLeftTrack.prefab using Guid(a576d9a69c1fb7049b9d4bdf2da5450a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2ba989089c77976527c7f99d00f9298') in 0.020371 seconds
+  Import took 0.023196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015416 seconds.
+  path: Assets/MyFolder/lampLeftTrack.prefab
+  artifactKey: Guid(a576d9a69c1fb7049b9d4bdf2da5450a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/lampLeftTrack.prefab using Guid(a576d9a69c1fb7049b9d4bdf2da5450a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2ba989089c77976527c7f99d00f9298') in 0.012824 seconds
+  Import took 0.015765 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.570515 seconds.
+  path: Assets/MyFolder/GuidePivotManager.cs
+  artifactKey: Guid(4179bbdf47e65cc4ab048b12d710abf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/GuidePivotManager.cs using Guid(4179bbdf47e65cc4ab048b12d710abf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d5f60c9834c54765304b289a0560667') in 0.004989 seconds
+  Import took 0.007648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015237 seconds.
+  path: Assets/MyFolder/GuidePivotManager.cs
+  artifactKey: Guid(4179bbdf47e65cc4ab048b12d710abf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/GuidePivotManager.cs using Guid(4179bbdf47e65cc4ab048b12d710abf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d5f60c9834c54765304b289a0560667') in 0.002121 seconds
+  Import took 0.004626 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.116138 seconds.
+  path: Assets/MyFolder/GoodDriverAI.cs
+  artifactKey: Guid(355c0abf92a43474e8355a389c0f8e65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/GoodDriverAI.cs using Guid(355c0abf92a43474e8355a389c0f8e65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '811c288df98695f7c09ae32fa448ce1b') in 0.005208 seconds
+  Import took 0.007954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4377.857724 seconds.
+  path: Assets/MyFolder/RoadEditor.cs
+  artifactKey: Guid(3a1506caf1f04b14c8011cd55630200d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/RoadEditor.cs using Guid(3a1506caf1f04b14c8011cd55630200d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da471ec7a99820f9e87c80ffab736df5') in 0.005412 seconds
+  Import took 0.008378 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 803.425967 seconds.
+  path: Assets/MyFolder/RoadEditor.cs
+  artifactKey: Guid(3a1506caf1f04b14c8011cd55630200d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/RoadEditor.cs using Guid(3a1506caf1f04b14c8011cd55630200d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed9663cc981bef336a465c5beee31656') in 0.002116 seconds
+  Import took 0.005023 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000721 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.604 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1790 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 186.8 MB.
+System memory in use after: 186.9 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2331.
+Total: 1.831100 ms (FindLiveObjects: 0.210500 ms CreateObjectMapping: 0.082000 ms MarkObjects: 1.473800 ms  DeleteObjects: 0.063900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1051.988693 seconds.
+  path: Assets/MyFolder/RoadEditor.cs
+  artifactKey: Guid(3a1506caf1f04b14c8011cd55630200d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/RoadEditor.cs using Guid(3a1506caf1f04b14c8011cd55630200d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e21b25d42159bb3816ed56aa903c6d8') in 0.005062 seconds
+  Import took 0.007730 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000830 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.605 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 186.8 MB.
+System memory in use after: 186.9 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2333.
+Total: 1.916600 ms (FindLiveObjects: 0.220000 ms CreateObjectMapping: 0.047300 ms MarkObjects: 1.575200 ms  DeleteObjects: 0.072900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000628 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.591 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 186.8 MB.
+System memory in use after: 186.9 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2336.
+Total: 1.888900 ms (FindLiveObjects: 0.256400 ms CreateObjectMapping: 0.050600 ms MarkObjects: 1.511400 ms  DeleteObjects: 0.069500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000721 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.586 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 186.8 MB.
+System memory in use after: 186.9 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2339.
+Total: 1.959900 ms (FindLiveObjects: 0.230600 ms CreateObjectMapping: 0.050200 ms MarkObjects: 1.608700 ms  DeleteObjects: 0.069500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000817 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.579 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 186.8 MB.
+System memory in use after: 186.9 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2342.
+Total: 2.007500 ms (FindLiveObjects: 0.250400 ms CreateObjectMapping: 0.052700 ms MarkObjects: 1.625700 ms  DeleteObjects: 0.077800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000698 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.592 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 186.9 MB.
+System memory in use after: 186.9 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2345.
+Total: 1.943600 ms (FindLiveObjects: 0.271200 ms CreateObjectMapping: 0.050900 ms MarkObjects: 1.546500 ms  DeleteObjects: 0.074100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000638 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.587 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 186.9 MB.
+System memory in use after: 186.9 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2348.
+Total: 1.846500 ms (FindLiveObjects: 0.235600 ms CreateObjectMapping: 0.052200 ms MarkObjects: 1.491100 ms  DeleteObjects: 0.066400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000604 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.590 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 186.9 MB.
+System memory in use after: 187.0 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2351.
+Total: 1.826600 ms (FindLiveObjects: 0.260400 ms CreateObjectMapping: 0.048600 ms MarkObjects: 1.457100 ms  DeleteObjects: 0.059300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000673 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.593 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 186.9 MB.
+System memory in use after: 187.0 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2354.
+Total: 2.051900 ms (FindLiveObjects: 0.408100 ms CreateObjectMapping: 0.058400 ms MarkObjects: 1.514500 ms  DeleteObjects: 0.069700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000586 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.597 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 186.9 MB.
+System memory in use after: 187.0 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2357.
+Total: 1.977500 ms (FindLiveObjects: 0.208900 ms CreateObjectMapping: 0.047400 ms MarkObjects: 1.654400 ms  DeleteObjects: 0.066000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000618 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.624 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 186.9 MB.
+System memory in use after: 187.0 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2360.
+Total: 1.892900 ms (FindLiveObjects: 0.210400 ms CreateObjectMapping: 0.049300 ms MarkObjects: 1.554600 ms  DeleteObjects: 0.077700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2917.764369 seconds.
+  path: Assets/MyFolder/1 lane track.prefab
+  artifactKey: Guid(3fe409d2a1e0b1e498fe931866607c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/1 lane track.prefab using Guid(3fe409d2a1e0b1e498fe931866607c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22534087963cfd7819905f09eca7afb4') in 0.042993 seconds
+  Import took 0.046261 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.113434 seconds.
+  path: Assets/MyFolder/lampLeftTrack.prefab
+  artifactKey: Guid(a576d9a69c1fb7049b9d4bdf2da5450a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/lampLeftTrack.prefab using Guid(a576d9a69c1fb7049b9d4bdf2da5450a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2a6348c1226f2621b0bb9476d606038') in 0.012541 seconds
+  Import took 0.015377 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000803 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.585 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 186.9 MB.
+System memory in use after: 187.0 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2364.
+Total: 1.900600 ms (FindLiveObjects: 0.231600 ms CreateObjectMapping: 0.048800 ms MarkObjects: 1.557300 ms  DeleteObjects: 0.062000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000666 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.615 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 186.9 MB.
+System memory in use after: 187.0 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2367.
+Total: 1.767400 ms (FindLiveObjects: 0.200900 ms CreateObjectMapping: 0.050600 ms MarkObjects: 1.452600 ms  DeleteObjects: 0.062200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000749 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.584 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 186.9 MB.
+System memory in use after: 187.0 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2370.
+Total: 2.194000 ms (FindLiveObjects: 0.200600 ms CreateObjectMapping: 0.063600 ms MarkObjects: 1.862400 ms  DeleteObjects: 0.066700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000660 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.589 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 186.9 MB.
+System memory in use after: 187.0 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2373.
+Total: 1.833400 ms (FindLiveObjects: 0.220500 ms CreateObjectMapping: 0.049000 ms MarkObjects: 1.502800 ms  DeleteObjects: 0.060100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000760 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.606 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1788 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 186.9 MB.
+System memory in use after: 187.0 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2375.
+Total: 1.879800 ms (FindLiveObjects: 0.194500 ms CreateObjectMapping: 0.075800 ms MarkObjects: 1.542500 ms  DeleteObjects: 0.066100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1779.376792 seconds.
+  path: Assets/MyFolder/RoadManager.cs
+  artifactKey: Guid(bf449756254080a4384a6c4e4ad11248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/RoadManager.cs using Guid(bf449756254080a4384a6c4e4ad11248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fc8d19537af362ca295213a765c66b8') in 0.008575 seconds
+  Import took 0.011688 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002285 seconds.
+  path: Assets/MyFolder/RoadManager.cs
+  artifactKey: Guid(bf449756254080a4384a6c4e4ad11248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyFolder/RoadManager.cs using Guid(bf449756254080a4384a6c4e4ad11248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fc8d19537af362ca295213a765c66b8') in 0.002028 seconds
+  Import took 0.003819 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000640 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.578 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1788 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 194.6 MB.
+System memory in use after: 194.6 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2378.
+Total: 1.987400 ms (FindLiveObjects: 0.193200 ms CreateObjectMapping: 0.061000 ms MarkObjects: 1.670800 ms  DeleteObjects: 0.061600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000696 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.601 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1788 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 194.6 MB.
+System memory in use after: 194.6 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2381.
+Total: 2.013600 ms (FindLiveObjects: 0.221400 ms CreateObjectMapping: 0.072000 ms MarkObjects: 1.658100 ms  DeleteObjects: 0.061200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000769 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.605 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1788 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 186.9 MB.
+System memory in use after: 187.0 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2384.
+Total: 1.868700 ms (FindLiveObjects: 0.250600 ms CreateObjectMapping: 0.065900 ms MarkObjects: 1.475800 ms  DeleteObjects: 0.075400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001146 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.600 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1788 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 194.6 MB.
+System memory in use after: 194.7 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2387.
+Total: 2.019000 ms (FindLiveObjects: 0.313000 ms CreateObjectMapping: 0.050000 ms MarkObjects: 1.581200 ms  DeleteObjects: 0.073200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000642 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.600 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1788 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 194.6 MB.
+System memory in use after: 194.7 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2390.
+Total: 1.824600 ms (FindLiveObjects: 0.212700 ms CreateObjectMapping: 0.045100 ms MarkObjects: 1.508800 ms  DeleteObjects: 0.057300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000744 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.591 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1788 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 194.6 MB.
+System memory in use after: 194.7 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2393.
+Total: 1.911700 ms (FindLiveObjects: 0.242100 ms CreateObjectMapping: 0.045800 ms MarkObjects: 1.558800 ms  DeleteObjects: 0.064200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000647 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.595 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1788 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 194.6 MB.
+System memory in use after: 194.7 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2396.
+Total: 1.820400 ms (FindLiveObjects: 0.184500 ms CreateObjectMapping: 0.049100 ms MarkObjects: 1.531200 ms  DeleteObjects: 0.054500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000717 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.585 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1788 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 194.6 MB.
+System memory in use after: 194.7 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2399.
+Total: 1.918800 ms (FindLiveObjects: 0.314800 ms CreateObjectMapping: 0.049900 ms MarkObjects: 1.477700 ms  DeleteObjects: 0.075700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000619 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.601 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1788 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 194.6 MB.
+System memory in use after: 194.7 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2402.
+Total: 1.791800 ms (FindLiveObjects: 0.231200 ms CreateObjectMapping: 0.036400 ms MarkObjects: 1.461300 ms  DeleteObjects: 0.062300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000833 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.598 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1788 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 187.0 MB.
+System memory in use after: 187.1 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2405.
+Total: 1.797800 ms (FindLiveObjects: 0.195500 ms CreateObjectMapping: 0.048400 ms MarkObjects: 1.491600 ms  DeleteObjects: 0.061200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000673 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.575 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1788 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 187.0 MB.
+System memory in use after: 187.1 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2408.
+Total: 1.720500 ms (FindLiveObjects: 0.174400 ms CreateObjectMapping: 0.035900 ms MarkObjects: 1.450800 ms  DeleteObjects: 0.058600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000733 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.585 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1788 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 187.0 MB.
+System memory in use after: 187.1 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2411.
+Total: 1.914200 ms (FindLiveObjects: 0.220600 ms CreateObjectMapping: 0.049100 ms MarkObjects: 1.573400 ms  DeleteObjects: 0.070300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000623 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.596 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1788 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 187.0 MB.
+System memory in use after: 187.1 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2414.
+Total: 1.897500 ms (FindLiveObjects: 0.263100 ms CreateObjectMapping: 0.060100 ms MarkObjects: 1.511200 ms  DeleteObjects: 0.062100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000620 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.591 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1788 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 187.0 MB.
+System memory in use after: 187.1 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2417.
+Total: 1.819800 ms (FindLiveObjects: 0.220200 ms CreateObjectMapping: 0.048500 ms MarkObjects: 1.485200 ms  DeleteObjects: 0.065200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000691 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.585 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1788 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 187.0 MB.
+System memory in use after: 187.1 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2420.
+Total: 1.766800 ms (FindLiveObjects: 0.196500 ms CreateObjectMapping: 0.035400 ms MarkObjects: 1.470700 ms  DeleteObjects: 0.063400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000605 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.559 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1788 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 187.0 MB.
+System memory in use after: 187.1 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2423.
+Total: 1.708300 ms (FindLiveObjects: 0.185200 ms CreateObjectMapping: 0.048800 ms MarkObjects: 1.418000 ms  DeleteObjects: 0.055600 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
