@@ -8,6 +8,10 @@
 
 차로 중앙 유지, 차선 변경
 
+- Guide Pivot System
+  AI Driver 들의 차선인식과 추후 Navigation System을 위한 방향제어에 도움을 주는 시스템
+  ***
+
 ##### 참고영상: (https://youtu.be/Sd1zf1EzL4s)
 
 ### Good Driver
