@@ -59,7 +59,6 @@ namespace NWH.VehiclePhysics2.Input
             cruiseControl.setTargetSpeedOnEnable = false;
             cruiseControl.targetSpeed = targetspeed;
             
-            
         }
 
         void EngineStart()
@@ -68,7 +67,6 @@ namespace NWH.VehiclePhysics2.Input
             isEngineStart = true;
         }
 
-        // Update is called once per frame
         void FixedUpdate()
         {
             if (!isEngineStart)
@@ -89,12 +87,26 @@ namespace NWH.VehiclePhysics2.Input
             /* 속도 조절 */
             cruiseControl.targetSpeed = targetspeed;
 
-            // 차선간의 거리의 차가 작도록 핸들조작, 차로중앙유지
+            /* 차선간의 거리의 차가 작도록 핸들조작, 차로중앙유지 */
             Vector3 relativeVector = myvehicle.vehicleTransform.InverseTransformPoint(currentPivot.cur.position);
             steeringValue = relativeVector.x / relativeVector.magnitude;
             myvehicle.input.Steering = steeringValue * steeringCoefficient;
 
         }
+
+        /* < 전방의 차량 인식 >
+         * RayCast를 이용해 전방의 차량을 감지하여 반환한다.
+         */
+
+
+
+        /* < 전방 차에 대한 행동 결정 >
+         * 전방 차량과의 거리, 속도차를 계산하여 회피, 감속을 결정한다
+         * 
+         */
+
+
+
 
         private void OnDrawGizmos()
         {
