@@ -12,11 +12,9 @@
 
 AI Driver 들의 차선인식과 추후 Navigation System을 위한 방향제어에 도움을 주는 시스템
 
-    ![Guide Pivot System Image 1](./Images/GuidePivotSystem1.png)
-            - Image.1 -
+![Guide Pivot System Image 1](./Images/GuidePivotSystem1.png) - Image.1 -
 
-    ![Guide Pivot System Image 2](./Images/GuidePivotSystem2.png)
-            - Image.2 -
+![Guide Pivot System Image 2](./Images/GuidePivotSystem2.png) - Image.2 -
 
 ##### 참고영상: (https://youtu.be/Sd1zf1EzL4s)
 
