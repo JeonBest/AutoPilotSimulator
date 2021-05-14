@@ -38,7 +38,7 @@ public class RoadManager : MonoBehaviour
 
     public Road myRoad;
 
-    private void Start()
+    private void Awake()
     {
         myRoad = new Road(transform, LaneCount);
         myRoad.InitializeRoad();

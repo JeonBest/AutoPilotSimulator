@@ -9,7 +9,7 @@ namespace NWH.VehiclePhysics2.Input
     {
         [Header ("Common")]
         public VehicleController myvehicle;
-        public GameObject Track;
+        public Transform Track;
         public Color lineColor;
 
         [Header ("AI settings")]
