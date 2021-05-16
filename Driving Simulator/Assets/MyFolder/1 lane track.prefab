@@ -143,7 +143,7 @@ GameObject:
   - component: {fileID: 3658182636906860225}
   m_Layer: 8
   m_Name: trackbody
-  m_TagString: Road
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

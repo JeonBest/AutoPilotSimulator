@@ -13,7 +13,7 @@ namespace NWH.VehiclePhysics2.Input
         public Color lineColor;
 
         [Header ("AI settings")]
-        public float targetspeed;
+        public float targetSpeedKPerH;
         public float firstMinPivotDis;
         public float steeringCoefficient;
 
@@ -24,23 +24,32 @@ namespace NWH.VehiclePhysics2.Input
         VehicleController FrontCar;
         GuidePivotManager.GuidePivot currentPivot;
         GuidePivotManager GPM;
-        Modules.CruiseControl.CruiseControlModule cruiseControl;
         private bool isEngineStart = false;
+
+        // From CruiseControlModule.cs
+        private float _e;
+        private float _ed;
+        private float _ei;
+        private float _eprev;
+
+        private float output;
+        private float targetSpeed;
+        private float prevTargetSpeed;
 
         // Start is called before the first frame update
         void Start()
         {
-            myvehicle.input.autoSetInput = true;
+            myvehicle.input.autoSetInput = false;
+
+            targetSpeed = targetSpeedKPerH / 3.6f;
             minPivotDis = firstMinPivotDis;
 
-            Invoke("EngineStart", 4.0f);
             Invoke("RaceStart", 2.0f);
         }
 
         void RaceStart()
         {
-            cruiseControl = myvehicle.moduleManager.GetModule<Modules.CruiseControl.CruiseControlModule>();
-
+            
             /* 자신과 가장 가까운 GuidePivot 찾기 */
             GPM = Track.GetComponent<GuidePivotManager>();
             float minimunDis = 100f;
@@ -55,15 +64,6 @@ namespace NWH.VehiclePhysics2.Input
             }
 
             // myvehicle.input.TrailerAttachDetach = true;
-
-            cruiseControl.setTargetSpeedOnEnable = false;
-            cruiseControl.targetSpeed = targetspeed;
-            
-        }
-
-        void EngineStart()
-        {
-            cruiseControl.Enable();
             isEngineStart = true;
         }
 
@@ -74,7 +74,7 @@ namespace NWH.VehiclePhysics2.Input
 
             /* 속도에 따라 minPivotDis 조절 */
             if (myvehicle.LocalForwardVelocity > 24)
-                minPivotDis = myvehicle.LocalForwardVelocity;
+                minPivotDis = myvehicle.LocalForwardVelocity * 0.8f;
             else if (myvehicle.LocalForwardVelocity > 18)
                 minPivotDis = 12;
             else
@@ -85,7 +85,7 @@ namespace NWH.VehiclePhysics2.Input
                 currentPivot = currentPivot.next;
 
             /* 속도 조절 */
-            cruiseControl.targetSpeed = targetspeed;
+            CruiseMode(targetSpeed);
 
             /* 차선간의 거리의 차가 작도록 핸들조작, 차로중앙유지 */
             Vector3 relativeVector = myvehicle.vehicleTransform.InverseTransformPoint(currentPivot.cur.position);
@@ -93,6 +93,39 @@ namespace NWH.VehiclePhysics2.Input
             myvehicle.input.Steering = steeringValue * steeringCoefficient;
 
         }
+
+        /* <크루즈 컨트롤>
+         * CruiseControlModule.cs의 소스코드를 인용한 속도조절 함수
+         */
+        private void CruiseMode(float _targetSpeed)
+        {
+            float speed = myvehicle.Speed;
+            float dt = myvehicle.fixedDeltaTime;
+
+            _eprev = _e;
+            _e = _targetSpeed - speed;
+            if (_e > -0.5f && _e < 0.5f)
+            {
+                _ei = 0f;
+            }
+
+            if (prevTargetSpeed != _targetSpeed)
+            {
+                _ei = 0f;
+            }
+
+            _ei += _e * dt;
+            _ed = (_e - _eprev) / dt;
+            float newOutput = _e * 0.5f + _ei * 0.25f + _ed * 0.1f;
+            newOutput = newOutput < -1f ? -1f : newOutput > 1f ? 1f : newOutput;
+            output = Mathf.Lerp(output, newOutput, myvehicle.fixedDeltaTime * 5f);
+
+            myvehicle.input.Vertical = output;
+
+            prevTargetSpeed = _targetSpeed;
+        }
+
+
 
         /* < 전방의 차량 인식 >
          * RayCast를 이용해 전방의 차량을 감지하여 반환한다.
