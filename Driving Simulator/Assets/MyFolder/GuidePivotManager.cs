@@ -191,7 +191,7 @@ public class GuidePivotManager : MonoBehaviour
                         fromPivots.Add(guideLinePerRoad[fromRoadNum - 1][i * cm.FRLaneCnt + cm.FRLaneCnt - 1]);
 
                     for (int i = cm.ToRoadTileIdx.x; i <= cm.ToRoadTileIdx.y; i++)
-                        toPivots.Add(guideLinePerRoad[toRoadNum - 1][i * cm.TRLaneCnt + cm.TRLaneCnt - 1]);
+                        toPivots.Add(guideLinePerRoad[toRoadNum - 1][i * cm.TRLaneCnt]);
 
                     if (fromPivots.Count != toPivots.Count)
                         Debug.LogError("From Road Idx count don't matches To Road Idx count!!!!");
@@ -203,10 +203,10 @@ public class GuidePivotManager : MonoBehaviour
 
                 case ConnectPos.leftIC:
                     for (int i = cm.FromRoadTileIdx.x; i <= cm.FromRoadTileIdx.y; i++)
-                        fromPivots.Add(guideLinePerRoad[fromRoadNum - 1][i * cm.FRLaneCnt + cm.FRLaneCnt - 1]);
+                        fromPivots.Add(guideLinePerRoad[fromRoadNum - 1][i * cm.FRLaneCnt]);
 
                     for (int i = cm.ToRoadTileIdx.x; i <= cm.ToRoadTileIdx.y; i++)
-                        toPivots.Add(guideLinePerRoad[toRoadNum - 1][i * cm.TRLaneCnt]);
+                        toPivots.Add(guideLinePerRoad[toRoadNum - 1][i * cm.TRLaneCnt + cm.TRLaneCnt - 1]);
 
                     if (fromPivots.Count != toPivots.Count)
                         Debug.LogError("From Road Idx count don't matches To Road Idx count!!!!");
@@ -358,7 +358,7 @@ public class GuidePivotManager : MonoBehaviour
                         fromPivots.Add(guideLinePerRoad[fromRoadNum - 1][i * cm.FRLaneCnt + cm.FRLaneCnt - 1]);
 
                     for (int i = cm.ToRoadTileIdx.x; i <= cm.ToRoadTileIdx.y; i++)
-                        toPivots.Add(guideLinePerRoad[toRoadNum - 1][i * cm.TRLaneCnt + cm.TRLaneCnt - 1]);
+                        toPivots.Add(guideLinePerRoad[toRoadNum - 1][i * cm.TRLaneCnt]);
 
                     if (fromPivots.Count != toPivots.Count)
                         Debug.LogError("From Road Idx count don't matches To Road Idx count!!!!");
@@ -370,10 +370,10 @@ public class GuidePivotManager : MonoBehaviour
 
                 case ConnectPos.leftIC:
                     for (int i = cm.FromRoadTileIdx.x; i <= cm.FromRoadTileIdx.y; i++)
-                        fromPivots.Add(guideLinePerRoad[fromRoadNum - 1][i * cm.FRLaneCnt + cm.FRLaneCnt - 1]);
+                        fromPivots.Add(guideLinePerRoad[fromRoadNum - 1][i * cm.FRLaneCnt]);
 
                     for (int i = cm.ToRoadTileIdx.x; i <= cm.ToRoadTileIdx.y; i++)
-                        toPivots.Add(guideLinePerRoad[toRoadNum - 1][i * cm.TRLaneCnt]);
+                        toPivots.Add(guideLinePerRoad[toRoadNum - 1][i * cm.TRLaneCnt + cm.TRLaneCnt - 1]);
 
                     if (fromPivots.Count != toPivots.Count)
                         Debug.LogError("From Road Idx count don't matches To Road Idx count!!!!");
