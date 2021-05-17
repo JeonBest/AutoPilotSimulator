@@ -12,6 +12,7 @@ namespace NWH.VehiclePhysics2.Input
         public Transform Track;
         public Color lineColor;
         public Transform frontSensor;
+        public UnityEngine.UI.Text UItargetspeed;
 
         private Sensoring FSensor;
 
@@ -125,11 +126,13 @@ namespace NWH.VehiclePhysics2.Input
                 if (targetSpeed > -targetSpeedDiff / 3.6f && targetSpeed > 80f / 3.6f)
                 {
                     CruiseMode(targetSpeed + targetSpeedDiff / 3.6f);
+                    UItargetspeed.text = System.Convert.ToString((targetSpeed + targetSpeedDiff / 3.6f)*3.6f);
                     targetSpeedKPH = (targetSpeed + targetSpeedDiff / 3.6f) * 3.6f;
                 }
                 else
                 {
                     CruiseMode(targetSpeed);
+                    UItargetspeed.text = System.Convert.ToString(targetSpeed*3.6f);
                     targetSpeedKPH = targetSpeed * 3.6f;
                 }
             }

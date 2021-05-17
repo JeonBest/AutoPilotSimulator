@@ -168,7 +168,7 @@ namespace NWH.VehiclePhysics2.Input
             {
                 /* 속도 조절 */
                 targetSpeed = Mathf.Lerp(targetSpeed, currentPivot.speedLimit / 3.6f, myvehicle.fixedDeltaTime * 0.2f);
-                if (targetSpeed > -targetSpeedDiff / 3.6f && targetSpeed < 70f / 3.6f)
+                if (targetSpeed > -targetSpeedDiff / 3.6f && targetSpeed > 70f / 3.6f)
                 {
                     CruiseMode(targetSpeed + targetSpeedDiff / 3.6f);
                     targetSpeedKPH = (targetSpeed + targetSpeedDiff / 3.6f) * 3.6f;
