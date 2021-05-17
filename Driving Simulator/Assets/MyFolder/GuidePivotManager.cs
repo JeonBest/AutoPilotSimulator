@@ -12,11 +12,14 @@ public class GuidePivotManager : MonoBehaviour
         public GuidePivot right;
         public GuidePivot prev;
 
+        public float speedLimit;
+
         public GuidePivot() { }
 
-        public GuidePivot(Transform _cur)
+        public GuidePivot(Transform _cur, float _speedLimit)
         {
             cur = _cur;
+            speedLimit = _speedLimit;
         }
     }
 
@@ -68,6 +71,8 @@ public class GuidePivotManager : MonoBehaviour
             RoadManager RM = transform.GetChild(i).GetComponent<RoadManager>();
             guideLinePerRoad.Add(new List<GuidePivot>());
 
+            float myRoadSpeedLimit = RM.myRoad.speedLimit;
+
             GuidePivot[] curLine = { null, null, null, null, null, null };   // 편도 5차로까지 지원
             GuidePivot[] oldLine = { null, null, null, null, null, null };
 
@@ -80,7 +85,7 @@ public class GuidePivotManager : MonoBehaviour
                     if (!pivotTransform.CompareTag("DriveGuide"))
                         continue;
 
-                    GuidePivot current = new GuidePivot(pivotTransform);
+                    GuidePivot current = new GuidePivot(pivotTransform, myRoadSpeedLimit);
 
                     switch (pivotTransform.name)
                     {
@@ -234,7 +239,9 @@ public class GuidePivotManager : MonoBehaviour
 
         for(int i = 0; i < transform.childCount; i++){
             RoadManager RM = transform.GetChild(i).GetComponent<RoadManager>();
-            guideLinePerRoad.Add(new List<GuidePivot>()); 
+            guideLinePerRoad.Add(new List<GuidePivot>());
+
+            float myRoadSpeedLimit = RM.myRoad.speedLimit;
 
             GuidePivot[] curLine = { null, null, null, null, null, null };   // 편도 5차로까지 지원
             GuidePivot[] oldLine = { null, null, null, null, null, null };
@@ -248,7 +255,7 @@ public class GuidePivotManager : MonoBehaviour
                     if (!pivotTransform.CompareTag("DriveGuide"))
                         continue;
 
-                    GuidePivot current = new GuidePivot(pivotTransform);
+                    GuidePivot current = new GuidePivot(pivotTransform, myRoadSpeedLimit);
 
                     switch (pivotTransform.name) {
                         case "GuidePivot.1":

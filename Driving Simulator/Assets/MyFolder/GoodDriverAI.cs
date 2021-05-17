@@ -13,13 +13,15 @@ namespace NWH.VehiclePhysics2.Input
         public Color lineColor;
 
         [Header ("AI settings")]
-        public float targetSpeedKPerH;
         public float firstMinPivotDis;
         public float steeringCoefficient;
 
         [Header ("Only for Read")]
         public float steeringValue;
         public float minPivotDis;
+        public float targetSpeed;
+        public float acceler;
+        public float speedKPH;
 
         VehicleController FrontCar;
         GuidePivotManager.GuidePivot currentPivot;
@@ -33,7 +35,7 @@ namespace NWH.VehiclePhysics2.Input
         private float _eprev;
 
         private float output;
-        private float targetSpeed;
+        // private float targetSpeed;
         private float prevTargetSpeed;
 
         // Start is called before the first frame update
@@ -41,10 +43,10 @@ namespace NWH.VehiclePhysics2.Input
         {
             myvehicle.input.autoSetInput = false;
 
-            targetSpeed = targetSpeedKPerH / 3.6f;
+            targetSpeed = 0f;
             minPivotDis = firstMinPivotDis;
 
-            Invoke("RaceStart", 2.0f);
+            Invoke("RaceStart", 1.0f);
         }
 
         void RaceStart()
@@ -85,13 +87,16 @@ namespace NWH.VehiclePhysics2.Input
                 currentPivot = currentPivot.next;
 
             /* 속도 조절 */
+            targetSpeed = Mathf.Lerp(targetSpeed, currentPivot.speedLimit / 3.6f, myvehicle.fixedDeltaTime * 0.5f);
             CruiseMode(targetSpeed);
 
             /* 차선간의 거리의 차가 작도록 핸들조작, 차로중앙유지 */
             Vector3 relativeVector = myvehicle.vehicleTransform.InverseTransformPoint(currentPivot.cur.position);
-            steeringValue = relativeVector.x / relativeVector.magnitude;
-            myvehicle.input.Steering = steeringValue * steeringCoefficient;
-
+            steeringValue = Mathf.Lerp(steeringValue, relativeVector.x / relativeVector.magnitude * steeringCoefficient, myvehicle.fixedDeltaTime * 10.0f);
+            myvehicle.input.Steering = steeringValue;
+            
+            acceler = myvehicle.LocalForwardAcceleration;
+            speedKPH = myvehicle.LocalForwardVelocity * 3.6f;
         }
 
         /* <크루즈 컨트롤>
@@ -118,7 +123,7 @@ namespace NWH.VehiclePhysics2.Input
             _ed = (_e - _eprev) / dt;
             float newOutput = _e * 0.5f + _ei * 0.25f + _ed * 0.1f;
             newOutput = newOutput < -1f ? -1f : newOutput > 1f ? 1f : newOutput;
-            output = Mathf.Lerp(output, newOutput, myvehicle.fixedDeltaTime * 5f);
+            output = Mathf.Lerp(output, newOutput, dt * 3.0f);
 
             myvehicle.input.Vertical = output;
 

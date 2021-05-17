@@ -9,11 +9,13 @@ public class RoadManager : MonoBehaviour
         public Transform self;                  // 자기자신
         public List<Transform> trackTiles;      // Road 아래의 track tiles들의 List
         public int laneCount;
+        public float speedLimit;
         
-        public Road(Transform _self, int _laneCount)
+        public Road(Transform _self, int _laneCount, float _speedLimit)
         {
             self = _self;
             laneCount = _laneCount;
+            speedLimit = _speedLimit;
             trackTiles = new List<Transform>();
         }
 
@@ -36,17 +38,20 @@ public class RoadManager : MonoBehaviour
     [Header ("이 도로의 차로 수")]
     public int LaneCount;
 
+    [Header("이 도로의 제한속도")]
+    public float speedLimit;
+
     public Road myRoad;
 
     private void Awake()
     {
-        myRoad = new Road(transform, LaneCount);
+        myRoad = new Road(transform, LaneCount, speedLimit);
         myRoad.InitializeRoad();
     }
 
     void OnDrawGizmos()
     {
-        myRoad = new Road(transform, LaneCount);
+        myRoad = new Road(transform, LaneCount, speedLimit);
         myRoad.InitializeRoad();
     }
 }
