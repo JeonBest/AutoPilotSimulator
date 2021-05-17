@@ -15,11 +15,13 @@ namespace NWH.VehiclePhysics2.Input
         [Header ("AI settings")]
         public float firstMinPivotDis;
         public float steeringCoefficient;
+        public float targetSpeedDiff;
 
         [Header ("Only for Read")]
         public float steeringValue;
         public float minPivotDis;
-        public float targetSpeed;
+        private float targetSpeed;
+        public float targetSpeedKPH;
         public float acceler;
         public float speedKPH;
 
@@ -46,7 +48,7 @@ namespace NWH.VehiclePhysics2.Input
             targetSpeed = 0f;
             minPivotDis = firstMinPivotDis;
 
-            Invoke("RaceStart", 1.0f);
+            Invoke("RaceStart", 0.1f);
         }
 
         void RaceStart()
@@ -54,7 +56,7 @@ namespace NWH.VehiclePhysics2.Input
             
             /* 자신과 가장 가까운 GuidePivot 찾기 */
             GPM = Track.GetComponent<GuidePivotManager>();
-            float minimunDis = 100f;
+            float minimunDis = 1000f;
             foreach (GuidePivotManager.GuidePivot gp in GPM.guideLine)
             {
                 float distance = (myvehicle.vehicleTransform.position - gp.cur.position).sqrMagnitude;
@@ -87,8 +89,17 @@ namespace NWH.VehiclePhysics2.Input
                 currentPivot = currentPivot.next;
 
             /* 속도 조절 */
-            targetSpeed = Mathf.Lerp(targetSpeed, currentPivot.speedLimit / 3.6f, myvehicle.fixedDeltaTime * 0.5f);
-            CruiseMode(targetSpeed);
+            targetSpeed = Mathf.Lerp(targetSpeed, currentPivot.speedLimit / 3.6f, myvehicle.fixedDeltaTime * 0.2f);
+            if (targetSpeed > -targetSpeedDiff / 3.6f)
+            {
+                CruiseMode(targetSpeed + targetSpeedDiff / 3.6f);
+                targetSpeedKPH = (targetSpeed + targetSpeedDiff / 3.6f) * 3.6f;
+            }
+            else
+            {
+                CruiseMode(targetSpeed);
+                targetSpeedKPH = targetSpeed * 3.6f;
+            }
 
             /* 차선간의 거리의 차가 작도록 핸들조작, 차로중앙유지 */
             Vector3 relativeVector = myvehicle.vehicleTransform.InverseTransformPoint(currentPivot.cur.position);

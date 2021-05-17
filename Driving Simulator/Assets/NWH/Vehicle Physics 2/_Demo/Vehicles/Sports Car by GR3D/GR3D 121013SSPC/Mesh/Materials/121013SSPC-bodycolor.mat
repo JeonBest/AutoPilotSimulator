@@ -117,3 +117,4 @@ Material:
     - _PaintColor: {r: 1, g: 0, b: 0, a: 0}
     - _ReflectColor: {r: 0.15686275, g: 0.15686275, b: 0.19607843, a: 0.5019608}
     - _SpecularColor: {r: 0.7058824, g: 0.7058824, b: 0.74509805, a: 1}
+  m_BuildTextureStacks: []

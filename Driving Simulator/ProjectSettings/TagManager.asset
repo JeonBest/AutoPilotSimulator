@@ -11,7 +11,7 @@ TagManager:
   - DirtRoad
   - Trailer
   - DriveGuide
-  - LampEnd
+  - CollectorException
   layers:
   - Default
   - TransparentFX
