@@ -12,20 +12,32 @@ namespace NWH.VehiclePhysics2.Input
         public Transform Track;
         public Color lineColor;
 
+        [Header("Sensors")]
+        public Transform frontSensor;
+        public Transform leftSideSensor;
+        public Transform rightSideSensor;
+        public Transform leftBackSensor;
+        public Transform rightBackSensor;
+
+        private Sensoring FSensor;
+        private Sensoring LSSensor;
+        private Sensoring RSSensor;
+        private Sensoring LBSensor;
+        private Sensoring RBSensor;
+
         [Header("AI settings")]
         public float firstMinPivotDis;
         public float steeringCoefficient;
         public float targetSpeedDiff;
+        public float delayTime;
 
         [Header("Only for Read")]
         public float steeringValue;
         public float minPivotDis;
-        private float targetSpeed;
         public float targetSpeedKPH;
         public float acceler;
         public float speedKPH;
 
-        VehicleController FrontCar;
         GuidePivotManager.GuidePivot currentPivot;
         GuidePivotManager GPM;
         private bool isEngineStart = false;
@@ -35,10 +47,13 @@ namespace NWH.VehiclePhysics2.Input
         private float _ed;
         private float _ei;
         private float _eprev;
-
         private float output;
-        // private float targetSpeed;
+
+        private float targetSpeed;
         private float prevTargetSpeed;
+
+        private bool isActing = false;
+        private float actTime;
 
         // Start is called before the first frame update
         void Start()
@@ -48,7 +63,15 @@ namespace NWH.VehiclePhysics2.Input
             targetSpeed = 0f;
             minPivotDis = firstMinPivotDis;
 
-            Invoke("RaceStart", 0.1f);
+            FSensor = frontSensor.GetComponent<Sensoring>();
+            LSSensor = leftSideSensor.GetComponent<Sensoring>();
+            RSSensor = rightSideSensor.GetComponent<Sensoring>();
+            LBSensor = leftBackSensor.GetComponent<Sensoring>();
+            RBSensor = rightBackSensor.GetComponent<Sensoring>();
+
+            actTime = delayTime;
+
+            Invoke("RaceStart", delayTime);
         }
 
         void RaceStart()
@@ -88,20 +111,76 @@ namespace NWH.VehiclePhysics2.Input
             if (Vector3.Distance(currentPivot.cur.position, myvehicle.vehicleTransform.position) < minPivotDis)
                 currentPivot = currentPivot.next;
 
-            /* 속도 조절 */
-            targetSpeed = Mathf.Lerp(targetSpeed, currentPivot.speedLimit / 3.6f, myvehicle.fixedDeltaTime * 0.2f);
-            if (targetSpeed > -targetSpeedDiff / 3.6f)
+            /* 센서로 감지한 주변 차 정보로 Bad behavior 동작 */
+
+            if (Time.time - actTime > 2.0f)
+                isActing = false;
+
+            // 좌측 칼치기
+            if (!isActing && LBSensor.hitCount != 0 && LSSensor.hitCount == 0 && currentPivot.left != null)
             {
-                CruiseMode(targetSpeed + targetSpeedDiff / 3.6f);
-                targetSpeedKPH = (targetSpeed + targetSpeedDiff / 3.6f) * 3.6f;
+                Debug.Log("좌측차량 칼치기!");
+                currentPivot = currentPivot.left;
+                isActing = true;
+                actTime = Time.time;
+            }
+
+            // 우측 칼치기
+            if (!isActing && RBSensor.hitCount != 0 && RSSensor.hitCount == 0 && currentPivot.right != null)
+            {
+                Debug.Log("우측차량 칼치기!");
+                currentPivot = currentPivot.right;
+                isActing = true;
+                actTime = Time.time;
+            }
+
+            // 전방 차량 회피
+            if (FSensor.hitCount != 0)
+            {
+                if (!isActing)
+                {
+                    // 좌측을 확인
+                    if (LSSensor.hitCount == 0 && currentPivot.left != null)
+                    {
+                        Debug.Log("전방에 차량발견! 좌측으로 회피!");
+                        currentPivot = currentPivot.left;
+                        isActing = true;
+                        actTime = Time.time;
+                    }
+                    // 우측을 확인
+                    else if (!isActing && RSSensor.hitCount == 0 && currentPivot.right != null)
+                    {
+                        Debug.Log("전방에 차량 발견! 우측으로 회피!");
+                        currentPivot = currentPivot.right;
+                        isActing = true;
+                        actTime = Time.time;
+                    }
+                }
+                // 칼치기 했는데 앞에 차가 있으면, 그냥 감
+                else
+                {
+                    Debug.Log("칼치기 했는데 전방에 차량 발견!");
+                    myvehicle.input.Brakes = 0.2f;
+                }
+                    
             }
             else
             {
-                CruiseMode(targetSpeed);
-                targetSpeedKPH = targetSpeed * 3.6f;
+                /* 속도 조절 */
+                targetSpeed = Mathf.Lerp(targetSpeed, currentPivot.speedLimit / 3.6f, myvehicle.fixedDeltaTime * 0.2f);
+                if (targetSpeed > -targetSpeedDiff / 3.6f && targetSpeed < 70f / 3.6f)
+                {
+                    CruiseMode(targetSpeed + targetSpeedDiff / 3.6f);
+                    targetSpeedKPH = (targetSpeed + targetSpeedDiff / 3.6f) * 3.6f;
+                }
+                else
+                {
+                    CruiseMode(targetSpeed);
+                    targetSpeedKPH = targetSpeed * 3.6f;
+                }
             }
 
-            /* 차선간의 거리의 차가 작도록 핸들조작, 차로중앙유지 */
+            /* current pivot을 바라보도록 핸들조작, 차로중앙유지 */
             Vector3 relativeVector = myvehicle.vehicleTransform.InverseTransformPoint(currentPivot.cur.position);
             steeringValue = Mathf.Lerp(steeringValue, relativeVector.x / relativeVector.magnitude * steeringCoefficient, myvehicle.fixedDeltaTime * 10.0f);
             myvehicle.input.Steering = steeringValue;
@@ -141,13 +220,9 @@ namespace NWH.VehiclePhysics2.Input
             prevTargetSpeed = _targetSpeed;
         }
 
-
-
         /* < 전방의 차량 인식 >
-         * RayCast를 이용해 전방의 차량을 감지하여 반환한다.
+         * FrontSensor를 이용해 전방의 차량을 감지하여 반환한다.
          */
-
-
 
         /* < 전방 차에 대한 행동 결정 >
          * 전방 차량과의 거리, 속도차를 계산하여 회피, 감속을 결정한다

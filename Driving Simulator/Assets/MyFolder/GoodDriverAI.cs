@@ -12,6 +12,11 @@ namespace NWH.VehiclePhysics2.Input
         public Transform Track;
         public Color lineColor;
 
+        [Header("Sensors")]
+        public Transform frontSensor;
+
+        private Sensoring FSensor;
+
         [Header ("AI settings")]
         public float firstMinPivotDis;
         public float steeringCoefficient;
@@ -47,6 +52,8 @@ namespace NWH.VehiclePhysics2.Input
 
             targetSpeed = 0f;
             minPivotDis = firstMinPivotDis;
+
+            FSensor = frontSensor.GetComponent<Sensoring>();
 
             Invoke("RaceStart", 0.1f);
         }
@@ -88,17 +95,24 @@ namespace NWH.VehiclePhysics2.Input
             if (Vector3.Distance(currentPivot.cur.position, myvehicle.vehicleTransform.position) < minPivotDis)
                 currentPivot = currentPivot.next;
 
-            /* 속도 조절 */
-            targetSpeed = Mathf.Lerp(targetSpeed, currentPivot.speedLimit / 3.6f, myvehicle.fixedDeltaTime * 0.2f);
-            if (targetSpeed > -targetSpeedDiff / 3.6f)
+            if (FSensor.hitCount != 0)
             {
-                CruiseMode(targetSpeed + targetSpeedDiff / 3.6f);
-                targetSpeedKPH = (targetSpeed + targetSpeedDiff / 3.6f) * 3.6f;
+                myvehicle.input.Brakes = 0.4f;
             }
             else
             {
-                CruiseMode(targetSpeed);
-                targetSpeedKPH = targetSpeed * 3.6f;
+                /* 속도 조절 */
+                targetSpeed = Mathf.Lerp(targetSpeed, currentPivot.speedLimit / 3.6f, myvehicle.fixedDeltaTime * 0.2f);
+                if (targetSpeed > -targetSpeedDiff / 3.6f)
+                {
+                    CruiseMode(targetSpeed + targetSpeedDiff / 3.6f);
+                    targetSpeedKPH = (targetSpeed + targetSpeedDiff / 3.6f) * 3.6f;
+                }
+                else
+                {
+                    CruiseMode(targetSpeed);
+                    targetSpeedKPH = targetSpeed * 3.6f;
+                }
             }
 
             /* 차선간의 거리의 차가 작도록 핸들조작, 차로중앙유지 */

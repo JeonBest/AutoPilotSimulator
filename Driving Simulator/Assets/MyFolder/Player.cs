@@ -11,6 +11,9 @@ namespace NWH.VehiclePhysics2.Input
         public VehicleController myvehicle;
         public Transform Track;
         public Color lineColor;
+        public Transform frontSensor;
+
+        private Sensoring FSensor;
 
         [Header("AI settings")]
         public float firstMinPivotDis;
@@ -48,6 +51,8 @@ namespace NWH.VehiclePhysics2.Input
 
             targetSpeed = 0f;
             minPivotDis = firstMinPivotDis;
+
+            FSensor = frontSensor.GetComponent<Sensoring>();
 
             Invoke("RaceStart", 0.1f);
         }
@@ -109,18 +114,24 @@ namespace NWH.VehiclePhysics2.Input
             if (InputProvider.CombinedInput<VehicleInputProviderBase>(i => i.Brakes()) == 1)
                 goSlower();
 
-
-            /* 속도 조절 */
-            targetSpeed = Mathf.Lerp(targetSpeed, currentPivot.speedLimit / 3.6f, myvehicle.fixedDeltaTime * 0.2f);
-            if (targetSpeed > -targetSpeedDiff / 3.6f)
+            if (FSensor.hitCount != 0)
             {
-                CruiseMode(targetSpeed + targetSpeedDiff / 3.6f);
-                targetSpeedKPH = (targetSpeed + targetSpeedDiff / 3.6f) * 3.6f;
+                myvehicle.input.Brakes = 0.8f;
             }
             else
             {
-                CruiseMode(targetSpeed);
-                targetSpeedKPH = targetSpeed * 3.6f;
+                /* 속도 조절 */
+                targetSpeed = Mathf.Lerp(targetSpeed, currentPivot.speedLimit / 3.6f, myvehicle.fixedDeltaTime * 0.2f);
+                if (targetSpeed > -targetSpeedDiff / 3.6f && targetSpeed > 80f / 3.6f)
+                {
+                    CruiseMode(targetSpeed + targetSpeedDiff / 3.6f);
+                    targetSpeedKPH = (targetSpeed + targetSpeedDiff / 3.6f) * 3.6f;
+                }
+                else
+                {
+                    CruiseMode(targetSpeed);
+                    targetSpeedKPH = targetSpeed * 3.6f;
+                }
             }
 
             /* 차선간의 거리의 차가 작도록 핸들조작, 차로중앙유지 */
@@ -184,12 +195,12 @@ namespace NWH.VehiclePhysics2.Input
 
         void goFaster()
         {
-            targetSpeedDiff += Time.deltaTime;
+            targetSpeedDiff += Time.deltaTime * 3.0f;
         }
 
         void goSlower()
         {
-            targetSpeedDiff -= Time.deltaTime;
+            targetSpeedDiff -= Time.deltaTime * 3.0f;
         }
 
         /* < 전방의 차량 인식 >
