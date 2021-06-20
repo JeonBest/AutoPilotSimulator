@@ -102,12 +102,12 @@ namespace NWH.VehiclePhysics2.Input
                 if (InputProvider.CombinedInput<VehicleInputProviderBase>(i => i.Steering()) == -1.0f)
                 {
                     isInputReserved = true;
-                    Invoke("goLeft", 1.5f);
+                    Invoke("goLeft", 0.2f);
                 }
                 if (InputProvider.CombinedInput<VehicleInputProviderBase>(i => i.Steering()) == 1.0f)
                 {
                     isInputReserved = true;
-                    Invoke("goRight", 1.5f);
+                    Invoke("goRight", 0.2f);
                 }
             }
             if (InputProvider.CombinedInput<VehicleInputProviderBase>(i => i.Throttle()) == 1)

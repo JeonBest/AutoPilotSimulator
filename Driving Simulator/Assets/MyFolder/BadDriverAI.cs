@@ -159,7 +159,7 @@ namespace NWH.VehiclePhysics2.Input
                 // 칼치기 했는데 앞에 차가 있으면, 그냥 감
                 else
                 {
-                    Debug.Log("칼치기 했는데 전방에 차량 발견!");
+                    // Debug.Log("칼치기 했는데 전방에 차량 발견!");
                     myvehicle.input.Brakes = 0.2f;
                 }
                     

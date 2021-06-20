@@ -202,7 +202,7 @@ public class GuidePivotManager : MonoBehaviour
                         Debug.LogError("From Road Idx count don't matches To Road Idx count!!!!");
 
                     for (int i = 0; i < fromPivots.Count; i++)
-                        fromPivots[i].left = toPivots[i];
+                        fromPivots[i].right = toPivots[i];
 
                     break;
 
@@ -217,7 +217,7 @@ public class GuidePivotManager : MonoBehaviour
                         Debug.LogError("From Road Idx count don't matches To Road Idx count!!!!");
 
                     for (int i = 0; i < fromPivots.Count; i++)
-                        fromPivots[i].right = toPivots[i];
+                        fromPivots[i].left = toPivots[i];
 
                     break;
             }
@@ -371,7 +371,7 @@ public class GuidePivotManager : MonoBehaviour
                         Debug.LogError("From Road Idx count don't matches To Road Idx count!!!!");
 
                     for (int i = 0; i < fromPivots.Count; i++)
-                        fromPivots[i].left = toPivots[i];
+                        fromPivots[i].right = toPivots[i];
 
                     break;
 
@@ -386,7 +386,7 @@ public class GuidePivotManager : MonoBehaviour
                         Debug.LogError("From Road Idx count don't matches To Road Idx count!!!!");
 
                     for (int i = 0; i < fromPivots.Count; i++)
-                        fromPivots[i].right = toPivots[i];
+                        fromPivots[i].left = toPivots[i];
 
                     break;
             }
