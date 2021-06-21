@@ -1,476 +1,133 @@
 Using pre-set license
 Built from '2020.3/release' branch; Version is '2020.3.12f1 (b3b2c6512326) revision 11776710'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19041.1052; Version 2004; 64bit' Language: 'ko' Physical Memory: 8143 MB
+OS: 'Windows 10 Home; OS build 19042.1052; Version 2009; 64bit' Language: 'ko' Physical Memory: 32694 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-D:\Unity\2020.3.12f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.12f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/Unity/AutoPilotSimulator/Driving Simulator
+C:/Users/USER/WSL/AutoPilotSimulator/Driving Simulator
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50305
-Successfully changed project path to: D:/Unity/AutoPilotSimulator/Driving Simulator
-D:/Unity/AutoPilotSimulator/Driving Simulator
+65294
+Successfully changed project path to: C:/Users/USER/WSL/AutoPilotSimulator/Driving Simulator
+C:/Users/USER/WSL/AutoPilotSimulator/Driving Simulator
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 66.98 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 32.31 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.12f1 (b3b2c6512326)
-[Subsystems] Discovering subsystems at path D:/Unity/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Unity/AutoPilotSimulator/Driving Simulator/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/USER/WSL/AutoPilotSimulator/Driving Simulator/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 960 (ID=0x1401)
+    Renderer: AMD Radeon RX 6700 XT (ID=0x73df)
     Vendor:   
-    VRAM:     2007 MB
-    Driver:   27.21.14.5671
+    VRAM:     12244 MB
+    Driver:   27.20.21002.112
 Initialize mono
-Mono path[0] = 'D:/Unity/2020.3.12f1/Editor/Data/Managed'
-Mono path[1] = 'D:/Unity/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'D:/Unity/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56988
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56456
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/Unity/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002312 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001780 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 55.79 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 33.24 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.501 seconds
+- Completed reload, in  0.818 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006796 seconds.
+Registered in 0.003752 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-0000017B94554010 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\Assembly-CSharp.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B92738B20 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\NWH.Common.NUI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B95D0CFF0 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\NWH.Common.Utility.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B925FA010 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B9250BF30 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\NWH.VehiclePhysics2.NUI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B94403020 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B92A36BC0 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B94105790 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\NWH.Common.Input.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B92744460 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\NWH.Common.Demo.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B959A0C20 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B92849040 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B95AAB1F0 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\NWH.NRigidbody.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B70FFE030 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\NWH.Common.CoM.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B956FCC30 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B956FCC30 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B95768020 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B95D20020 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\NWH.Common.FloatingOrigin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B92744460 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\NWH.Common.SceneManagement.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B9258E4A0 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B92B39D10 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\NWH.VehiclePhysics2.VehicleController.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B928CA020 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B942A2C20 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B95E011D0 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\NWH.Common.AssetInfo.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B70F7CE90 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\NWH.VehiclePhysics2.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B92A99720 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\NWH.Common.Vehicle.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B929EA7B0 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\NWH.WheelController.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B94554010 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\NWH.VehiclePhysics2.Demo.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017B9402E460 doesn't match image C:\Users\USER\WSL\AutoPilotSimulator\Driving Simulator\Library\ScriptAssemblies\NWH.Common.Cameras.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Could not load signature of UnityEditor.TestTools.TestRunner.Api.TestRunnerApi:ParseTestMode due to: Could not load file or assembly 'UnityEngine.TestRunner, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEngine.TestRunner, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Could not load signature of UnityEditor.TestTools.TestRunner.EditModeRunner:Init due to: Could not load file or assembly 'UnityEngine.TestRunner, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEngine.TestRunner, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Could not load signature of UnityEditor.TestTools.TestRunner.TestListCacheData:get_platforms due to: Could not load file or assembly 'UnityEngine.TestRunner, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEngine.TestRunner, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Unloading broken assembly Library/ScriptAssemblies/UnityEditor.TestRunner.dll, this assembly can cause crashes in the runtime
+
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 109.28 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 32.06 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+Could not load signature of UnityEditor.TestTools.TestRunner.Api.TestRunnerApi:ParseTestMode due to: Could not load file or assembly 'UnityEngine.TestRunner, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEngine.TestRunner, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
 Mono: successfully reloaded assembly
-- Completed reload, in  1.610 seconds
+- Completed reload, in  1.122 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
-Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2097 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 179.1 MB.
-System memory in use after: 179.2 MB.
-
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2562.
-Total: 2.392700 ms (FindLiveObjects: 0.200000 ms CreateObjectMapping: 0.089000 ms MarkObjects: 1.951600 ms  DeleteObjects: 0.151100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/MyFolder/Player.cs
-  artifactKey: Guid(156a83a9bcdea884a9331ff41cd0749f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyFolder/Player.cs using Guid(156a83a9bcdea884a9331ff41cd0749f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22783182f487278a6479374ed30fc151') in 0.085480 seconds 
-  Import took 0.089541 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006962 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.NullReferenceException: Object reference not set to an instance of an object
-  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in D:\Unity\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.289 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2063 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 187.8 MB.
-System memory in use after: 187.9 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2565.
-Total: 2.266300 ms (FindLiveObjects: 0.220100 ms CreateObjectMapping: 0.088900 ms MarkObjects: 1.881300 ms  DeleteObjects: 0.074800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008818 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.NullReferenceException: Object reference not set to an instance of an object
-  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in D:\Unity\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.365 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2063 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 187.8 MB.
-System memory in use after: 187.9 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2568.
-Total: 3.321900 ms (FindLiveObjects: 0.578200 ms CreateObjectMapping: 0.350000 ms MarkObjects: 2.316500 ms  DeleteObjects: 0.076000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005528 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.NullReferenceException: Object reference not set to an instance of an object
-  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in D:\Unity\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.242 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2063 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 187.9 MB.
-System memory in use after: 188.0 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2571.
-Total: 2.904800 ms (FindLiveObjects: 0.232100 ms CreateObjectMapping: 0.093800 ms MarkObjects: 2.474000 ms  DeleteObjects: 0.103300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010931 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.NullReferenceException: Object reference not set to an instance of an object
-  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in D:\Unity\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  2.277 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2063 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 187.9 MB.
-System memory in use after: 188.0 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2574.
-Total: 6.062800 ms (FindLiveObjects: 0.924600 ms CreateObjectMapping: 0.350700 ms MarkObjects: 4.669000 ms  DeleteObjects: 0.116700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005755 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.NullReferenceException: Object reference not set to an instance of an object
-  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in D:\Unity\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  2.064 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.90 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2063 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 187.8 MB.
-System memory in use after: 187.9 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2577.
-Total: 5.393300 ms (FindLiveObjects: 0.261700 ms CreateObjectMapping: 0.098200 ms MarkObjects: 4.928600 ms  DeleteObjects: 0.103300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006705 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.17 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.NullReferenceException: Object reference not set to an instance of an object
-  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in D:\Unity\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.361 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2063 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 187.9 MB.
-System memory in use after: 188.0 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2580.
-Total: 2.589400 ms (FindLiveObjects: 0.213900 ms CreateObjectMapping: 0.084800 ms MarkObjects: 2.206600 ms  DeleteObjects: 0.082900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007052 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.NullReferenceException: Object reference not set to an instance of an object
-  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in D:\Unity\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.274 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2063 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 187.9 MB.
-System memory in use after: 188.0 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2583.
-Total: 2.350300 ms (FindLiveObjects: 0.205300 ms CreateObjectMapping: 0.083200 ms MarkObjects: 1.958700 ms  DeleteObjects: 0.101700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007268 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.NullReferenceException: Object reference not set to an instance of an object
-  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in D:\Unity\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.293 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2063 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 187.9 MB.
-System memory in use after: 188.0 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2586.
-Total: 2.432700 ms (FindLiveObjects: 0.253300 ms CreateObjectMapping: 0.084600 ms MarkObjects: 2.003200 ms  DeleteObjects: 0.090700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1162.691578 seconds.
-  path: Assets/MyFolder/GuidePivotManager.cs
-  artifactKey: Guid(4179bbdf47e65cc4ab048b12d710abf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyFolder/GuidePivotManager.cs using Guid(4179bbdf47e65cc4ab048b12d710abf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ac844604599f03edb6f69cf538fa5a3') in 0.014977 seconds 
-  Import took 0.021234 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005854 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.NullReferenceException: Object reference not set to an instance of an object
-  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in D:\Unity\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.302 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2063 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 187.9 MB.
-System memory in use after: 188.0 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2589.
-Total: 2.373300 ms (FindLiveObjects: 0.207900 ms CreateObjectMapping: 0.087000 ms MarkObjects: 1.976200 ms  DeleteObjects: 0.101300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010150 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
 Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-System.NullReferenceException: Object reference not set to an instance of an object
-  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in D:\Unity\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+Unloading 2097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 179.3 MB.
+System memory in use after: 179.4 MB.
 
-Mono: successfully reloaded assembly
-- Completed reload, in  1.319 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2063 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 187.9 MB.
-System memory in use after: 188.0 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2592.
-Total: 2.399300 ms (FindLiveObjects: 0.192100 ms CreateObjectMapping: 0.073600 ms MarkObjects: 2.039100 ms  DeleteObjects: 0.093000 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2558.
+Total: 2.146600 ms (FindLiveObjects: 0.180800 ms CreateObjectMapping: 0.065800 ms MarkObjects: 1.820600 ms  DeleteObjects: 0.078300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -479,239 +136,14 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.012807 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.NullReferenceException: Object reference not set to an instance of an object
-  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in D:\Unity\AutoPilotSimulator\Driving Simulator\Assets\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.328 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.37 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2063 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 188.0 MB.
-System memory in use after: 188.1 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2595.
-Total: 3.247000 ms (FindLiveObjects: 0.189200 ms CreateObjectMapping: 0.825900 ms MarkObjects: 2.097600 ms  DeleteObjects: 0.133300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 2357.173608 seconds.
-  path: Assets/MyFolder/TerrainData_8a04e768-4a43-43c1-bc83-b5e5ce5b04fd.asset
-  artifactKey: Guid(74b294607a1f92f44a11a0daf2461925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyFolder/TerrainData_8a04e768-4a43-43c1-bc83-b5e5ce5b04fd.asset using Guid(74b294607a1f92f44a11a0daf2461925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac9367c6ff0099ad9c535e5850648508') in 0.402719 seconds 
-  Import took 0.411893 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.389437 seconds.
-  path: Assets/MyFolder/TerrainData_4cbe2359-376e-4f05-9ae9-af54484fcfbb.asset
-  artifactKey: Guid(e5f9d3f580f8dac42b928dc667a03a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyFolder/TerrainData_4cbe2359-376e-4f05-9ae9-af54484fcfbb.asset using Guid(e5f9d3f580f8dac42b928dc667a03a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd95de2a23bdc87c460c0dda729bae58') in 0.034108 seconds 
-  Import took 0.038581 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.368546 seconds.
-  path: Assets/MyFolder/TerrainData_8e777b69-31af-4687-86b6-b4c6e2da0359.asset
-  artifactKey: Guid(25e587cbd80bf5a48a50a9060bdd3725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyFolder/TerrainData_8e777b69-31af-4687-86b6-b4c6e2da0359.asset using Guid(25e587cbd80bf5a48a50a9060bdd3725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6d5a431aba2bab98c96d5b635334c87') in 0.034719 seconds 
-  Import took 0.041884 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.398157 seconds.
-  path: Assets/MyFolder/TerrainData_5e90dbb6-4e78-4e3c-a903-467e7df56950.asset
-  artifactKey: Guid(ebd094e684e09c249a9e2f7ce7e59489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyFolder/TerrainData_5e90dbb6-4e78-4e3c-a903-467e7df56950.asset using Guid(ebd094e684e09c249a9e2f7ce7e59489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21e3fb651d10d5fd5e9ffc0963eb83e5') in 0.029183 seconds 
-  Import took 0.034329 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.960324 seconds.
-  path: Assets/MyFolder/TerrainData_02f7e5f8-c647-4325-95aa-b21df9fd4a70.asset
-  artifactKey: Guid(49fa52bca97092f4f99db75bbce44f95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyFolder/TerrainData_02f7e5f8-c647-4325-95aa-b21df9fd4a70.asset using Guid(49fa52bca97092f4f99db75bbce44f95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88d0579bda97610c3d3a076aab07c9da') in 0.028260 seconds 
-  Import took 0.032831 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.251631 seconds.
-  path: Assets/MyFolder/TerrainData_9b741ef4-bc8a-49aa-ad7b-c6985d0f6a27.asset
-  artifactKey: Guid(674c3a381695a0648b893093a295b589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyFolder/TerrainData_9b741ef4-bc8a-49aa-ad7b-c6985d0f6a27.asset using Guid(674c3a381695a0648b893093a295b589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db994bb3b734836b4162f44455e79caa') in 0.025365 seconds 
-  Import took 0.029847 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.242102 seconds.
-  path: Assets/MyFolder/TerrainData_d77e23d4-30cd-4fef-be33-e7e705b7729c.asset
-  artifactKey: Guid(395ef09129a424544aa176396b25e496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyFolder/TerrainData_d77e23d4-30cd-4fef-be33-e7e705b7729c.asset using Guid(395ef09129a424544aa176396b25e496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de812e85a8bfb419f7b7ee7e25a10544') in 0.027337 seconds 
-  Import took 0.032177 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.257665 seconds.
-  path: Assets/MyFolder/TerrainData_b1cee751-f6b0-4b16-b73f-e6906f99a526.asset
-  artifactKey: Guid(8c87005f27ff42f4f9a87b1627828cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyFolder/TerrainData_b1cee751-f6b0-4b16-b73f-e6906f99a526.asset using Guid(8c87005f27ff42f4f9a87b1627828cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '486db7382a4f453f45b75689f659b0f6') in 0.105512 seconds 
-  Import took 0.112457 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.202422 seconds.
-  path: Assets/MyFolder/TerrainData_9ee13928-224d-49a2-a122-839fe9358bfe.asset
-  artifactKey: Guid(db241ae9b4826b640806c41352695e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyFolder/TerrainData_9ee13928-224d-49a2-a122-839fe9358bfe.asset using Guid(db241ae9b4826b640806c41352695e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9b325216b4c4c9921ec2226fcb63ba8') in 0.029913 seconds 
-  Import took 0.035520 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.686268 seconds.
-  path: Assets/MyFolder/TerrainData_93d6f02c-d829-4fb0-bb0d-f69936325622.asset
-  artifactKey: Guid(fe15e603a5e478d418e30506f13b2580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyFolder/TerrainData_93d6f02c-d829-4fb0-bb0d-f69936325622.asset using Guid(fe15e603a5e478d418e30506f13b2580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5bfefaf805ab724332b4e90162fc84d') in 0.050875 seconds 
-  Import took 0.057835 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.645071 seconds.
-  path: Assets/MyFolder/TerrainData_5b4baa0b-d1e6-40ee-88bb-eb8b803ffc84.asset
-  artifactKey: Guid(20c5ddc736321ea4db0828996356369a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyFolder/TerrainData_5b4baa0b-d1e6-40ee-88bb-eb8b803ffc84.asset using Guid(20c5ddc736321ea4db0828996356369a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1546743c7e6d5771412559a4d87da407') in 0.028891 seconds 
-  Import took 0.033190 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.407066 seconds.
-  path: Assets/MyFolder/TerrainData_f549144b-b7eb-415e-a2e0-159823c35f88.asset
-  artifactKey: Guid(97bdf57dd1dd6d947b6242f856df9ae4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyFolder/TerrainData_f549144b-b7eb-415e-a2e0-159823c35f88.asset using Guid(97bdf57dd1dd6d947b6242f856df9ae4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '945fa4995f49d4c23a5b1018238aa6da') in 0.057994 seconds 
-  Import took 0.063417 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.859254 seconds.
-  path: Assets/MyFolder/TerrainData_5b92262a-3394-4fa3-8437-04d8cd96e4d2.asset
-  artifactKey: Guid(6c20e4ccea2cb1a499abb219cce907c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyFolder/TerrainData_5b92262a-3394-4fa3-8437-04d8cd96e4d2.asset using Guid(6c20e4ccea2cb1a499abb219cce907c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3453ad0e4feb666777b33f63d36006f3') in 0.028705 seconds 
-  Import took 0.033127 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.226246 seconds.
-  path: Assets/MyFolder/TerrainData_19689372-9185-4891-9c1a-fa6d0914e67f.asset
-  artifactKey: Guid(5f7a979d7293b6e4e9d3aa9782e112d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyFolder/TerrainData_19689372-9185-4891-9c1a-fa6d0914e67f.asset using Guid(5f7a979d7293b6e4e9d3aa9782e112d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c078fad4f600dba734a5e6cf13c664e3') in 0.026463 seconds 
-  Import took 0.033250 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.232093 seconds.
-  path: Assets/MyFolder/TerrainData_6f22e6ed-0f53-4e46-9e7f-444be4042268.asset
-  artifactKey: Guid(5ed9a8b6c8f66ff4c9b48d24944feab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyFolder/TerrainData_6f22e6ed-0f53-4e46-9e7f-444be4042268.asset using Guid(5ed9a8b6c8f66ff4c9b48d24944feab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b8890615381fb88ff51effe451e01fb') in 0.029273 seconds 
-  Import took 0.033890 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.207945 seconds.
-  path: Assets/MyFolder/TerrainData_638b3419-6823-464b-91e7-ed6ed15ba62c.asset
-  artifactKey: Guid(71195dde9f443ee45afe1a0d5418b724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyFolder/TerrainData_638b3419-6823-464b-91e7-ed6ed15ba62c.asset using Guid(71195dde9f443ee45afe1a0d5418b724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43d018f4146b754f5d3f2d94be2a07fe') in 0.025357 seconds 
-  Import took 0.029937 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.230160 seconds.
-  path: Assets/MyFolder/TerrainData_0caab48d-ab3d-4f6c-981b-f11ecdd4b59b.asset
-  artifactKey: Guid(965f805553c5949419f00547d3f8ae63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyFolder/TerrainData_0caab48d-ab3d-4f6c-981b-f11ecdd4b59b.asset using Guid(965f805553c5949419f00547d3f8ae63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bfdff5f0ddbbcc0938e8cd308a0734c') in 0.022564 seconds 
-  Import took 0.029363 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 228.592641 seconds.
-  path: Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Euro Truck by GR3D/GR3D 010416TRUK/Mesh/Materials/MirrorGlassR.mat
-  artifactKey: Guid(19292d40f3780954d82f63183919958e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Euro Truck by GR3D/GR3D 010416TRUK/Mesh/Materials/MirrorGlassR.mat using Guid(19292d40f3780954d82f63183919958e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7160e155923ffeeb037232b8eadf2614') in 1.217496 seconds 
-  Import took 1.222220 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.125622 seconds.
-  path: Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Euro Truck by GR3D/GR3D 010416TRUK/Mesh/Materials/Rims.mat
-  artifactKey: Guid(84d56789fed42024fa307b2d3fc8e0b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Euro Truck by GR3D/GR3D 010416TRUK/Mesh/Materials/Rims.mat using Guid(84d56789fed42024fa307b2d3fc8e0b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94de6afadd793f2ad5dcf3198750dc50') in 0.034813 seconds 
-  Import took 0.040124 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.487138 seconds.
-  path: Assets/NWH/Vehicle Physics 2/_Demo/Roads/Racetrack/Materials/road_material.mat
-  artifactKey: Guid(b778ea50911410d488474b849f2c9a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NWH/Vehicle Physics 2/_Demo/Roads/Racetrack/Materials/road_material.mat using Guid(b778ea50911410d488474b849f2c9a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afbeac2a4508a7c90acadbf9cfec6570') in 0.201282 seconds 
-  Import took 0.207363 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000376 seconds.
-  path: Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Euro Truck by GR3D/GR3D 010416TRUK/Demo Scene/Mesh/Materials/ShadowProjector.mat
-  artifactKey: Guid(e30ff3588e719f34bbf0c66f22d97487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Euro Truck by GR3D/GR3D 010416TRUK/Demo Scene/Mesh/Materials/ShadowProjector.mat using Guid(e30ff3588e719f34bbf0c66f22d97487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b418d5be58d72bda4efe1594ad917b05') in 0.151953 seconds 
-  Import took 0.155630 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.597613 seconds.
-  path: Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Euro Truck by GR3D/GR3D 010416TRUK/Mesh/Materials/MirrorGlassL.mat
-  artifactKey: Guid(a8bee48e6da84794b8c1a46ed05ed8c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Euro Truck by GR3D/GR3D 010416TRUK/Mesh/Materials/MirrorGlassL.mat using Guid(a8bee48e6da84794b8c1a46ed05ed8c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f5da7efb008e78616b4a7aec2ac633c') in 0.080501 seconds 
-  Import took 0.089131 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.497562 seconds.
-  path: Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Euro Truck by GR3D/GR3D 010416TRUK/Mesh/Materials/license plate.001.mat
-  artifactKey: Guid(a2d4df34cbcfbcf428ee47dec08ce80f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NWH/Vehicle Physics 2/_Demo/Vehicles/Euro Truck by GR3D/GR3D 010416TRUK/Mesh/Materials/license plate.001.mat using Guid(a2d4df34cbcfbcf428ee47dec08ce80f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd86fda45cc7b09a5accc7777020ec6b3') in 0.053292 seconds 
-  Import took 0.057798 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 78.399723 seconds.
-  path: Assets/MyFolder/Material/GrassMat.mat
-  artifactKey: Guid(b849f74758f95ea40a5dacd867274b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyFolder/Material/GrassMat.mat using Guid(b849f74758f95ea40a5dacd867274b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '122582b3581c4012330efb1b64154491') in 0.037430 seconds 
-  Import took 0.042430 seconds .
+  path: Assets/Main.unity
+  artifactKey: Guid(daebbb93fe0020b45a4c5a2691d1aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Main.unity using Guid(daebbb93fe0020b45a4c5a2691d1aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3332a3deb81bb75347ea17d915b44ed0') in 0.014742 seconds 
+  Import took 0.017212 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

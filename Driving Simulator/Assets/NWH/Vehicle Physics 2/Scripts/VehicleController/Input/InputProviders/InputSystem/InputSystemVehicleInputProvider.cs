@@ -84,6 +84,7 @@ namespace NWH.VehiclePhysics2.Input
 
         public void Update()
         {
+            /*
             _throttle = mouseInput
                             ? Mathf.Clamp(GetMouseVertical(), 0f, 1f)
                             : vehicleInputActions.VehicleControls.Throttle.ReadValue<float>();
@@ -93,6 +94,12 @@ namespace NWH.VehiclePhysics2.Input
             _steering = mouseInput
                             ? Mathf.Clamp(GetMouseHorizontal(), -1f, 1f)
                             : vehicleInputActions.VehicleControls.Steering.ReadValue<float>();
+            */
+
+            _throttle = vehicleInputActions.VehicleControls.Throttle.ReadValue<float>();
+            _brakes = vehicleInputActions.VehicleControls.Brakes.ReadValue<float>();
+            _steering = Mathf.Clamp(GetMouseHorizontal(), -1f, 1f);
+
             _clutch    = vehicleInputActions.VehicleControls.Clutch.ReadValue<float>();
             _handbrake = vehicleInputActions.VehicleControls.Handbrake.ReadValue<float>();
         }
