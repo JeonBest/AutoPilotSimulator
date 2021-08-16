@@ -72,7 +72,6 @@ InitTestScene*.unity
 ### My ignore ###
 # Demo Scenes
 DrivingSimulator/Assets/NWH/Vehicle Physics 2/_Demo/_Scenes
-DrivingSimulator/Library/
 
 
 # End of https://www.toptal.com/developers/gitignore/api/unity
