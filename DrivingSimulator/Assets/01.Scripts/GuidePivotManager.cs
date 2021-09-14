@@ -12,6 +12,7 @@ public class GuidePivotManager : MonoBehaviour
         public GuidePivot right;
         public GuidePivot prev;
 
+        public Vector2Int coordinates;
         public float speedLimit;
 
         public GuidePivot() { }
@@ -48,10 +49,10 @@ public class GuidePivotManager : MonoBehaviour
 
     // *********************************************************************************
 
-    [Header (" ** For Debugging ** ")]
+    [Header(" ** For Debugging ** ")]
     public Color lineColor;
 
-    [Header (" ** Road Connection Settings ** ")]
+    [Header(" ** Road Connection Settings ** ")]
     public List<ConnectMeta> connectMetas;
 
     // List of every GuidePivots  => to Find Starting Pivot
@@ -237,7 +238,8 @@ public class GuidePivotManager : MonoBehaviour
 
         List<List<GuidePivot>> guideLinePerRoad = new List<List<GuidePivot>>();
 
-        for(int i = 0; i < transform.childCount; i++){
+        for (int i = 0; i < transform.childCount; i++)
+        {
             RoadManager RM = transform.GetChild(i).GetComponent<RoadManager>();
             guideLinePerRoad.Add(new List<GuidePivot>());
 
@@ -257,7 +259,8 @@ public class GuidePivotManager : MonoBehaviour
 
                     GuidePivot current = new GuidePivot(pivotTransform, myRoadSpeedLimit);
 
-                    switch (pivotTransform.name) {
+                    switch (pivotTransform.name)
+                    {
                         case "GuidePivot.1":
                             curLine[0] = current;
                             break;
@@ -281,9 +284,9 @@ public class GuidePivotManager : MonoBehaviour
                             break;
                     }
                 }
-                
+
                 // GuidePivot끼리 관계 형성
-                for(int j = 0; j < RM.myRoad.laneCount; j++)
+                for (int j = 0; j < RM.myRoad.laneCount; j++)
                 {
                     if (oldLine[j] != null)
                     {
@@ -301,8 +304,8 @@ public class GuidePivotManager : MonoBehaviour
         }
 
         // Road끼리 연결부의 GuidePivot끼리 관계 형성
-        
-        foreach(ConnectMeta cm in connectMetas)
+
+        foreach (ConnectMeta cm in connectMetas)
         {
             int fromRoadNum = System.Convert.ToInt32(cm.FromRoad.name.Split('.')[1]);
             int toRoadNum = System.Convert.ToInt32(cm.ToRoad.name.Split('.')[1]);
@@ -315,9 +318,9 @@ public class GuidePivotManager : MonoBehaviour
                 case ConnectPos.straight:
                     for (int i = cm.FromRoadTileIdx.x; i <= cm.FromRoadTileIdx.y; i++)
                         // straight는 from road의 끝과 to road의 시작이 만나므로 마지막 줄의 원소를 받아온다
-                        fromPivots.Add(guideLinePerRoad[fromRoadNum-1][guideLinePerRoad[fromRoadNum-1].Count - cm.FRLaneCnt+i-1]);
+                        fromPivots.Add(guideLinePerRoad[fromRoadNum - 1][guideLinePerRoad[fromRoadNum - 1].Count - cm.FRLaneCnt + i - 1]);
                     for (int i = cm.ToRoadTileIdx.x; i <= cm.ToRoadTileIdx.y; i++)
-                        toPivots.Add(guideLinePerRoad[toRoadNum - 1][i-1]);
+                        toPivots.Add(guideLinePerRoad[toRoadNum - 1][i - 1]);
 
                     if (fromPivots.Count != toPivots.Count)
                         Debug.LogError("From Road Idx count don't matches To Road Idx count!!!!");
@@ -332,7 +335,7 @@ public class GuidePivotManager : MonoBehaviour
 
                 case ConnectPos.rightTurn:
                     for (int i = cm.FromRoadTileIdx.x; i <= cm.FromRoadTileIdx.y; i++)
-                        fromPivots.Add(guideLinePerRoad[fromRoadNum - 1][guideLinePerRoad[fromRoadNum-1].Count - cm.FRLaneCnt+i-1]);
+                        fromPivots.Add(guideLinePerRoad[fromRoadNum - 1][guideLinePerRoad[fromRoadNum - 1].Count - cm.FRLaneCnt + i - 1]);
 
                     for (int i = cm.ToRoadTileIdx.x; i <= cm.ToRoadTileIdx.y; i++)
                         toPivots.Add(guideLinePerRoad[toRoadNum - 1][i - 1]);
@@ -347,7 +350,7 @@ public class GuidePivotManager : MonoBehaviour
 
                 case ConnectPos.leftTurn:
                     for (int i = cm.FromRoadTileIdx.x; i <= cm.FromRoadTileIdx.y; i++)
-                        fromPivots.Add(guideLinePerRoad[fromRoadNum - 1][guideLinePerRoad[fromRoadNum-1].Count - cm.FRLaneCnt + i - 1]);
+                        fromPivots.Add(guideLinePerRoad[fromRoadNum - 1][guideLinePerRoad[fromRoadNum - 1].Count - cm.FRLaneCnt + i - 1]);
 
                     for (int i = cm.ToRoadTileIdx.x; i <= cm.ToRoadTileIdx.y; i++)
                         toPivots.Add(guideLinePerRoad[toRoadNum - 1][i - 1]);
@@ -390,7 +393,7 @@ public class GuidePivotManager : MonoBehaviour
 
                     break;
             }
-            
+
         }
 
         // 결과 guideLine에 합치기
@@ -400,8 +403,8 @@ public class GuidePivotManager : MonoBehaviour
         }
 
         Gizmos.color = lineColor;
-        
-        foreach(GuidePivot gp in guideLine)
+
+        foreach (GuidePivot gp in guideLine)
         {
             Gizmos.DrawWireSphere(gp.cur.position, 0.5f);
             if (gp.next != null)
@@ -410,7 +413,7 @@ public class GuidePivotManager : MonoBehaviour
                 Gizmos.DrawLine(gp.cur.position, gp.left.cur.position);
             if (gp.right != null)
                 Gizmos.DrawLine(gp.cur.position, gp.right.cur.position);
-            
+
         }
     }
 }

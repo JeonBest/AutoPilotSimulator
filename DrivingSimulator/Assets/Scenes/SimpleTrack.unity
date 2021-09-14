@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2995,6 +2995,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5057729791620008010, guid: 0521e1381ba971f47ac4077c1fab9ccb, type: 3}
   m_PrefabInstance: {fileID: 1339071662}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1390033252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1390033253}
+  m_Layer: 0
+  m_Name: CarManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1390033253
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390033252}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 496.7215, y: 0.14981122, z: 271.57736}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1479954541
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4106,6 +4136,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1923850899}
+  - component: {fileID: 1923850900}
   m_Layer: 0
   m_Name: Tracks
   m_TagString: Untagged
@@ -4199,6 +4230,503 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1923850900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923850898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4179bbdf47e65cc4ab048b12d710abf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineColor: {r: 1, g: 1, b: 1, a: 1}
+  connectMetas:
+  - FromRoad: {fileID: 2298848585799631706}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 5003474029507136154}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 5003474029507136154}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 523966865}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 523966865}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1241897237}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1241897237}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 2205748949127924093}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 2205748949127924093}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1727748719}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1727748719}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 260363703}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 260363703}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1201262955}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1201262955}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1100433090}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1100433090}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1490724217}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1490724217}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 160882901}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 160882901}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1981865435}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1981865435}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 132962398}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 132962398}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 666233030}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 666233030}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1510240677}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1510240677}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 333268149}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 333268149}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 293344511}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 293344511}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 929864543}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 929864543}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1767199482}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1767199482}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1131873392}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1131873392}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1626820169}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1626820169}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1532393735}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1532393735}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 395130674}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 395130674}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1132114271}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1132114271}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1720065085}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1720065085}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 2064181614}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 2064181614}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 348164738}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 348164738}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1947131779}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1947131779}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1958097666}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1958097666}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 618032604}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 618032604}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 2061968915}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 2061968915}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 491675010}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 491675010}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1894922407}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1894922407}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1921517803}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1921517803}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1976771537}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1976771537}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 632758453}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 632758453}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1926813518}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1926813518}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1916223698}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1916223698}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1229838488}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1229838488}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1738044487}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1738044487}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1899302125}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1899302125}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1689886794}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1689886794}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1940879994}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1940879994}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1479954542}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 322153437}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 959996176}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 959996176}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 420284421}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 420284421}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 612256050}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 612256050}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 824192615}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 824192615}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1080620410}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1080620410}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1339071663}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1339071663}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 927605315}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 927605315}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 532536216}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 532536216}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1896982641}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1896982641}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 2126152526}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 2126152526}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1147512474}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1147512474}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 808953563}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 808953563}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 393802366}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 393802366}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 988975566}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 988975566}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1057795170}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1057795170}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1971299906}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1971299906}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 379633915}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 379633915}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 767567167}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 767567167}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1913141404}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1913141404}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 613185019}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 613185019}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1779094232}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1779094232}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1219273705}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1219273705}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 291226357}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 291226357}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 1021007112}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 1021007112}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 637794088}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
+  - FromRoad: {fileID: 637794088}
+    FRLaneCnt: 4
+    ToRoad: {fileID: 690325872}
+    TRLaneCnt: 4
+    connectPos: 0
+    FromRoadTileIdx: {x: 1, y: 4}
+    ToRoadTileIdx: {x: 1, y: 4}
 --- !u!1001 &1924257314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5047,6 +5575,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 19340982992259954, guid: 97042ffc704dc31459d91fdd14ac53f0, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 158495678828312767, guid: 97042ffc704dc31459d91fdd14ac53f0, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 401396351151648929, guid: 97042ffc704dc31459d91fdd14ac53f0, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1513987667586742107, guid: 97042ffc704dc31459d91fdd14ac53f0, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1719359208848909160, guid: 97042ffc704dc31459d91fdd14ac53f0, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982376867516518994, guid: 97042ffc704dc31459d91fdd14ac53f0, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2164563789274186373, guid: 97042ffc704dc31459d91fdd14ac53f0, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2875831730066826038, guid: 97042ffc704dc31459d91fdd14ac53f0, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3627980287884791492, guid: 97042ffc704dc31459d91fdd14ac53f0, type: 3}
       propertyPath: m_Name
       value: Terrains
@@ -5093,6 +5653,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3627980287884791493, guid: 97042ffc704dc31459d91fdd14ac53f0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676777014036058669, guid: 97042ffc704dc31459d91fdd14ac53f0, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8607196522989220720, guid: 97042ffc704dc31459d91fdd14ac53f0, type: 3}
+      propertyPath: m_ReflectionProbeUsage
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

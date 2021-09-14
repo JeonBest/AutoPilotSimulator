@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/NWH/Common/Scripts/Input/InputSystem/SceneInputActions.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/99.Plugins/NWH/Common/Scripts/Input/InputSystem/SceneInputActions.inputactions'
 
 using System;
 using System.Collections;
