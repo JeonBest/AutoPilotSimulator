@@ -3946,7 +3946,7 @@ GameObject:
   - component: {fileID: 7240627239598132504}
   - component: {fileID: 156246711686717494}
   m_Layer: 0
-  m_Name: Good Driver #
+  m_Name: Good Driver
   m_TagString: Vehicle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

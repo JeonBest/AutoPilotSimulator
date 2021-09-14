@@ -5,11 +5,15 @@ using UnityEngine;
 public class CarSpawner : MonoBehaviour
 {
 
-    GameObject GoodCarPrefab;
-    GameObject BadCarPrefab;
+    [SerializeField]
+    private GameObject GoodCarPrefab;
+    [SerializeField]
+    private GameObject BadCarPrefab;
 
-    List<Vector2Int> _goodCars = new List<Vector2Int>();
-    List<Vector2Int> _badCars = new List<Vector2Int>();
+    [SerializeField]
+    private List<Vector2Int> _goodCars = new List<Vector2Int>();
+    [SerializeField]
+    private List<Vector2Int> _badCars = new List<Vector2Int>();
 
     void Start()
     {

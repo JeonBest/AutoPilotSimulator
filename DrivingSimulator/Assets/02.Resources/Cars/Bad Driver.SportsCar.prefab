@@ -17249,7 +17249,7 @@ GameObject:
   - component: {fileID: 4108705158181837136}
   - component: {fileID: 6869665088602977406}
   m_Layer: 0
-  m_Name: Bad Driver 1
+  m_Name: Bad Driver
   m_TagString: Vehicle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

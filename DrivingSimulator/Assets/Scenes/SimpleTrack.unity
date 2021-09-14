@@ -3004,6 +3004,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1390033253}
+  - component: {fileID: 1390033254}
   m_Layer: 0
   m_Name: CarManager
   m_TagString: Untagged
@@ -3025,6 +3026,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1390033254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390033252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7d4b8a59cb344a886babb552d62696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoodCarPrefab: {fileID: 156246711686717492, guid: 8cd693b0e9166924d9b94c7c2ab04dfd, type: 3}
+  BadCarPrefab: {fileID: 6869665088602977404, guid: 7fcbd779a9d6f31428cf179fc39d02e0, type: 3}
+  _goodCars:
+  - {x: 1, y: 4}
+  - {x: 2, y: 5}
+  - {x: 3, y: 6}
+  - {x: 4, y: 7}
+  - {x: 1, y: 8}
+  - {x: 2, y: 9}
+  - {x: 3, y: 10}
+  - {x: 4, y: 11}
+  - {x: 1, y: 12}
+  - {x: 2, y: 13}
+  _badCars: []
 --- !u!1001 &1479954541
 PrefabInstance:
   m_ObjectHideFlags: 0
