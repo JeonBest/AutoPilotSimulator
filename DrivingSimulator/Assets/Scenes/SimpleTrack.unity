@@ -643,6 +643,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Niva
       objectReference: {fileID: 0}
+    - target: {fileID: 3257780161372232328, guid: 858cc54b36ffeff478f53c58eef2b16c, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 3257780161372718760, guid: 858cc54b36ffeff478f53c58eef2b16c, type: 3}
       propertyPath: m_RootOrder
       value: 3
