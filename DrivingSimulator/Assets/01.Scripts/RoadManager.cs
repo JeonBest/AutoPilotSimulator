@@ -35,10 +35,10 @@ public class RoadManager : MonoBehaviour
         }
     }
 
-    [Header("이 도로의 차로 수")]
+    [Header("Number of Lane on this road")]
     public int LaneCount;
 
-    [Header("이 도로의 제한속도")]
+    [Header("Speed Limit of this road")]
     public float speedLimit;
 
     public Road myRoad;

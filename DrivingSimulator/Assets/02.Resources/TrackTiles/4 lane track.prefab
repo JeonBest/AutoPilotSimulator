@@ -318,10 +318,10 @@ Transform:
   - {fileID: 996598751985399811}
   - {fileID: 6893607992401033350}
   - {fileID: 996598750532608976}
-  - {fileID: 8725845229704771537}
-  - {fileID: 760009075376357259}
-  - {fileID: 8690072267904171618}
   - {fileID: 1211420546037803815}
+  - {fileID: 8690072267904171618}
+  - {fileID: 760009075376357259}
+  - {fileID: 8725845229704771537}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -525,7 +525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 760009075376357259}
   m_Layer: 0
-  m_Name: GuidePivot.2
+  m_Name: GuidePivot.3
   m_TagString: DriveGuide
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -543,7 +543,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 996598751240424325}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4459096332376137737
 GameObject:
@@ -555,7 +555,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1211420546037803815}
   m_Layer: 0
-  m_Name: GuidePivot.4
+  m_Name: GuidePivot.1
   m_TagString: DriveGuide
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -573,7 +573,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 996598751240424325}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7231047684676895975
 GameObject:
@@ -680,7 +680,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8690072267904171618}
   m_Layer: 0
-  m_Name: GuidePivot.3
+  m_Name: GuidePivot.2
   m_TagString: DriveGuide
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -698,7 +698,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 996598751240424325}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8814204747362601096
 GameObject:
@@ -710,7 +710,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8725845229704771537}
   m_Layer: 0
-  m_Name: GuidePivot.1
+  m_Name: GuidePivot.4
   m_TagString: DriveGuide
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -728,5 +728,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 996598751240424325}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

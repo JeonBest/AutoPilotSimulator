@@ -3936,6 +3936,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7176328805229239371}
   - component: {fileID: 156246711686717495}
+  - component: {fileID: 1536548921763467788}
   - component: {fileID: 2309919918352393775}
   - component: {fileID: 7240627240809310093}
   - component: {fileID: 5680784411643748867}
@@ -3946,7 +3947,7 @@ GameObject:
   - component: {fileID: 7240627239598132504}
   - component: {fileID: 156246711686717494}
   m_Layer: 0
-  m_Name: Good Driver
+  m_Name: Good Driver.SportsCar
   m_TagString: Vehicle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3985,7 +3986,6 @@ Transform:
   - {fileID: 156246711503986642}
   - {fileID: 156246711291749210}
   - {fileID: 7240627239014276854}
-  - {fileID: 1053129018782487185}
   - {fileID: 5547306018319935107}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -4006,6 +4006,29 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &1536548921763467788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156246711686717492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 355c0abf92a43474e8355a389c0f8e65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myVehicle: {fileID: 2309919918352393775}
+  lineColor: {r: 1, g: 0, b: 0, a: 0.5019608}
+  frontSensor: {fileID: 5547306018319935107}
+  firstMinPivotDis: 6
+  steeringCoefficient: 2.5
+  targetSpeedDiff: 0
+  steeringValue: 0
+  minPivotDis: 0
+  targetSpeedKPH: 0
+  acceler: 0
+  speedKPH: 0
 --- !u!114 &2309919918352393775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5414,61 +5437,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &1053129018782487190
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1053129018782487185}
-  - component: {fileID: 1053129018782487184}
-  m_Layer: 0
-  m_Name: AI
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1053129018782487185
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1053129018782487190}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 7176328805229239371}
-  m_RootOrder: 22
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1053129018782487184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1053129018782487190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 355c0abf92a43474e8355a389c0f8e65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myvehicle: {fileID: 2309919918352393775}
-  Track: {fileID: 0}
-  lineColor: {r: 1, g: 0, b: 0, a: 0.5019608}
-  frontSensor: {fileID: 5547306018319935107}
-  firstMinPivotDis: 6
-  steeringCoefficient: 2.5
-  targetSpeedDiff: 0
-  steeringValue: 0
-  minPivotDis: 0
-  targetSpeedKPH: 0
-  acceler: 0
-  speedKPH: 0
 --- !u!1 &1840876028100712361
 GameObject:
   m_ObjectHideFlags: 0
@@ -5689,7 +5657,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.2, z: 8}
   m_Children: []
   m_Father: {fileID: 7176328805229239371}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4888059948045470776
 MeshFilter:
@@ -5785,14 +5753,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 810437f958b002e41b86c9e0a121c7ce, type: 3}
---- !u!4 &5892532386068644562 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1176674673329548499, guid: 810437f958b002e41b86c9e0a121c7ce, type: 3}
-  m_PrefabInstance: {fileID: 4724867123902082561}
-  m_PrefabAsset: {fileID: 0}
 --- !u!198 &6014368599976554018 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 1361580215377543203, guid: 810437f958b002e41b86c9e0a121c7ce, type: 3}
+  m_PrefabInstance: {fileID: 4724867123902082561}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5892532386068644562 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1176674673329548499, guid: 810437f958b002e41b86c9e0a121c7ce, type: 3}
   m_PrefabInstance: {fileID: 4724867123902082561}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8729448405452854701
@@ -5919,13 +5887,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 810437f958b002e41b86c9e0a121c7ce, type: 3}
---- !u!4 &7954698612442109814 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1176674673329548499, guid: 810437f958b002e41b86c9e0a121c7ce, type: 3}
-  m_PrefabInstance: {fileID: 9092951676572548005}
-  m_PrefabAsset: {fileID: 0}
 --- !u!198 &7842432309774089094 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 1361580215377543203, guid: 810437f958b002e41b86c9e0a121c7ce, type: 3}
+  m_PrefabInstance: {fileID: 9092951676572548005}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7954698612442109814 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1176674673329548499, guid: 810437f958b002e41b86c9e0a121c7ce, type: 3}
   m_PrefabInstance: {fileID: 9092951676572548005}
   m_PrefabAsset: {fileID: 0}

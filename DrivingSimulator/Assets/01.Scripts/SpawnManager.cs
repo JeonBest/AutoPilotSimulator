@@ -48,9 +48,8 @@ namespace NWH.VehiclePhysics2.Input
             VehicleController vc = tmpGood.GetComponent<VehicleController>();
             GoodDriverAI tmpAI = tmpGood.GetComponentInChildren<GoodDriverAI>();
             Sensoring sensor = vc.GetComponentInChildren<Sensoring>();
-            tmpAI.myvehicle = vc;
+            tmpAI.myVehicle = vc;
             tmpAI.frontSensor = sensor.transform;
-            tmpAI.Track = track;
             tmpAI.firstMinPivotDis = 6;
             tmpAI.steeringCoefficient = 2.5f;
             tmpAI.targetSpeedDiff = 2;

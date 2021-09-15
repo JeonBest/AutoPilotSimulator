@@ -251,7 +251,7 @@ public class GuidePivotManager : MonoBehaviour
             guideLine.AddRange(gplist);
         }
 
-        StartCoroutine(MoveCheckBox());
+        //StartCoroutine(MoveCheckBox());
 
     }
 

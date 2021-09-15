@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using NWH.VehiclePhysics2;
+using NWH.VehiclePhysics2.Input;
 using UnityEngine;
 using Zenject;
 
@@ -23,7 +23,7 @@ public class CarSpawner : MonoBehaviour
     [Inject]
     void Injected(GuidePivotManager guidePivotManager)
     {
-
+        Debug.Log($"{gameObject.name} Injected");
         SpawnOnStart(guidePivotManager);
         StartCoroutine(MoveCarCoroutine());
 
@@ -42,6 +42,8 @@ public class CarSpawner : MonoBehaviour
                 transform);
             newObj.name = $"Good Driver {goodCarNum++}";
 
+            GoodDriverAI newAI = newObj.GetComponent<GoodDriverAI>();
+            newAI.Init(guidePivotManager);
         }
         int badCarNum = 1;
         foreach (Vector2Int coor in _badCars)

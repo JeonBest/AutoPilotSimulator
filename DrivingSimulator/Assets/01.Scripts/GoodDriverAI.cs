@@ -7,9 +7,8 @@ namespace NWH.VehiclePhysics2.Input
 {
     public class GoodDriverAI : InputProvider
     {
-        [Header ("Common")]
-        public VehicleController myvehicle;
-        public Transform Track;
+        [Header("Common")]
+        public VehicleController myVehicle;
         public Color lineColor;
 
         [Header("Sensors")]
@@ -17,12 +16,12 @@ namespace NWH.VehiclePhysics2.Input
 
         private Sensoring FSensor;
 
-        [Header ("AI settings")]
+        [Header("AI settings")]
         public float firstMinPivotDis;
         public float steeringCoefficient;
         public float targetSpeedDiff;
 
-        [Header ("Only for Read")]
+        [Header("Only for Read")]
         public float steeringValue;
         public float minPivotDis;
         private float targetSpeed;
@@ -32,8 +31,7 @@ namespace NWH.VehiclePhysics2.Input
 
         VehicleController FrontCar;
         GuidePivotManager.GuidePivot currentPivot;
-        GuidePivotManager GPM;
-        private bool isEngineStart = false;
+        private bool isReady = false;
         private bool isDamaged = false;
 
         // From CruiseControlModule.cs
@@ -46,49 +44,47 @@ namespace NWH.VehiclePhysics2.Input
         // private float targetSpeed;
         private float prevTargetSpeed;
 
-        // Start is called before the first frame update
-        void Start()
+        public void Init(GuidePivotManager guidePivotManager)
         {
-            myvehicle.input.autoSetInput = false;
+            Debug.Log("Injected");
+            myVehicle.input.autoSetInput = false;
 
             targetSpeed = 0f;
             minPivotDis = firstMinPivotDis;
 
             FSensor = frontSensor.GetComponent<Sensoring>();
 
-            Invoke("RaceStart", 0.1f);
-            InvokeRepeating("speedChange", 10.0f, 10.0f);
+            SetStartGP(guidePivotManager);
+            InvokeRepeating(nameof(speedChange), 10.0f, 10.0f);
         }
 
-        void RaceStart()
+        void SetStartGP(GuidePivotManager guidePivotManager)
         {
-            
             /* 자신과 가장 가까운 GuidePivot 찾기 */
-            GPM = Track.GetComponent<GuidePivotManager>();
             float minimunDis = 1000f;
-            foreach (GuidePivotManager.GuidePivot gp in GPM.guideLine)
+            foreach (GuidePivotManager.GuidePivot gp in guidePivotManager.guideLine)
             {
-                float distance = (myvehicle.vehicleTransform.position - gp.cur.position).sqrMagnitude;
+                float distance = (myVehicle.vehicleTransform.position - gp.cur.position).sqrMagnitude;
                 if (minimunDis > distance)
                 {
                     minimunDis = distance;
                     currentPivot = gp;
                 }
             }
-
-            // myvehicle.input.TrailerAttachDetach = true;
-            isEngineStart = true;
+            // myVehicle.input.TrailerAttachDetach = true;
+            isReady = true;
+            Debug.Log("ready");
         }
 
         void FixedUpdate()
         {
-            if (!isEngineStart)
+            if (!isReady)
                 return;
-            if (!isDamaged && myvehicle.damageHandler.lastCollision != null)
+            if (!isDamaged && myVehicle.damageHandler.lastCollision != null)
             {
                 isDamaged = true;
-                myvehicle.input.Vertical = 0f;
-                myvehicle.input.Handbrake = 1f;
+                myVehicle.input.Vertical = 0f;
+                myVehicle.input.Handbrake = 1f;
                 Invoke("terminateMode", 10f);
             }
             if (isDamaged)
@@ -97,18 +93,19 @@ namespace NWH.VehiclePhysics2.Input
             }
 
             /* 속도에 따라 minPivotDis 조절 */
-            if (myvehicle.LocalForwardVelocity > 24)
-                minPivotDis = myvehicle.LocalForwardVelocity * 0.8f;
-            else if (myvehicle.LocalForwardVelocity > 18)
+            if (myVehicle.LocalForwardVelocity > 24)
+                minPivotDis = myVehicle.LocalForwardVelocity * 0.8f;
+            else if (myVehicle.LocalForwardVelocity > 18)
                 minPivotDis = 12;
             else
                 minPivotDis = firstMinPivotDis;
 
             /* currentPivot 관리 */
             // currentPivot과의 거리가 minPivotDis보다 작아지면, next로 갱신
-            if (Vector3.Distance(currentPivot.cur.position, myvehicle.vehicleTransform.position) < minPivotDis)
+            if (Vector3.Distance(currentPivot.cur.position, myVehicle.vehicleTransform.position) < minPivotDis)
             {
-                if (currentPivot.next != null) {
+                if (currentPivot.next != null)
+                {
                     currentPivot = currentPivot.next;
                 }
                 else
@@ -125,12 +122,12 @@ namespace NWH.VehiclePhysics2.Input
 
             if (FSensor.hitCount != 0)
             {
-                myvehicle.input.Brakes = 0.4f;
+                myVehicle.input.Brakes = 0.4f;
             }
             else
             {
                 /* 속도 조절 */
-                targetSpeed = Mathf.Lerp(targetSpeed, currentPivot.speedLimit / 3.6f, myvehicle.fixedDeltaTime * 0.2f);
+                targetSpeed = Mathf.Lerp(targetSpeed, currentPivot.speedLimit / 3.6f, myVehicle.fixedDeltaTime * 0.2f);
                 if (targetSpeed > -targetSpeedDiff / 3.6f)
                 {
                     CruiseMode(targetSpeed + targetSpeedDiff / 3.6f);
@@ -144,12 +141,12 @@ namespace NWH.VehiclePhysics2.Input
             }
 
             /* 차선간의 거리의 차가 작도록 핸들조작, 차로중앙유지 */
-            Vector3 relativeVector = myvehicle.vehicleTransform.InverseTransformPoint(currentPivot.cur.position);
-            steeringValue = Mathf.Lerp(steeringValue, relativeVector.x / relativeVector.magnitude * steeringCoefficient, myvehicle.fixedDeltaTime * 10.0f);
-            myvehicle.input.Steering = steeringValue;
-            
-            acceler = myvehicle.LocalForwardAcceleration;
-            speedKPH = myvehicle.LocalForwardVelocity * 3.6f;
+            Vector3 relativeVector = myVehicle.vehicleTransform.InverseTransformPoint(currentPivot.cur.position);
+            steeringValue = Mathf.Lerp(steeringValue, relativeVector.x / relativeVector.magnitude * steeringCoefficient, myVehicle.fixedDeltaTime * 10.0f);
+            myVehicle.input.Steering = steeringValue;
+
+            acceler = myVehicle.LocalForwardAcceleration;
+            speedKPH = myVehicle.LocalForwardVelocity * 3.6f;
         }
 
         private void speedChange()
@@ -162,8 +159,8 @@ namespace NWH.VehiclePhysics2.Input
          */
         private void CruiseMode(float _targetSpeed)
         {
-            float speed = myvehicle.Speed;
-            float dt = myvehicle.fixedDeltaTime;
+            float speed = myVehicle.Speed;
+            float dt = myVehicle.fixedDeltaTime;
 
             _eprev = _e;
             _e = _targetSpeed - speed;
@@ -183,7 +180,7 @@ namespace NWH.VehiclePhysics2.Input
             newOutput = newOutput < -1f ? -1f : newOutput > 1f ? 1f : newOutput;
             output = Mathf.Lerp(output, newOutput, dt * 3.0f);
 
-            myvehicle.input.Vertical = output;
+            myVehicle.input.Vertical = output;
 
             prevTargetSpeed = _targetSpeed;
         }
@@ -193,9 +190,9 @@ namespace NWH.VehiclePhysics2.Input
          */
         private void terminateMode()
         {
-            myvehicle.input.Vertical = 0;
-            myvehicle.input.Steering = 0;
-            myvehicle.gameObject.SetActive(false);
+            myVehicle.input.Vertical = 0;
+            myVehicle.input.Steering = 0;
+            myVehicle.gameObject.SetActive(false);
         }
 
         /* < 전방의 차량 인식 >
@@ -214,11 +211,11 @@ namespace NWH.VehiclePhysics2.Input
 
         private void OnDrawGizmos()
         {
-            if (!isEngineStart)
+            if (!isReady)
                 return;
             Gizmos.color = lineColor;
             Gizmos.DrawSphere(currentPivot.cur.position, 1f);
-            Gizmos.DrawLine(myvehicle.vehicleTransform.position, currentPivot.cur.position);
+            Gizmos.DrawLine(myVehicle.vehicleTransform.position, currentPivot.cur.position);
         }
     }
 }
