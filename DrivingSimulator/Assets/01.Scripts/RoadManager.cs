@@ -10,7 +10,7 @@ public class RoadManager : MonoBehaviour
         public List<Transform> trackTiles;      // Road 아래의 track tiles들의 List
         public int laneCount;
         public float speedLimit;
-        
+
         public Road(Transform _self, int _laneCount, float _speedLimit)
         {
             self = _self;
@@ -25,7 +25,7 @@ public class RoadManager : MonoBehaviour
         // 마지막: 도로의 끝 tile
         public void InitializeRoad()
         {
-            foreach(Transform trans in self.GetComponentsInChildren<Transform>())
+            foreach (Transform trans in self.GetComponentsInChildren<Transform>())
             {
                 if (!trans.CompareTag("Road"))
                     continue;
@@ -35,7 +35,7 @@ public class RoadManager : MonoBehaviour
         }
     }
 
-    [Header ("이 도로의 차로 수")]
+    [Header("이 도로의 차로 수")]
     public int LaneCount;
 
     [Header("이 도로의 제한속도")]
@@ -43,7 +43,7 @@ public class RoadManager : MonoBehaviour
 
     public Road myRoad;
 
-    private void Awake()
+    public void Init()
     {
         myRoad = new Road(transform, LaneCount, speedLimit);
         myRoad.InitializeRoad();
