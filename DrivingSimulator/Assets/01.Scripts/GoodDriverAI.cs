@@ -46,7 +46,6 @@ namespace NWH.VehiclePhysics2.Input
 
         public void Init(GuidePivotManager guidePivotManager)
         {
-            Debug.Log("Injected");
             myVehicle.input.autoSetInput = false;
 
             targetSpeed = 0f;
@@ -73,7 +72,6 @@ namespace NWH.VehiclePhysics2.Input
             }
             // myVehicle.input.TrailerAttachDetach = true;
             isReady = true;
-            Debug.Log("ready");
         }
 
         void FixedUpdate()
@@ -122,6 +120,7 @@ namespace NWH.VehiclePhysics2.Input
 
             if (FSensor.hitCount != 0)
             {
+                Debug.Log("Some Vehicle is blocking me!");
                 myVehicle.input.Brakes = 0.4f;
             }
             else

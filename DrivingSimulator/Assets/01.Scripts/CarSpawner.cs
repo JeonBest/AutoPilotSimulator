@@ -23,7 +23,6 @@ public class CarSpawner : MonoBehaviour
     [Inject]
     void Injected(GuidePivotManager guidePivotManager)
     {
-        Debug.Log($"{gameObject.name} Injected");
         SpawnOnStart(guidePivotManager);
         StartCoroutine(MoveCarCoroutine());
 
