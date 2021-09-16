@@ -1,0 +1,589 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.12f1 (b3b2c6512326) revision 11776710'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1165; Version 2009; 64bit' Language: 'ko' Physical Memory: 7986 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.12f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+F:/Unity/Project/DrivingSimulatorZ
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+4205
+Successfully changed project path to: F:/Unity/Project/DrivingSimulatorZ
+F:/Unity/Project/DrivingSimulatorZ
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 195.93 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.12f1 (b3b2c6512326)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/Unity/Project/DrivingSimulatorZ/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics 620 (ID=0x3ea0)
+    Vendor:   
+    VRAM:     3993 MB
+    Driver:   27.20.100.8681
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56904
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.008102 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 148.12 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.290 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.015512 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 165.93 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.479 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.47 seconds
+Refreshing native plugins compatible for Editor in 1.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.1 MB.
+System memory in use after: 95.2 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2541.
+Total: 6.515500 ms (FindLiveObjects: 0.541100 ms CreateObjectMapping: 0.236100 ms MarkObjects: 5.548800 ms  DeleteObjects: 0.184200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/SimpleTrack.unity
+  artifactKey: Guid(0492e97761ea4a248836df9dab9e92d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SimpleTrack.unity using Guid(0492e97761ea4a248836df9dab9e92d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d4c714a0d7767df27d956b7f36f0cd7') in 0.052389 seconds 
+  Import took 0.068666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001289 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85059f4f9e1a832ed95adaa0d25c5c4c') in 0.013056 seconds 
+  Import took 0.025581 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.248267 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at NWH.Common.WelcomeMessage.WelcomeMessage..cctor () [0x0000e] in F:\Unity\Project\DrivingSimulatorZ\Assets\99.Plugins\NWH\Common\Scripts\AssetInfo\WelcomeMessage\Editor\WelcomeMessage.cs:17 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.302 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.78 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2066 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.8 MB.
+System memory in use after: 103.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2544.
+Total: 3.828000 ms (FindLiveObjects: 0.207100 ms CreateObjectMapping: 0.072200 ms MarkObjects: 3.504000 ms  DeleteObjects: 0.043300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 521.491166 seconds.
+  path: Assets/Scenes/Main.unity
+  artifactKey: Guid(daebbb93fe0020b45a4c5a2691d1aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main.unity using Guid(daebbb93fe0020b45a4c5a2691d1aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '187c57d783e4789bdd1d80167584cbc5') in 0.105271 seconds 
+  Import took 0.114176 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4468.046237 seconds.
+  path: Assets/02.Resources/Track.prefab
+  artifactKey: Guid(58109c002a9a0e94dbdf7ef5b897898d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02.Resources/Track.prefab using Guid(58109c002a9a0e94dbdf7ef5b897898d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f869f9f9358804bf7bb37a7199b0d072') in 1.335189 seconds 
+  Import took 1.379000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.581532 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees
+  artifactKey: Guid(a3a6bef719d7d5442913a49e4c53ab59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees using Guid(a3a6bef719d7d5442913a49e4c53ab59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b37880a14cc1b59f1283143c28bf3909') in 0.027123 seconds 
+  Import took 0.045245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.093981 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Broadleaf_Desktop.spm
+  artifactKey: Guid(b6972eaa35c2e574e8ab5083a59d8459) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Broadleaf_Desktop.spm using Guid(b6972eaa35c2e574e8ab5083a59d8459) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '803b666be73ce76b13f5ae0335fbb223') in 2.600329 seconds 
+  Import took 2.641678 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000384 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Broadleaf_Mobile.spm
+  artifactKey: Guid(1e84b98fc4c200c4aa16e1ec38895673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Broadleaf_Mobile.spm using Guid(1e84b98fc4c200c4aa16e1ec38895673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d4ac4d47be80e55c6cfb03a765a7f38') in 0.738698 seconds 
+  Import took 0.765899 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000672 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Broadleaf_Mobile_Atlas.tga
+  artifactKey: Guid(aff229c1761713249bcd47b52eae7b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Broadleaf_Mobile_Atlas.tga using Guid(aff229c1761713249bcd47b52eae7b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9179ceabe8bc103ccb6f90044fe48498') in 0.082102 seconds 
+  Import took 0.100683 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000379 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Broadleaf_Desktop_Atlas_Normal.tga
+  artifactKey: Guid(95797b7ad77ef66488f0a638eb46b900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Broadleaf_Desktop_Atlas_Normal.tga using Guid(95797b7ad77ef66488f0a638eb46b900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de2343b05266e5d15b69d5447f3e951e') in 0.036099 seconds 
+  Import took 0.065195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001662 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Cap_01_Normal.tga
+  artifactKey: Guid(28708d8807aed5e4fb6d176a1f42c0d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Cap_01_Normal.tga using Guid(28708d8807aed5e4fb6d176a1f42c0d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6172893d6fc8da3215d8b0cb4f1c0977') in 0.044607 seconds 
+  Import took 0.097864 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000450 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Broadleaf_Mobile_Atlas_Billboards_Normal.tga
+  artifactKey: Guid(d08ed16db3ffed749b2a182a220ec7e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Broadleaf_Mobile_Atlas_Billboards_Normal.tga using Guid(d08ed16db3ffed749b2a182a220ec7e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd17d5a596c855866b8fd3608c041dcf') in 0.017797 seconds 
+  Import took 0.021743 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000359 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Conifer_Desktop_Atlas_Normal.tga
+  artifactKey: Guid(baaa7978ce9574a4184b4f8e4cfa1b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Conifer_Desktop_Atlas_Normal.tga using Guid(baaa7978ce9574a4184b4f8e4cfa1b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b02bb125ba7403eb315731e1742c4571') in 0.106184 seconds 
+  Import took 0.131441 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000506 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Broadleaf_Desktop_Atlas_Billboards.tga
+  artifactKey: Guid(400cf02f268b02e4497feb50a409aaf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Broadleaf_Desktop_Atlas_Billboards.tga using Guid(400cf02f268b02e4497feb50a409aaf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e04e48cabadba18e8bebb9f7534a1f02') in 0.018670 seconds 
+  Import took 0.039676 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000608 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Conifer_Needles_Desktop_Normal.tga
+  artifactKey: Guid(3aa94b05cef7fed4eaa649ae8e6eb783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Conifer_Needles_Desktop_Normal.tga using Guid(3aa94b05cef7fed4eaa649ae8e6eb783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80dc3281e46041127f99ffce2fc9cfa1') in 0.038863 seconds 
+  Import took 0.052726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001018 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Palm_Desktop_Atlas_Billboards_Normal.tga
+  artifactKey: Guid(b98975c2c06423345b8a31d592d0dd30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Palm_Desktop_Atlas_Billboards_Normal.tga using Guid(b98975c2c06423345b8a31d592d0dd30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd38aaf7dcd16bd7c7589aea1bdb3efb2') in 0.113251 seconds 
+  Import took 0.133472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000490 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/PalmFrond_Normal.tga
+  artifactKey: Guid(37d401ed5593db646a078ec27db9eb5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/PalmFrond_Normal.tga using Guid(37d401ed5593db646a078ec27db9eb5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '913da87580f337e83cfb206a3eadb0b9') in 0.075045 seconds 
+  Import took 0.079010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000392 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Palm_Desktop.spm
+  artifactKey: Guid(5c2ecb53217ee6d47845944d5e81b5a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Palm_Desktop.spm using Guid(5c2ecb53217ee6d47845944d5e81b5a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3aa2d5230355172a5094b785df446f5') in 0.733360 seconds 
+  Import took 0.758581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000368 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Cap_01.tga
+  artifactKey: Guid(4c736772015edbc45a598838d178886f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Cap_01.tga using Guid(4c736772015edbc45a598838d178886f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96a81273a33f62e5c83f170abe7093b8') in 0.037386 seconds 
+  Import took 0.065644 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000719 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/ClippedFrond_Normal.tga
+  artifactKey: Guid(e399812032ced8c4b91235f1231db905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/ClippedFrond_Normal.tga using Guid(e399812032ced8c4b91235f1231db905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '198a006addd58b163764451f1dd400ab') in 0.032323 seconds 
+  Import took 0.060099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000413 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Conifer_Desktop_Atlas_Specular.tga
+  artifactKey: Guid(73268d3bd099d004c84aa15d081305a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Conifer_Desktop_Atlas_Specular.tga using Guid(73268d3bd099d004c84aa15d081305a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dabd06c5ac5a3c8a417a6bef2eae67aa') in 0.078074 seconds 
+  Import took 0.111760 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000469 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/PalmBark_Detail_Normal.tga
+  artifactKey: Guid(0a2326416847b0144b84a9af7474a69f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/PalmBark_Detail_Normal.tga using Guid(0a2326416847b0144b84a9af7474a69f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1aaa9ad5af075b98bc7802c30df8502') in 0.126976 seconds 
+  Import took 0.144115 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000418 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Broadleaf_Desktop_Atlas.tga
+  artifactKey: Guid(31018c739fc121f40904965bce982a7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Broadleaf_Desktop_Atlas.tga using Guid(31018c739fc121f40904965bce982a7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74a76f70de772da1e6cd71d344c31f70') in 0.020751 seconds 
+  Import took 0.049291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000666 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Broadleaf_Mobile_Atlas_Normal.tga
+  artifactKey: Guid(cae8ecee60430f64b90c5796b575e166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Broadleaf_Mobile_Atlas_Normal.tga using Guid(cae8ecee60430f64b90c5796b575e166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd82fb3230e57e1aab7136fd79a8a936') in 0.056781 seconds 
+  Import took 0.065915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000640 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Broadleaves_Desktop_Normal.tga
+  artifactKey: Guid(ca83d5eb2956aee4e9773b061b826d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Broadleaves_Desktop_Normal.tga using Guid(ca83d5eb2956aee4e9773b061b826d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcf9c352388c7c4c60bada6d804a7265') in 0.057250 seconds 
+  Import took 0.066046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000449 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Broadleaves_Mobile_Spec.tga
+  artifactKey: Guid(55d21301079feab4f9262aad8851109c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Broadleaves_Mobile_Spec.tga using Guid(55d21301079feab4f9262aad8851109c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ef131306edcb67dc5161358725b42da') in 0.201521 seconds 
+  Import took 0.206124 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/BroadleafBark_Normal.tga
+  artifactKey: Guid(1f5ec39442ecd0743b110eccfc24d442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/BroadleafBark_Normal.tga using Guid(1f5ec39442ecd0743b110eccfc24d442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb036b0d3ae90918f963ea021a74287f') in 0.018947 seconds 
+  Import took 0.045174 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000645 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/PalmFrond_Spec.tga
+  artifactKey: Guid(ff5ae99d6014df84a89412c1f0ec079e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/PalmFrond_Spec.tga using Guid(ff5ae99d6014df84a89412c1f0ec079e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '463d6cc1487215a37888e79f89589e11') in 0.052541 seconds 
+  Import took 0.061693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000347 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Broadleaves_Card_Desktop_Spec.tga
+  artifactKey: Guid(f11e0c60fcaddcd4ca3d2de05ae014c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Broadleaves_Card_Desktop_Spec.tga using Guid(f11e0c60fcaddcd4ca3d2de05ae014c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e2b1857b25ef1537e000e0617f271cf') in 0.134528 seconds 
+  Import took 0.139695 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000418 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Broadleaf_Mobile_Atlas_Billboards.tga
+  artifactKey: Guid(e9d5f83e9143624479658513c3542ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Broadleaf_Mobile_Atlas_Billboards.tga using Guid(e9d5f83e9143624479658513c3542ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9c7ebba91af0af9d296726c19b991b9') in 0.016874 seconds 
+  Import took 0.035226 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000462 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Conifer_Desktop_Atlas_Billboards.tga
+  artifactKey: Guid(b6b6a150997c48847a2e282d7758946e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Conifer_Desktop_Atlas_Billboards.tga using Guid(b6b6a150997c48847a2e282d7758946e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f99adc0089bd8d46ad0887c32771aeb') in 0.131812 seconds 
+  Import took 0.136421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000390 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/ClippedFrond.tga
+  artifactKey: Guid(92b189208338b724f828f66e4eb40478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/ClippedFrond.tga using Guid(92b189208338b724f828f66e4eb40478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7585cb59bbf62c9c01327c2341de15c7') in 0.048365 seconds 
+  Import took 0.081701 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000685 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Broadleaves_Desktop_Spec.tga
+  artifactKey: Guid(8aa20d044431d7146a3169d49aac11bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Broadleaves_Desktop_Spec.tga using Guid(8aa20d044431d7146a3169d49aac11bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55395d5bd63c9babeab1ecc87bcf78fd') in 0.082044 seconds 
+  Import took 0.091000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000392 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/ConiferBark_Normal.tga
+  artifactKey: Guid(f37a87d1d87d5994493dcd34c80cd320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/ConiferBark_Normal.tga using Guid(f37a87d1d87d5994493dcd34c80cd320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64b0d168a37b114836331998ed4f534c') in 0.110121 seconds 
+  Import took 0.143017 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000384 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/PalmBark_Detail.tga
+  artifactKey: Guid(8b7a06b5540df73499b1ca9e9a99f815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/PalmBark_Detail.tga using Guid(8b7a06b5540df73499b1ca9e9a99f815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ca56d3bdd799f05902f706974536b11') in 0.013336 seconds 
+  Import took 0.018159 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000491 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Palm_Desktop_Atlas_Billboards.tga
+  artifactKey: Guid(084d7ceca59c0ac47928eb2300496432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Palm_Desktop_Atlas_Billboards.tga using Guid(084d7ceca59c0ac47928eb2300496432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3bb4fb35f5e9302491615b1e4749650') in 0.019746 seconds 
+  Import took 0.024118 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000526 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/BroadleafBark.tga
+  artifactKey: Guid(8388ef004037cfb4bb078b578e3ed979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/BroadleafBark.tga using Guid(8388ef004037cfb4bb078b578e3ed979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '115abae30fe45442c9adfbc2e15ab5c0') in 0.017981 seconds 
+  Import took 0.024650 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000783 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/PalmFrond.tga
+  artifactKey: Guid(ded5a4d59b5ef9c4bb5aa8a8d57b5fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/PalmFrond.tga using Guid(ded5a4d59b5ef9c4bb5aa8a8d57b5fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e393616f201328400f9d31b558166de6') in 0.048620 seconds 
+  Import took 0.054812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000612 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Broadleaves_Mobile.tga
+  artifactKey: Guid(fda4b0464694cfc4ea753953e2b5c879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Broadleaves_Mobile.tga using Guid(fda4b0464694cfc4ea753953e2b5c879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a27066e752f08edefb8873e95a722b48') in 0.352758 seconds 
+  Import took 0.384279 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000942 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Broadleaves.obj
+  artifactKey: Guid(cf3c778055c27074b849beaac044a88b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Broadleaves.obj using Guid(cf3c778055c27074b849beaac044a88b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ee9dbf0d214cc2207d112ea37ee1b9b') in 0.506570 seconds 
+  Import took 0.516841 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000864 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Conifer_Needles_Desktop.tga
+  artifactKey: Guid(7e67582339870f24596151c8ec9d2bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Conifer_Needles_Desktop.tga using Guid(7e67582339870f24596151c8ec9d2bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c42516ab01eb09f19da26b3564b8d633') in 0.082574 seconds 
+  Import took 0.106622 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000617 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/PalmBark.tga
+  artifactKey: Guid(73cac1ea7f4e8d644a257032a71360a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/PalmBark.tga using Guid(73cac1ea7f4e8d644a257032a71360a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f84af48185b3e3613799dec343dcc4c9') in 0.025004 seconds 
+  Import took 0.031137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000516 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/ConiferBark.tga
+  artifactKey: Guid(29902be09adfaa44d879f4d96eea5d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/ConiferBark.tga using Guid(29902be09adfaa44d879f4d96eea5d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81cda52b4820a0e84bc261dfcd296726') in 0.104587 seconds 
+  Import took 0.111585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Conifer_Needles_Dekstop_Spec.tga
+  artifactKey: Guid(09510e72a92b53449aa8ac24fd74d06f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Conifer_Needles_Dekstop_Spec.tga using Guid(09510e72a92b53449aa8ac24fd74d06f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9a1e4d0a76a7e50e1ec3aaf842b81d5') in 0.067751 seconds 
+  Import took 0.080912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000453 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Palm_Desktop_Atlas.tga
+  artifactKey: Guid(b15094df28b3a074fb23b0d7e6a30823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Palm_Desktop_Atlas.tga using Guid(b15094df28b3a074fb23b0d7e6a30823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4c658bd77fa0d30ae6814af69a9ee20') in 0.031304 seconds 
+  Import took 0.065582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000491 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Palm_Desktop_Atlas_Normal.tga
+  artifactKey: Guid(accfd802ffccef54295c2df37645a2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Palm_Desktop_Atlas_Normal.tga using Guid(accfd802ffccef54295c2df37645a2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d887561cd3a33945cfa77f5d5756aad') in 0.017134 seconds 
+  Import took 0.033647 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000526 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Broadleaf_Desktop_Atlas_Specular.tga
+  artifactKey: Guid(331fab33425f2a443a5533996e30c2f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Broadleaf_Desktop_Atlas_Specular.tga using Guid(331fab33425f2a443a5533996e30c2f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a349e1ff7b918ddf21bdcb03a7b4e15a') in 0.268517 seconds 
+  Import took 0.274290 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000429 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Cap_02_Normal.tga
+  artifactKey: Guid(087603efcf9e15c4fa292a1ba47041f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Cap_02_Normal.tga using Guid(087603efcf9e15c4fa292a1ba47041f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b76ea7b92800159bf62a208b3023819') in 0.076934 seconds 
+  Import took 0.093977 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000416 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Conifer_Desktop_Atlas.tga
+  artifactKey: Guid(6252e35b1ca7f8a41bee8af931e1518a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Conifer_Desktop_Atlas.tga using Guid(6252e35b1ca7f8a41bee8af931e1518a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58c54907afaa774533c3907271352a5c') in 0.080612 seconds 
+  Import took 0.112076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000447 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Broadleaves_Card_Desktop_Normal.tga
+  artifactKey: Guid(ba3df608f71aa66459b42227a3bfe843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Broadleaves_Card_Desktop_Normal.tga using Guid(ba3df608f71aa66459b42227a3bfe843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3528fc73c091204526f2e4fa1fae454') in 0.067094 seconds 
+  Import took 0.071509 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000538 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Broadleaf_Mobile_Atlas_Specular.tga
+  artifactKey: Guid(2fae588f60ac4474ea0fb25519d51427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Broadleaf_Mobile_Atlas_Specular.tga using Guid(2fae588f60ac4474ea0fb25519d51427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46c5a2f1a23acd6ec0cd411657cc7c6e') in 0.209882 seconds 
+  Import took 0.216258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000474 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Conifer_Desktop.spm
+  artifactKey: Guid(70417e08343ef354db9a6c398faf67bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Conifer_Desktop.spm using Guid(70417e08343ef354db9a6c398faf67bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b7bb9d83d1471e0cb974250d8f71423') in 0.334523 seconds 
+  Import took 0.339534 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000418 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Cap_02.tga
+  artifactKey: Guid(1e84037f5ea09ab4591dfa710d05aea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Cap_02.tga using Guid(1e84037f5ea09ab4591dfa710d05aea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '657fa835f44ddf6b423e09d1dfa9ba58') in 0.080523 seconds 
+  Import took 0.084815 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000441 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Palm_Desktop_Atlas_Specular.tga
+  artifactKey: Guid(74e4b8a9d329a9d4da4f2280b142d8c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Palm_Desktop_Atlas_Specular.tga using Guid(74e4b8a9d329a9d4da4f2280b142d8c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cb4b1fa99d91b766546fcd95be93e00') in 0.087012 seconds 
+  Import took 0.091063 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000540 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Conifer_Desktop_Atlas_Billboards_Normal.tga
+  artifactKey: Guid(b40ea9e85cab82240b343e59cba9e540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Conifer_Desktop_Atlas_Billboards_Normal.tga using Guid(b40ea9e85cab82240b343e59cba9e540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c28aacd81cb8cb7e8d02455f39edfd46') in 0.020592 seconds 
+  Import took 0.066250 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000471 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Broadleaf_Desktop_Atlas_Billboards_Normal.tga
+  artifactKey: Guid(9eee8eb4a2dc9b544acbad65d658bae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Broadleaf_Desktop_Atlas_Billboards_Normal.tga using Guid(9eee8eb4a2dc9b544acbad65d658bae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6ca60a854bf61b410b1325e7ec6704c') in 0.022116 seconds 
+  Import took 0.029837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000557 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Broadleaves_Card_Desktop.tga
+  artifactKey: Guid(e64cf5c9456ef684aaff7b60939f2eaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Broadleaves_Card_Desktop.tga using Guid(e64cf5c9456ef684aaff7b60939f2eaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '156cdff4030fcccb7efa7fd33341a9c9') in 0.100440 seconds 
+  Import took 0.130924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000981 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Broadleaves_Mobile_Normal.tga
+  artifactKey: Guid(43fb5de94234b754c904d3a30aa4c2f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Broadleaves_Mobile_Normal.tga using Guid(43fb5de94234b754c904d3a30aa4c2f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84ff6510092f5630dfa537568a5154a4') in 0.236201 seconds 
+  Import took 0.242906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000448 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/Broadleaves_Desktop.tga
+  artifactKey: Guid(ce9dea0a872176a4c894d4bcfb48fd18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/Broadleaves_Desktop.tga using Guid(ce9dea0a872176a4c894d4bcfb48fd18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a12a7c8905bf327f8127ac974e1bf715') in 0.082951 seconds 
+  Import took 0.088059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000460 seconds.
+  path: Assets/99.Plugins/Free_SpeedTrees/PalmBark_Normal.tga
+  artifactKey: Guid(848a6ba0b902217489e437776cba0a85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99.Plugins/Free_SpeedTrees/PalmBark_Normal.tga using Guid(848a6ba0b902217489e437776cba0a85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f83fc59c3472a69f157f06ec300c20af') in 0.018165 seconds 
+  Import took 0.024773 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
