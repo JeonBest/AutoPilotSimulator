@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/NWH/Vehicle Physics 2/Scripts/VehicleController/Input/InputProviders/InputSystem/VehicleInputActions.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/99.Plugins/NWH/Vehicle Physics 2/Scripts/VehicleController/Input/InputProviders/InputSystem/VehicleInputActions.inputactions'
 
 using System;
 using System.Collections;
