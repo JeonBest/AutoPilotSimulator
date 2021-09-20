@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using NWH.VehiclePhysics2;
 using NWH.VehiclePhysics2.Input;
 using UnityEngine;
 using Zenject;
@@ -8,7 +9,7 @@ using Zenject;
 public class CarMover : MonoBehaviour
 {
     [SerializeField]
-    private Transform player;
+    private VehicleController player;
     [SerializeField]
     private List<GoodDriverAI> goodDrivers = new List<GoodDriverAI>();
     [SerializeField]
@@ -19,6 +20,7 @@ public class CarMover : MonoBehaviour
     private List<GuidePivotManager.GuidePivot> frontSpawn = new List<GuidePivotManager.GuidePivot>();
 
     public float visibleDistance;
+    public float distance2ground;
 
     [SerializeField]
     private List<GameObject> frontPointSpheres;
@@ -94,7 +96,7 @@ public class CarMover : MonoBehaviour
             for (int i = 0; i < frontSpawn.Count; i++)
             {
                 var frontPoint = frontSpawn[i];
-                if (Vector3.Distance(player.position, frontPoint.cur.position) < visibleDistance)
+                if (Vector3.Distance(player.transform.position, frontPoint.cur.position) < visibleDistance)
                 {
                     frontSpawn[i] = frontPoint.next;
                     frontPointSpheres[frontPoint.coordinates.x - 1].transform.position = frontPoint.cur.position;
@@ -103,7 +105,7 @@ public class CarMover : MonoBehaviour
             for (int i = 0; i < backSpawn.Count; i++)
             {
                 var backPoint = backSpawn[i];
-                if (Vector3.Distance(player.position, backPoint.cur.position) > visibleDistance)
+                if (Vector3.Distance(player.transform.position, backPoint.cur.position) > visibleDistance)
                 {
 
                     backSpawn[i] = backPoint.next;
@@ -117,7 +119,59 @@ public class CarMover : MonoBehaviour
 
     IEnumerator MoveCar()
     {
+        while (true)
+        {
+            foreach (var goodDriver in goodDrivers)
+            {
+                if (Vector3.Distance(player.transform.position, goodDriver.transform.position) < visibleDistance)
+                    continue;
 
-        yield return new WaitForSeconds(1f);
+                if (goodDriver.myVehicle.LocalForwardVelocity > player.LocalForwardVelocity)
+                {
+                    var gp = backSpawn[goodDriver.laneNum - 1];
+                    goodDriver.transform.position
+                        = gp.cur.position
+                        - new Vector3(0, distance2ground, 0);
+                    goodDriver.transform.rotation = gp.cur.rotation;
+                    goodDriver.OnMoved(gp);
+                }
+                else
+                {
+                    var gp = frontSpawn[goodDriver.laneNum - 1];
+                    goodDriver.transform.position
+                        = gp.cur.position
+                        - new Vector3(0, distance2ground, 0);
+                    goodDriver.transform.rotation = gp.cur.rotation;
+                    goodDriver.OnMoved(gp);
+                }
+            }
+
+            foreach (var badDriver in badDrivers)
+            {
+                if (Vector3.Distance(player.transform.position, badDriver.transform.position) < visibleDistance)
+                    continue;
+
+                if (badDriver.myVehicle.LocalForwardVelocity > player.LocalForwardVelocity)
+                {
+                    var gp = backSpawn[badDriver.laneNum - 1];
+                    badDriver.transform.position
+                        = gp.cur.position
+                        - new Vector3(0, distance2ground, 0);
+                    badDriver.transform.rotation = gp.cur.rotation;
+                    badDriver.OnMoved(gp);
+                }
+                else
+                {
+                    var gp = frontSpawn[badDriver.laneNum - 1];
+                    badDriver.transform.position
+                        = gp.cur.position
+                        - new Vector3(0, distance2ground, 0);
+                    badDriver.transform.rotation = gp.cur.rotation;
+                    badDriver.OnMoved(gp);
+                }
+            }
+
+            yield return new WaitForSeconds(1f);
+        }
     }
 }

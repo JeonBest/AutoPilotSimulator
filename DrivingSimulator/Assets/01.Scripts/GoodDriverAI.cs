@@ -28,9 +28,10 @@ namespace NWH.VehiclePhysics2.Input
         public float targetSpeedKPH;
         public float acceler;
         public float speedKPH;
+        public int laneNum;
 
-        VehicleController FrontCar;
         GuidePivotManager.GuidePivot currentPivot;
+        Rigidbody myRigidbody;
         private bool isReady = false;
         private bool isDamaged = false;
 
@@ -52,6 +53,7 @@ namespace NWH.VehiclePhysics2.Input
             minPivotDis = firstMinPivotDis;
 
             FSensor = frontSensor.GetComponent<Sensoring>();
+            myRigidbody = GetComponent<Rigidbody>();
 
             SetStartGP(guidePivotManager);
             InvokeRepeating(nameof(speedChange), 10.0f, 10.0f);
@@ -59,7 +61,7 @@ namespace NWH.VehiclePhysics2.Input
 
         void SetStartGP(GuidePivotManager guidePivotManager)
         {
-            /* 자신과 가장 가까운 GuidePivot 찾기 */
+            /* ???? ???? ????? GuidePivot ??? */
             float minimunDis = 1000f;
             foreach (GuidePivotManager.GuidePivot gp in guidePivotManager.guideLine)
             {
@@ -90,7 +92,7 @@ namespace NWH.VehiclePhysics2.Input
                 return;
             }
 
-            /* 속도에 따라 minPivotDis 조절 */
+            /* ????? ???? minPivotDis ???? */
             if (myVehicle.LocalForwardVelocity > 24)
                 minPivotDis = myVehicle.LocalForwardVelocity * 0.8f;
             else if (myVehicle.LocalForwardVelocity > 18)
@@ -98,8 +100,8 @@ namespace NWH.VehiclePhysics2.Input
             else
                 minPivotDis = firstMinPivotDis;
 
-            /* currentPivot 관리 */
-            // currentPivot과의 거리가 minPivotDis보다 작아지면, next로 갱신
+            /* currentPivot ???? */
+            // currentPivot???? ????? minPivotDis???? ???????, next?? ????
             if (Vector3.Distance(currentPivot.cur.position, myVehicle.vehicleTransform.position) < minPivotDis)
             {
                 if (currentPivot.next != null)
@@ -108,7 +110,7 @@ namespace NWH.VehiclePhysics2.Input
                 }
                 else
                 {
-                    // next 가 없으면, left나 right 중 존재하는 쪽을 다음으로 갱신
+                    // next ?? ??????, left?? right ?? ??????? ???? ???????? ????
                     if (currentPivot.right != null)
                         currentPivot = currentPivot.right;
                     else if (currentPivot.left != null)
@@ -125,7 +127,7 @@ namespace NWH.VehiclePhysics2.Input
             }
             else
             {
-                /* 속도 조절 */
+                /* ??? ???? */
                 targetSpeed = Mathf.Lerp(targetSpeed, currentPivot.speedLimit / 3.6f, myVehicle.fixedDeltaTime * 0.2f);
                 if (targetSpeed > -targetSpeedDiff / 3.6f)
                 {
@@ -139,13 +141,20 @@ namespace NWH.VehiclePhysics2.Input
                 }
             }
 
-            /* 차선간의 거리의 차가 작도록 핸들조작, 차로중앙유지 */
+            /* ???????? ????? ???? ????? ???????, ??????????? */
             Vector3 relativeVector = myVehicle.vehicleTransform.InverseTransformPoint(currentPivot.cur.position);
             steeringValue = Mathf.Lerp(steeringValue, relativeVector.x / relativeVector.magnitude * steeringCoefficient, myVehicle.fixedDeltaTime * 10.0f);
             myVehicle.input.Steering = steeringValue;
 
             acceler = myVehicle.LocalForwardAcceleration;
             speedKPH = myVehicle.LocalForwardVelocity * 3.6f;
+            laneNum = currentPivot.coordinates.x;
+        }
+
+        public void OnMoved(GuidePivotManager.GuidePivot gp)
+        {
+            currentPivot = gp.next;
+            myRigidbody.velocity = myVehicle.transform.forward * myVehicle.vehicleRigidbody.velocity.magnitude;
         }
 
         private void speedChange()
@@ -153,8 +162,8 @@ namespace NWH.VehiclePhysics2.Input
             targetSpeedDiff = Random.Range(-10.0f, 10.0f);
         }
 
-        /* <크루즈 컨트롤>
-         * CruiseControlModule.cs의 소스코드를 인용한 속도조절 함수
+        /* <????? ?????>
+         * CruiseControlModule.cs?? ?????? ?????? ??????? ???
          */
         private void CruiseMode(float _targetSpeed)
         {
@@ -184,8 +193,8 @@ namespace NWH.VehiclePhysics2.Input
             prevTargetSpeed = _targetSpeed;
         }
 
-        /* < 운행 정지 >
-         * 사고 발생 등의 이유로 차량을 멈출 때 사용
+        /* < ???? ???? >
+         * ??? ??? ???? ?????? ?????? ???? ?? ???
          */
         private void terminateMode()
         {
@@ -194,14 +203,14 @@ namespace NWH.VehiclePhysics2.Input
             myVehicle.gameObject.SetActive(false);
         }
 
-        /* < 전방의 차량 인식 >
-         * RayCast를 이용해 전방의 차량을 감지하여 반환한다.
+        /* < ?????? ???? ???? >
+         * RayCast?? ????? ?????? ?????? ??????? ??????.
          */
 
 
 
-        /* < 전방 차에 대한 행동 결정 >
-         * 전방 차량과의 거리, 속도차를 계산하여 회피, 감속을 결정한다
+        /* < ???? ???? ???? ?? ???? >
+         * ???? ???????? ???, ??????? ?????? ???, ?????? ???????
          * 
          */
 

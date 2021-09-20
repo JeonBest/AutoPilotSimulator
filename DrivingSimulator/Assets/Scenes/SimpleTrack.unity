@@ -2493,10 +2493,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac63befa2f5794449f8a9439a73d366, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1924257315}
+  player: {fileID: 816036934}
   goodDrivers: []
   badDrivers: []
   visibleDistance: 250
+  distance2ground: 0.4
   frontPointSpheres:
   - {fileID: 1246312489}
   - {fileID: 439945588}
@@ -3190,11 +3191,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 858cc54b36ffeff478f53c58eef2b16c, type: 3}
---- !u!4 &1924257315 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3257780161372718760, guid: 858cc54b36ffeff478f53c58eef2b16c, type: 3}
-  m_PrefabInstance: {fileID: 1924257314}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1954875015
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,7 +8,7 @@ namespace NWH.VehiclePhysics2.Input
     public class BadDriverAI : InputProvider
     {
         [Header("Common")]
-        public VehicleController myvehicle;
+        public VehicleController myVehicle;
         public Transform Track;
         public Color lineColor;
 
@@ -37,10 +37,11 @@ namespace NWH.VehiclePhysics2.Input
         public float targetSpeedKPH;
         public float acceler;
         public float speedKPH;
+        public int laneNum;
 
+        Rigidbody myRigidbody;
         GuidePivotManager.GuidePivot currentPivot;
-        GuidePivotManager GPM;
-        private bool isEngineStart = false;
+        private bool isReady = false;
         private bool isDamaged = false;
 
         // From CruiseControlModule.cs
@@ -56,10 +57,9 @@ namespace NWH.VehiclePhysics2.Input
         private bool isActing = false;
         private float actTime;
 
-        // Start is called before the first frame update
-        void Start()
+        public void Init(GuidePivotManager guidePivotManager)
         {
-            myvehicle.input.autoSetInput = false;
+            myVehicle.input.autoSetInput = false;
 
             targetSpeed = 0f;
             minPivotDis = firstMinPivotDis;
@@ -69,21 +69,21 @@ namespace NWH.VehiclePhysics2.Input
             RSSensor = rightSideSensor.GetComponent<Sensoring>();
             LBSensor = leftBackSensor.GetComponent<Sensoring>();
             RBSensor = rightBackSensor.GetComponent<Sensoring>();
+            myRigidbody = GetComponent<Rigidbody>();
 
             actTime = delayTime;
 
+            SetStartGP(guidePivotManager);
             Invoke("RaceStart", delayTime);
         }
 
-        void RaceStart()
+        void SetStartGP(GuidePivotManager guidePivotManager)
         {
-
-            /* 자신과 가장 가까운 GuidePivot 찾기 */
-            GPM = Track.GetComponent<GuidePivotManager>();
+            /* ???? ???? ????? GuidePivot ??? */
             float minimunDis = 1000f;
-            foreach (GuidePivotManager.GuidePivot gp in GPM.guideLine)
+            foreach (var gp in guidePivotManager.guideLine)
             {
-                float distance = (myvehicle.vehicleTransform.position - gp.cur.position).sqrMagnitude;
+                float distance = (myVehicle.vehicleTransform.position - gp.cur.position).sqrMagnitude;
                 if (minimunDis > distance)
                 {
                     minimunDis = distance;
@@ -92,18 +92,18 @@ namespace NWH.VehiclePhysics2.Input
             }
 
             // myvehicle.input.TrailerAttachDetach = true;
-            isEngineStart = true;
+            isReady = true;
         }
 
         void FixedUpdate()
         {
-            if (!isEngineStart)
+            if (!isReady)
                 return;
-            if (!isDamaged && myvehicle.damageHandler.lastCollision != null)
+            if (!isDamaged && myVehicle.damageHandler.lastCollision != null)
             {
                 isDamaged = true;
-                myvehicle.input.Vertical = 0f;
-                myvehicle.input.Handbrake = 1f;
+                myVehicle.input.Vertical = 0f;
+                myVehicle.input.Handbrake = 1f;
                 Invoke("terminateMode", 10f);
             }
             if (isDamaged)
@@ -111,75 +111,75 @@ namespace NWH.VehiclePhysics2.Input
                 return;
             }
 
-            /* 속도에 따라 minPivotDis 조절 */
-            if (myvehicle.LocalForwardVelocity > 24)
-                minPivotDis = myvehicle.LocalForwardVelocity * 0.8f;
-            else if (myvehicle.LocalForwardVelocity > 18)
+            /* ????? ???? minPivotDis ???? */
+            if (myVehicle.LocalForwardVelocity > 24)
+                minPivotDis = myVehicle.LocalForwardVelocity * 0.8f;
+            else if (myVehicle.LocalForwardVelocity > 18)
                 minPivotDis = 12;
             else
                 minPivotDis = firstMinPivotDis;
 
-            /* currentPivot과의 거리가 minPivotDis보다 작아지면, next로 갱신 */
-            if (Vector3.Distance(currentPivot.cur.position, myvehicle.vehicleTransform.position) < minPivotDis)
+            /* currentPivot???? ????? minPivotDis???? ???????, next?? ???? */
+            if (Vector3.Distance(currentPivot.cur.position, myVehicle.vehicleTransform.position) < minPivotDis)
                 currentPivot = currentPivot.next;
 
-            /* 센서로 감지한 주변 차 정보로 Bad behavior 동작 */
+            /* ?????? ?????? ??? ?? ?????? Bad behavior ???? */
 
             if (Time.time - actTime > 2.0f)
                 isActing = false;
 
-            // 좌측 칼치기
+            // ???? ????
             if (!isActing && LBSensor.hitCount != 0 && LSSensor.hitCount == 0 && currentPivot.left != null && !LBSensor.isPlayerInvolved)
             {
-                Debug.Log("좌측차량 칼치기!");
+                Debug.Log("???????? ????!");
                 currentPivot = currentPivot.left;
                 isActing = true;
                 actTime = Time.time;
             }
 
-            // 우측 칼치기
+            // ???? ????
             if (!isActing && RBSensor.hitCount != 0 && RSSensor.hitCount == 0 && currentPivot.right != null && !RBSensor.isPlayerInvolved)
             {
-                Debug.Log("우측차량 칼치기!");
+                Debug.Log("???????? ????!");
                 currentPivot = currentPivot.right;
                 isActing = true;
                 actTime = Time.time;
             }
 
-            // 전방 차량 회피
+            // ???? ???? ???
             if (FSensor.hitCount != 0)
             {
                 if (!isActing)
                 {
-                    // 좌측을 확인
+                    // ?????? ???
                     if (LSSensor.hitCount == 0 && currentPivot.left != null)
                     {
-                        Debug.Log("전방에 차량발견! 좌측으로 회피!");
+                        Debug.Log("???濡 ???????! ???????? ???!");
                         currentPivot = currentPivot.left;
                         isActing = true;
                         actTime = Time.time;
                     }
-                    // 우측을 확인
+                    // ?????? ???
                     else if (!isActing && RSSensor.hitCount == 0 && currentPivot.right != null)
                     {
-                        Debug.Log("전방에 차량 발견! 우측으로 회피!");
+                        Debug.Log("???濡 ???? ???! ???????? ???!");
                         currentPivot = currentPivot.right;
                         isActing = true;
                         actTime = Time.time;
                     }
                 }
-                // 칼치기 했는데 앞에 차가 있으면, 그냥 감
+                // ???? ???? ??? ???? ??????, ??? ??
                 else
                 {
-                    // Debug.Log("칼치기 했는데 전방에 차량 발견!");
-                    myvehicle.input.Brakes = 0.2f;
+                    // Debug.Log("???? ???? ???濡 ???? ???!");
+                    myVehicle.input.Brakes = 0.2f;
                 }
-                    
+
             }
             else
             {
-                /* 속도 조절 */
-                targetSpeed = Mathf.Lerp(targetSpeed, currentPivot.speedLimit / 3.6f, myvehicle.fixedDeltaTime * 0.2f);
+                /* ??? ???? */
+                targetSpeed = Mathf.Lerp(targetSpeed, currentPivot.speedLimit / 3.6f, myVehicle.fixedDeltaTime * 0.2f);
                 if (targetSpeed > -targetSpeedDiff / 3.6f && targetSpeed > 70f / 3.6f)
                 {
                     CruiseMode(targetSpeed + targetSpeedDiff / 3.6f);
@@ -192,22 +192,29 @@ namespace NWH.VehiclePhysics2.Input
                 }
             }
 
-            /* current pivot을 바라보도록 핸들조작, 차로중앙유지 */
-            Vector3 relativeVector = myvehicle.vehicleTransform.InverseTransformPoint(currentPivot.cur.position);
-            steeringValue = Mathf.Lerp(steeringValue, relativeVector.x / relativeVector.magnitude * steeringCoefficient, myvehicle.fixedDeltaTime * 10.0f);
-            myvehicle.input.Steering = steeringValue;
+            /* current pivot?? ?????? ???????, ??????????? */
+            Vector3 relativeVector = myVehicle.vehicleTransform.InverseTransformPoint(currentPivot.cur.position);
+            steeringValue = Mathf.Lerp(steeringValue, relativeVector.x / relativeVector.magnitude * steeringCoefficient, myVehicle.fixedDeltaTime * 10.0f);
+            myVehicle.input.Steering = steeringValue;
 
-            acceler = myvehicle.LocalForwardAcceleration;
-            speedKPH = myvehicle.LocalForwardVelocity * 3.6f;
+            acceler = myVehicle.LocalForwardAcceleration;
+            speedKPH = myVehicle.LocalForwardVelocity * 3.6f;
+            laneNum = currentPivot.coordinates.x;
         }
 
-        /* <크루즈 컨트롤>
-         * CruiseControlModule.cs의 소스코드를 인용한 속도조절 함수
+        public void OnMoved(GuidePivotManager.GuidePivot gp)
+        {
+            currentPivot = gp.next;
+            myRigidbody.velocity = myVehicle.transform.forward * myVehicle.vehicleRigidbody.velocity.magnitude;
+        }
+
+        /* <????? ?????>
+         * CruiseControlModule.cs?? ?????? ?ο??? ??????? ???
          */
         private void CruiseMode(float _targetSpeed)
         {
-            float speed = myvehicle.Speed;
-            float dt = myvehicle.fixedDeltaTime;
+            float speed = myVehicle.Speed;
+            float dt = myVehicle.fixedDeltaTime;
 
             _eprev = _e;
             _e = _targetSpeed - speed;
@@ -227,27 +234,27 @@ namespace NWH.VehiclePhysics2.Input
             newOutput = newOutput < -1f ? -1f : newOutput > 1f ? 1f : newOutput;
             output = Mathf.Lerp(output, newOutput, dt * 3.0f);
 
-            myvehicle.input.Vertical = output;
+            myVehicle.input.Vertical = output;
 
             prevTargetSpeed = _targetSpeed;
         }
 
-        /* < 운행 정지 >
-         * 사고 발생 등의 이유로 차량을 멈출 때 사용
+        /* < ???? ???? >
+         * ??? ??? ???? ?????? ?????? ???? ?? ???
          */
         private void terminateMode()
         {
-            myvehicle.input.Vertical = 0;
-            myvehicle.input.Steering = 0;
-            myvehicle.gameObject.SetActive(false);
+            myVehicle.input.Vertical = 0;
+            myVehicle.input.Steering = 0;
+            myVehicle.gameObject.SetActive(false);
         }
 
-        /* < 전방의 차량 인식 >
-         * FrontSensor를 이용해 전방의 차량을 감지하여 반환한다.
+        /* < ?????? ???? ?ν? >
+         * FrontSensor?? ????? ?????? ?????? ??????? ??????.
          */
 
-        /* < 전방 차에 대한 행동 결정 >
-         * 전방 차량과의 거리, 속도차를 계산하여 회피, 감속을 결정한다
+        /* < ???? ???? ???? ?? ???? >
+         * ???? ???????? ???, ??????? ?????? ???, ?????? ???????
          * 
          */
 
@@ -256,11 +263,11 @@ namespace NWH.VehiclePhysics2.Input
 
         private void OnDrawGizmos()
         {
-            if (!isEngineStart)
+            if (!isReady)
                 return;
             Gizmos.color = lineColor;
             Gizmos.DrawSphere(currentPivot.cur.position, 1f);
-            Gizmos.DrawLine(myvehicle.vehicleTransform.position, currentPivot.cur.position);
+            Gizmos.DrawLine(myVehicle.vehicleTransform.position, currentPivot.cur.position);
         }
     }
 }

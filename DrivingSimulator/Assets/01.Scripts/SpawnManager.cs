@@ -61,7 +61,7 @@ namespace NWH.VehiclePhysics2.Input
             GameObject tmpBad = Instantiate(bad, points[idx].position, points[idx].rotation);
             BadDriverAI tmpAI = tmpBad.GetComponentInChildren<BadDriverAI>();
             VehicleController vc = tmpBad.GetComponent<VehicleController>();
-            tmpAI.myvehicle = vc;
+            tmpAI.myVehicle = vc;
             tmpAI.Track = track;
             Sensoring[] sensors = tmpAI.GetComponentsInChildren<Sensoring>();
             tmpAI.frontSensor = sensors[0].transform;

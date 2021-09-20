@@ -39,7 +39,7 @@ public class CarSpawner : MonoBehaviour
             Transform worldTrans = guidePivotManager.GuidePivotPool[coor].cur.transform;
             GameObject newObj = Instantiate(
                 GoodCarPrefab,
-                worldTrans.position - new Vector3(0, 0, distance2ground),
+                worldTrans.position - new Vector3(0, distance2ground, 0),
                 worldTrans.rotation,
                 transform);
             newObj.name = $"Good Driver {goodCarNum++}";
@@ -54,11 +54,14 @@ public class CarSpawner : MonoBehaviour
             Transform worldTrans = guidePivotManager.GuidePivotPool[coor].cur.transform;
             GameObject newObj = Instantiate(
                 GoodCarPrefab,
-                worldTrans.position - new Vector3(0, 0, distance2ground),
+                worldTrans.position - new Vector3(0, distance2ground, 0),
                 worldTrans.rotation,
                 transform);
             newObj.name = $"Bad Driver {badCarNum++}";
 
+            BadDriverAI newAI = newObj.GetComponent<BadDriverAI>();
+            newAI.Init(guidePivotManager);
+            _badDriverAIs.Add(newAI);
         }
 
     }
