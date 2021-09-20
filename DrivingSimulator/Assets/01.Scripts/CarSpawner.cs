@@ -13,19 +13,22 @@ public class CarSpawner : MonoBehaviour
     private GameObject GoodCarPrefab;
     [SerializeField]
     private GameObject BadCarPrefab;
+    [SerializeField]
+    private CarMover carMover;
 
     [SerializeField]
     private List<Vector2Int> _goodCars = new List<Vector2Int>();
     [SerializeField]
     private List<Vector2Int> _badCars = new List<Vector2Int>();
 
+    private List<GoodDriverAI> _goodDriverAIs = new List<GoodDriverAI>();
+    private List<BadDriverAI> _badDriverAIs = new List<BadDriverAI>();
 
     [Inject]
     void Injected(GuidePivotManager guidePivotManager)
     {
         SpawnOnStart(guidePivotManager);
-        StartCoroutine(MoveCarCoroutine());
-
+        carMover.Init(_goodDriverAIs, _badDriverAIs);
     }
 
     private void SpawnOnStart(GuidePivotManager guidePivotManager)
@@ -43,6 +46,7 @@ public class CarSpawner : MonoBehaviour
 
             GoodDriverAI newAI = newObj.GetComponent<GoodDriverAI>();
             newAI.Init(guidePivotManager);
+            _goodDriverAIs.Add(newAI);
         }
         int badCarNum = 1;
         foreach (Vector2Int coor in _badCars)
@@ -59,8 +63,4 @@ public class CarSpawner : MonoBehaviour
 
     }
 
-    private IEnumerator MoveCarCoroutine()
-    {
-        yield break;
-    }
 }
