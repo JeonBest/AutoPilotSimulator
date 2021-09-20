@@ -4,7 +4,7 @@ namespace NWH.Common.Input
 {
     public class InputSystemSceneInputProvider : SceneInputProviderBase
     {
-        public SceneInputActions sceneInputActions;
+        public static SceneInputActions sceneInputActions;
 
         private bool _rotationModifier;
         private bool _panningModifier;
@@ -17,10 +17,10 @@ namespace NWH.Common.Input
             sceneInputActions = new SceneInputActions();
             sceneInputActions.Enable();
 
-            sceneInputActions.CameraControls.CameraRotationModifier.started  += ctx => _rotationModifier = true;
+            sceneInputActions.CameraControls.CameraRotationModifier.started += ctx => _rotationModifier = true;
             sceneInputActions.CameraControls.CameraRotationModifier.canceled += ctx => _rotationModifier = false;
 
-            sceneInputActions.CameraControls.CameraPanningModifier.started  += ctx => _panningModifier = true;
+            sceneInputActions.CameraControls.CameraPanningModifier.started += ctx => _panningModifier = true;
             sceneInputActions.CameraControls.CameraPanningModifier.canceled += ctx => _panningModifier = false;
         }
 
