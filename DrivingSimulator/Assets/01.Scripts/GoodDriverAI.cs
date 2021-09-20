@@ -122,8 +122,7 @@ namespace NWH.VehiclePhysics2.Input
 
             if (FSensor.hitCount != 0)
             {
-                Debug.Log("Some Vehicle is blocking me!");
-                myVehicle.input.Brakes = 0.4f;
+                myVehicle.input.Brakes = 0.5f;
             }
             else
             {

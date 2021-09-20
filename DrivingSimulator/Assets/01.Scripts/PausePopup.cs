@@ -12,6 +12,8 @@ public class PausePopup : MonoBehaviour
     private Button _restartButton;
     [SerializeField]
     private Button _resumeButton;
+    [SerializeField]
+    private Button _exitButton;
 
 
     Canvas _pausePopup;
@@ -40,6 +42,13 @@ public class PausePopup : MonoBehaviour
                 _pausePopup.enabled = false;
                 _pausePopupRaycast.enabled = false;
                 Time.timeScale = 1;
+            });
+
+        _exitButton
+            .OnClickAsObservable()
+            .Subscribe(_ =>
+            {
+                Application.Quit();
             });
 
     }

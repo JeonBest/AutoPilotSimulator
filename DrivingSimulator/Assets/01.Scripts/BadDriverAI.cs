@@ -9,7 +9,6 @@ namespace NWH.VehiclePhysics2.Input
     {
         [Header("Common")]
         public VehicleController myVehicle;
-        public Transform Track;
         public Color lineColor;
 
         [Header("Sensors")]
@@ -74,7 +73,6 @@ namespace NWH.VehiclePhysics2.Input
             actTime = delayTime;
 
             SetStartGP(guidePivotManager);
-            Invoke("RaceStart", delayTime);
         }
 
         void SetStartGP(GuidePivotManager guidePivotManager)
@@ -131,7 +129,6 @@ namespace NWH.VehiclePhysics2.Input
             // ???? ????
             if (!isActing && LBSensor.hitCount != 0 && LSSensor.hitCount == 0 && currentPivot.left != null && !LBSensor.isPlayerInvolved)
             {
-                Debug.Log("???????? ????!");
                 currentPivot = currentPivot.left;
                 isActing = true;
                 actTime = Time.time;
@@ -140,7 +137,6 @@ namespace NWH.VehiclePhysics2.Input
             // ???? ????
             if (!isActing && RBSensor.hitCount != 0 && RSSensor.hitCount == 0 && currentPivot.right != null && !RBSensor.isPlayerInvolved)
             {
-                Debug.Log("???????? ????!");
                 currentPivot = currentPivot.right;
                 isActing = true;
                 actTime = Time.time;
@@ -154,7 +150,6 @@ namespace NWH.VehiclePhysics2.Input
                     // ?????? ???
                     if (LSSensor.hitCount == 0 && currentPivot.left != null)
                     {
-                        Debug.Log("???ë¡ ???????! ???????? ???!");
                         currentPivot = currentPivot.left;
                         isActing = true;
                         actTime = Time.time;
@@ -162,7 +157,6 @@ namespace NWH.VehiclePhysics2.Input
                     // ?????? ???
                     else if (!isActing && RSSensor.hitCount == 0 && currentPivot.right != null)
                     {
-                        Debug.Log("???ë¡ ???? ???! ???????? ???!");
                         currentPivot = currentPivot.right;
                         isActing = true;
                         actTime = Time.time;
@@ -171,7 +165,7 @@ namespace NWH.VehiclePhysics2.Input
                 // ???? ???? ??? ???? ??????, ??? ??
                 else
                 {
-                    // Debug.Log("???? ???? ???ë¡ ???? ???!");
+                    // Debug.Log("???? ???? ???ï¿? ???? ???!");
                     myVehicle.input.Brakes = 0.2f;
                 }
 
@@ -209,7 +203,7 @@ namespace NWH.VehiclePhysics2.Input
         }
 
         /* <????? ?????>
-         * CruiseControlModule.cs?? ?????? ?¥ï??? ??????? ???
+         * CruiseControlModule.cs?? ?????? ?ï¿½ï¿½??? ??????? ???
          */
         private void CruiseMode(float _targetSpeed)
         {
@@ -249,7 +243,7 @@ namespace NWH.VehiclePhysics2.Input
             myVehicle.gameObject.SetActive(false);
         }
 
-        /* < ?????? ???? ?¥í? >
+        /* < ?????? ???? ?ï¿½ï¿½? >
          * FrontSensor?? ????? ?????? ?????? ??????? ??????.
          */
 

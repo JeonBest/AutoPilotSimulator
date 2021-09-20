@@ -14900,9 +14900,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6044845332206077657}
-  - component: {fileID: 3105361491672747462}
   m_Layer: 0
-  m_Name: AI
+  m_Name: Sensors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14927,35 +14926,6 @@ Transform:
   m_Father: {fileID: 4533326612089423875}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3105361491672747462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6044845332206077662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d828508d94e632744967014b872d7e08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myvehicle: {fileID: 9038889805546762855}
-  Track: {fileID: 0}
-  lineColor: {r: 0, g: 0, b: 0, a: 0.5019608}
-  frontSensor: {fileID: 5128777637637449429}
-  leftSideSensor: {fileID: 5237073624870073828}
-  rightSideSensor: {fileID: 7030681945239715522}
-  leftBackSensor: {fileID: 5584376455763493117}
-  rightBackSensor: {fileID: 5665292823300224252}
-  firstMinPivotDis: 8
-  steeringCoefficient: 3
-  targetSpeedDiff: 20
-  delayTime: 0
-  steeringValue: 0
-  minPivotDis: 0
-  targetSpeedKPH: 0
-  acceler: 0
-  speedKPH: 0
 --- !u!1 &6869665087620044647
 GameObject:
   m_ObjectHideFlags: 0
@@ -17239,6 +17209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4533326612089423875}
   - component: {fileID: 6869665088602977407}
+  - component: {fileID: 4381980087567050571}
   - component: {fileID: 9038889805546762855}
   - component: {fileID: 4108705159386330053}
   - component: {fileID: 1416627124431222347}
@@ -17249,7 +17220,7 @@ GameObject:
   - component: {fileID: 4108705158181837136}
   - component: {fileID: 6869665088602977406}
   m_Layer: 0
-  m_Name: Bad Driver
+  m_Name: Bad Driver.SportsCar
   m_TagString: Vehicle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17308,6 +17279,35 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &4381980087567050571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6869665088602977404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d828508d94e632744967014b872d7e08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myVehicle: {fileID: 9038889805546762855}
+  lineColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  frontSensor: {fileID: 5128777637637449429}
+  leftSideSensor: {fileID: 5237073624870073828}
+  rightSideSensor: {fileID: 7030681945239715522}
+  leftBackSensor: {fileID: 5584376455763493117}
+  rightBackSensor: {fileID: 5665292823300224252}
+  firstMinPivotDis: 6
+  steeringCoefficient: 2.5
+  targetSpeedDiff: 10
+  delayTime: 0
+  steeringValue: 0
+  minPivotDis: 0
+  targetSpeedKPH: 0
+  acceler: 0
+  speedKPH: 0
+  laneNum: 0
 --- !u!114 &9038889805546762855
 MonoBehaviour:
   m_ObjectHideFlags: 0

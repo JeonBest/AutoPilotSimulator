@@ -16,8 +16,6 @@ public class IdleCanvas : MonoBehaviour
     private Button _pauseButton;
     [SerializeField]
     private Text _velocityText;
-    [SerializeField]
-    private Text _remainText;
 
     Canvas _pauseCanvas;
     GraphicRaycaster _pauseRaycast;
@@ -39,7 +37,7 @@ public class IdleCanvas : MonoBehaviour
     void Update()
     {
         _velocityText.text = Mathf.Round(_playerVehicle.LocalForwardVelocity * 3.6f).ToString();
-        _remainText.text = Mathf.Round(Time.time).ToString();
+        //_remainText.text = Mathf.Round(Time.time).ToString();
     }
 
 }

@@ -62,7 +62,6 @@ namespace NWH.VehiclePhysics2.Input
             BadDriverAI tmpAI = tmpBad.GetComponentInChildren<BadDriverAI>();
             VehicleController vc = tmpBad.GetComponent<VehicleController>();
             tmpAI.myVehicle = vc;
-            tmpAI.Track = track;
             Sensoring[] sensors = tmpAI.GetComponentsInChildren<Sensoring>();
             tmpAI.frontSensor = sensors[0].transform;
             tmpAI.leftSideSensor = sensors[1].transform;

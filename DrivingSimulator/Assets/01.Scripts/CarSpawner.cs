@@ -53,7 +53,7 @@ public class CarSpawner : MonoBehaviour
         {
             Transform worldTrans = guidePivotManager.GuidePivotPool[coor].cur.transform;
             GameObject newObj = Instantiate(
-                GoodCarPrefab,
+                BadCarPrefab,
                 worldTrans.position - new Vector3(0, distance2ground, 0),
                 worldTrans.rotation,
                 transform);

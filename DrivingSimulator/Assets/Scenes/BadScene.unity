@@ -2480,7 +2480,25 @@ MonoBehaviour:
   _goodCars:
   - {x: 1, y: 4}
   - {x: 2, y: 5}
-  _badCars: []
+  - {x: 3, y: 6}
+  - {x: 1, y: 10}
+  - {x: 2, y: 11}
+  - {x: 3, y: 12}
+  - {x: 4, y: 13}
+  - {x: 1, y: 16}
+  - {x: 3, y: 18}
+  - {x: 4, y: 19}
+  - {x: 1, y: 22}
+  - {x: 2, y: 23}
+  - {x: 4, y: 25}
+  - {x: 1, y: 28}
+  - {x: 3, y: 30}
+  - {x: 4, y: 31}
+  _badCars:
+  - {x: 4, y: 7}
+  - {x: 2, y: 17}
+  - {x: 3, y: 24}
+  - {x: 2, y: 29}
 --- !u!114 &1390033255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2605,7 +2623,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4095394522734394777, guid: 30a748f1b73079c4da7b187055056621, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30a748f1b73079c4da7b187055056621, type: 3}
@@ -3117,6 +3135,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 57111747, guid: 858cc54b36ffeff478f53c58eef2b16c, type: 3}
+      propertyPath: currentCameraIndex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 285434548, guid: 858cc54b36ffeff478f53c58eef2b16c, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: -0.0000042170286

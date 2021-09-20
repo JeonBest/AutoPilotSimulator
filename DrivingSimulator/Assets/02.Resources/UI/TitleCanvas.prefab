@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 8102468380893205579}
   - component: {fileID: 7759132206381375420}
   m_Layer: 5
-  m_Name: ResumeButton
+  m_Name: ToBadButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -278,7 +278,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB3CC\uC544\uAC00\uAE30"
+  m_Text: "\uB09C\uD3ED\uD55C \uB3C4\uB85C"
 --- !u!1 &3599805776359366472
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,9 +490,9 @@ GameObject:
   - component: {fileID: 2422042803068760523}
   - component: {fileID: 6731634666205346065}
   - component: {fileID: 7718302802892481792}
-  - component: {fileID: 2892975516663350501}
+  - component: {fileID: 6742910793488989349}
   m_Layer: 5
-  m_Name: PausePopup
+  m_Name: TitleCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -556,7 +556,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &2892975516663350501
+--- !u!114 &6742910793488989349
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -565,11 +565,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4095394522734394777}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58e0a8308e9fb5344bee578a79b015ef, type: 3}
+  m_Script: {fileID: 11500000, guid: 13098a3491d1ccb4d856f65f39a0f39c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _restartButton: {fileID: 2284031905460957759}
-  _resumeButton: {fileID: 7759132206381375420}
+  _toGoodButton: {fileID: 2284031905460957759}
+  _toBadButton: {fileID: 7759132206381375420}
   _exitButton: {fileID: 4757821591743948681}
 --- !u!1 &5885948048413880315
 GameObject:
@@ -584,7 +584,7 @@ GameObject:
   - component: {fileID: 2507059039259178691}
   - component: {fileID: 2284031905460957759}
   m_Layer: 5
-  m_Name: RestartButton
+  m_Name: ToGoodButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -770,7 +770,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC77C\uC2DC\uC815\uC9C0\uB428"
+  m_Text: "\uC6B4\uC804 \uC2DC\uBBAC\uB808\uC774\uD130"
 --- !u!1 &6408937657194964132
 GameObject:
   m_ObjectHideFlags: 0
@@ -849,7 +849,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC7AC\uC2DC\uC791"
+  m_Text: "\uD3B8\uC548\uD55C \uB3C4\uB85C"
 --- !u!1 &8641483532436207876
 GameObject:
   m_ObjectHideFlags: 0
