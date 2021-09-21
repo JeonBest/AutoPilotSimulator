@@ -25,13 +25,13 @@ public class CarSpawner : MonoBehaviour
     private List<BadDriverAI> _badDriverAIs = new List<BadDriverAI>();
 
     [Inject]
-    void Injected(GuidePivotManager guidePivotManager)
+    void Injected(GuidePivotManager guidePivotManager, CarMover carMover)
     {
-        SpawnOnStart(guidePivotManager);
+        SpawnOnStart(guidePivotManager, carMover);
         carMover.Init(_goodDriverAIs, _badDriverAIs);
     }
 
-    private void SpawnOnStart(GuidePivotManager guidePivotManager)
+    private void SpawnOnStart(GuidePivotManager guidePivotManager, CarMover carMover)
     {
         int goodCarNum = 1;
         foreach (Vector2Int coor in _goodCars)
@@ -45,7 +45,7 @@ public class CarSpawner : MonoBehaviour
             newObj.name = $"Good Driver {goodCarNum++}";
 
             GoodDriverAI newAI = newObj.GetComponent<GoodDriverAI>();
-            newAI.Init(guidePivotManager);
+            newAI.Init(guidePivotManager, carMover);
             _goodDriverAIs.Add(newAI);
         }
         int badCarNum = 1;
@@ -60,10 +60,9 @@ public class CarSpawner : MonoBehaviour
             newObj.name = $"Bad Driver {badCarNum++}";
 
             BadDriverAI newAI = newObj.GetComponent<BadDriverAI>();
-            newAI.Init(guidePivotManager);
+            newAI.Init(guidePivotManager, carMover);
             _badDriverAIs.Add(newAI);
         }
-
     }
 
 }

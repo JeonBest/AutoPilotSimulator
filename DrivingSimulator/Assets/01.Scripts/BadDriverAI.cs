@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using NWH.Common.Input;
 using UnityEngine;
+using Zenject;
 
 namespace NWH.VehiclePhysics2.Input
 {
@@ -56,7 +57,9 @@ namespace NWH.VehiclePhysics2.Input
         private bool isActing = false;
         private float actTime;
 
-        public void Init(GuidePivotManager guidePivotManager)
+        CarMover _carMover;
+
+        public void Init(GuidePivotManager guidePivotManager, CarMover carMover)
         {
             myVehicle.input.autoSetInput = false;
 
@@ -73,6 +76,7 @@ namespace NWH.VehiclePhysics2.Input
             actTime = delayTime;
 
             SetStartGP(guidePivotManager);
+            _carMover = carMover;
         }
 
         void SetStartGP(GuidePivotManager guidePivotManager)
@@ -102,7 +106,8 @@ namespace NWH.VehiclePhysics2.Input
                 isDamaged = true;
                 myVehicle.input.Vertical = 0f;
                 myVehicle.input.Handbrake = 1f;
-                Invoke("terminateMode", 10f);
+                Invoke("terminateMode", 2f);
+                //_carMover.AddDamagedCar(false);
             }
             if (isDamaged)
             {
@@ -165,7 +170,7 @@ namespace NWH.VehiclePhysics2.Input
                 // ???? ???? ??? ???? ??????, ??? ??
                 else
                 {
-                    // Debug.Log("???? ???? ???ï¿? ???? ???!");
+                    // Debug.Log("???? ???? ???ï¿½? ???? ???!");
                     myVehicle.input.Brakes = 0.2f;
                 }
 

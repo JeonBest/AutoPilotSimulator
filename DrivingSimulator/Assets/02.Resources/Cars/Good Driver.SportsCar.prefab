@@ -330,13 +330,13 @@ MonoBehaviour:
     force: 0
     forceCoefficient: 1.15
     slip: 0
-    slipCoefficient: 0.9
+    slipCoefficient: 2
     speed: 0
   sideFriction:
     force: 0
     forceCoefficient: 1.15
     slip: 0
-    slipCoefficient: 0.8
+    slipCoefficient: 2
     speed: 0
   activeFrictionPreset: {fileID: 11400000, guid: 52f3fe046bf34e847b54bdb89bf46442, type: 2}
   applyForceToOthers: 0
@@ -723,13 +723,13 @@ MonoBehaviour:
     force: 0
     forceCoefficient: 1.15
     slip: 0
-    slipCoefficient: 0.9
+    slipCoefficient: 2
     speed: 0
   sideFriction:
     force: 0
     forceCoefficient: 1.15
     slip: 0
-    slipCoefficient: 0.8
+    slipCoefficient: 2
     speed: 0
   activeFrictionPreset: {fileID: 11400000, guid: 52f3fe046bf34e847b54bdb89bf46442, type: 2}
   applyForceToOthers: 0
@@ -1596,13 +1596,13 @@ MonoBehaviour:
     force: 0
     forceCoefficient: 1.15
     slip: 0
-    slipCoefficient: 0.9
+    slipCoefficient: 2
     speed: 0
   sideFriction:
     force: 0
     forceCoefficient: 1.15
     slip: 0
-    slipCoefficient: 0.8
+    slipCoefficient: 2
     speed: 0
   activeFrictionPreset: {fileID: 11400000, guid: 52f3fe046bf34e847b54bdb89bf46442, type: 2}
   applyForceToOthers: 0
@@ -3757,13 +3757,13 @@ MonoBehaviour:
     force: 0
     forceCoefficient: 1.15
     slip: 0
-    slipCoefficient: 0.9
+    slipCoefficient: 2
     speed: 0
   sideFriction:
     force: 0
     forceCoefficient: 1.15
     slip: 0
-    slipCoefficient: 0.8
+    slipCoefficient: 2
     speed: 0
   activeFrictionPreset: {fileID: 11400000, guid: 52f3fe046bf34e847b54bdb89bf46442, type: 2}
   applyForceToOthers: 0
@@ -4029,6 +4029,7 @@ MonoBehaviour:
   targetSpeedKPH: 0
   acceler: 0
   speedKPH: 0
+  laneNum: 0
 --- !u!114 &2309919918352393775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5820,14 +5821,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 810437f958b002e41b86c9e0a121c7ce, type: 3}
---- !u!198 &7764336526772229518 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 1361580215377543203, guid: 810437f958b002e41b86c9e0a121c7ce, type: 3}
-  m_PrefabInstance: {fileID: 8729448405452854701}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7597951299109239166 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1176674673329548499, guid: 810437f958b002e41b86c9e0a121c7ce, type: 3}
+  m_PrefabInstance: {fileID: 8729448405452854701}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7764336526772229518 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1361580215377543203, guid: 810437f958b002e41b86c9e0a121c7ce, type: 3}
   m_PrefabInstance: {fileID: 8729448405452854701}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9092951676572548005
@@ -5887,13 +5888,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 810437f958b002e41b86c9e0a121c7ce, type: 3}
---- !u!198 &7842432309774089094 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 1361580215377543203, guid: 810437f958b002e41b86c9e0a121c7ce, type: 3}
-  m_PrefabInstance: {fileID: 9092951676572548005}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7954698612442109814 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1176674673329548499, guid: 810437f958b002e41b86c9e0a121c7ce, type: 3}
+  m_PrefabInstance: {fileID: 9092951676572548005}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7842432309774089094 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1361580215377543203, guid: 810437f958b002e41b86c9e0a121c7ce, type: 3}
   m_PrefabInstance: {fileID: 9092951676572548005}
   m_PrefabAsset: {fileID: 0}

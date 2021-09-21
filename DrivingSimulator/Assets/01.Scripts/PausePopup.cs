@@ -60,6 +60,7 @@ public class PausePopup : MonoBehaviour
                     SceneManager.LoadScene("BadScene");
                 else
                     SceneManager.LoadScene("GoodScene");
+                Time.timeScale = 1;
             });
 
     }

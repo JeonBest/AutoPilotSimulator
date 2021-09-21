@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using NWH.Common.Input;
 using UnityEngine;
+using Zenject;
 
 namespace NWH.VehiclePhysics2.Input
 {
@@ -45,7 +46,9 @@ namespace NWH.VehiclePhysics2.Input
         // private float targetSpeed;
         private float prevTargetSpeed;
 
-        public void Init(GuidePivotManager guidePivotManager)
+        CarMover _carMover;
+
+        public void Init(GuidePivotManager guidePivotManager, CarMover carMover)
         {
             myVehicle.input.autoSetInput = false;
 
@@ -56,6 +59,7 @@ namespace NWH.VehiclePhysics2.Input
             myRigidbody = GetComponent<Rigidbody>();
 
             SetStartGP(guidePivotManager);
+            _carMover = carMover;
             InvokeRepeating(nameof(speedChange), 10.0f, 10.0f);
         }
 
@@ -85,7 +89,8 @@ namespace NWH.VehiclePhysics2.Input
                 isDamaged = true;
                 myVehicle.input.Vertical = 0f;
                 myVehicle.input.Handbrake = 1f;
-                Invoke("terminateMode", 10f);
+                Invoke("terminateMode", 2f);
+                //_carMover.AddDamagedCar(true);
             }
             if (isDamaged)
             {

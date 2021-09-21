@@ -54,13 +54,13 @@ namespace NWH.VehiclePhysics2.Input
 
         void Update()
         {
-            if (!logging && (1==2))
+            if (!logging && (1 == 2))
             {
                 if (myvehicle.input.Brakes > 0.9f)
                 {
                     logging = true;
                     brNum++;
-                    Log($"Brake {brNum}");
+                    //                Log($"Brake {brNum}");
                     Invoke("setLog", 2.0f);
                 }
 
@@ -68,7 +68,7 @@ namespace NWH.VehiclePhysics2.Input
                 {
                     logging = true;
                     curveNum++;
-                    Log($"Steer {curveNum} : {curveRate} to {myvehicle.input.Steering}");
+                    //              Log($"Steer {curveNum} : {curveRate} to {myvehicle.input.Steering}");
                     Invoke("setLog", 2.0f);
                 }
             }
@@ -91,9 +91,9 @@ namespace NWH.VehiclePhysics2.Input
             currentTime = GetCurrentTimeFormatted();
             float velo = myvehicle.LocalForwardVelocity;
             float steer = myvehicle.input.Steering;
-            
+
             logContentMerged = $"[{currentTime}]\t{velo}\t{steer}";
-            UnityEngine.Debug.Log(logContentMerged);
+            //            UnityEngine.Debug.Log(logContentMerged);
             SaveToFile(logContentMerged);
             yield return new WaitForSeconds(1.0f);
             StartCoroutine("TimeLog");
@@ -105,7 +105,7 @@ namespace NWH.VehiclePhysics2.Input
             callerName = GetCallerName();
             logContentMerged = $"[{currentTime}]\t{content}";
 
-            UnityEngine.Debug.Log(logContentMerged);
+            //          UnityEngine.Debug.Log(logContentMerged);
             SaveToFile(logContentMerged);
         }
 
