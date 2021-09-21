@@ -14,7 +14,8 @@ public class PausePopup : MonoBehaviour
     private Button _resumeButton;
     [SerializeField]
     private Button _exitButton;
-
+    [SerializeField]
+    private Button _skipButton;
 
     Canvas _pausePopup;
     GraphicRaycaster _pausePopupRaycast;
@@ -49,6 +50,16 @@ public class PausePopup : MonoBehaviour
             .Subscribe(_ =>
             {
                 Application.Quit();
+            });
+
+        _skipButton
+            .OnClickAsObservable()
+            .Subscribe(_ =>
+            {
+                if (SceneManager.GetActiveScene().name == "GoodScene")
+                    SceneManager.LoadScene("BadScene");
+                else
+                    SceneManager.LoadScene("GoodScene");
             });
 
     }
