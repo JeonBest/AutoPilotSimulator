@@ -1,0 +1,11 @@
+gInputControllers - v1.0.2
+
+Thanks for buying GIC! 
+
+----------------------------------------------------------------------------------------------------
+v2.0.0      Rewrite plugin:
+            * XInput management;
+            * Logitech G29 leds;
+v1.0.2      Fix DllNotFoundException error
+v1.0.1      Docs updated and unity requirements
+v1.0.0      Initial release
